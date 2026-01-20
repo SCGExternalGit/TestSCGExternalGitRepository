@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE SPE>
+<SPE AME_VERSION="2604" DOC_VERSION="6" HOTFIX="0" MAJ="20261" UPDATE="0">
+ <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="1" codeGenVersion="1.0" defaultIcon="SCLibCondensor" outputType="0" type="1" unit="0">
+  <ExtVars>
+   <Port tag="hflow">
+    <Vars>
+     <Var defValue="0" dimension="1" io="2" maxValue="0" minValue="0" subId="1" title="pressure at port 1" type="1" units="barA" value="0" varName="p1" varName2="dp1" visibility="True"/>
+     <Var defValue="0" dimension="1" io="2" maxValue="0" minValue="0" subId="2" title="density at port 1" type="1" units="kg/m**3" value="0" varName="rho1" varName2="drho1" visibility="True"/>
+     <Var defValue="0" dimension="1" io="2" maxValue="0" minValue="0" subId="3" title="com index at port 1" type="5" units="tpfnull" unplottable="1" value="0" varName="com1" visibility="True"/>
+     <Var dimension="1" io="1" subId="4" title="enthalpy flow rate at port 1" type="0" units="W" varName="dmh1" visibility="True"/>
+     <Var dimension="1" io="1" subId="5" title="mass flow rate at port 1" type="0" units="kg/s" varName="dm1" visibility="True"/>
+    </Vars>
+   </Port>
+   <Port tag="geocom">
+    <Vars>
+     <Var dimension="1" io="1" subId="55" title="inlet moist air mass flow rate" type="0" units="kg/s" unplottable="1" varName="mamfr" visibility="False"/>
+     <Var dimension="1" io="1" subId="56" title="inlet absolute humidity" type="0" units="g/kg" unplottable="1" varName="maxh" visibility="False"/>
+     <Var dimension="1" io="1" subId="59" title="inlet moist air pressure" type="0" units="barA" unplottable="1" varName="map" visibility="False"/>
+     <Var dimension="1" io="1" subId="60" title="inlet moist air temperature" type="0" units="degC" unplottable="1" varName="mat" visibility="False"/>
+     <Var dimension="1" io="1" subId="6" title="ordinate port 2" type="0" units="m" varName="hbot" visibility="False"/>
+     <Var dimension="1" io="1" subId="7" title="index of micro channel tube and fin heat exchanger" type="0" units="null" unplottable="1" varName="mctfindex" visibility="False"/>
+    </Vars>
+   </Port>
+   <Port tag="pflow">
+    <Vars>
+     <Var dimension="1" io="2" subId="72" title="moist air mass flow rate at port 3" type="0" units="kg/s" varName="mamfr3" visibility="True"/>
+     <Var dimension="1" io="2" subId="73" title="moist air relative humidity at port 3" type="0" units="%" varName="marh3" visibility="True"/>
+     <Var dupType="0" primaryPort="1" primaryVar="2" subId="68" type="4" varName="map3" visibility="True"/>
+     <Var dimension="1" io="2" subId="69" title="moist air temperature at port 3" type="0" units="degC" varName="mat3" visibility="True"/>
+    </Vars>
+   </Port>
+   <Port tag="hflow">
+    <Vars>
+     <Var dimension="1" express2="@_4_2" io="2" subId="122" title="enthalpy flow rate at port 4" type="12" units="W" varName="dmh4" visibility="True"/>
+     <Var dimension="1" express2="@_4_3,@_4_4,@_4_5,@_0_2,@_0_3" io="2" subId="71" title="mass flow rate at port 4" type="8" units="kg/s" varName="dm4" visibility="True"/>
+     <Var dimension="1" io="1" subId="74" title="pressure at port 4" type="0" units="barA" varName="p4" visibility="True"/>
+     <Var dimension="1" io="1" subId="13" title="density at port 4" type="0" units="kg/m**3" varName="rho4" visibility="True"/>
+     <Var dimension="1" io="1" subId="75" title="com index at port 4" type="0" units="tpfnull" unplottable="1" varName="com4" visibility="True"/>
+    </Vars>
+   </Port>
+   <Port tag="geocom">
+    <Vars>
+     <Var dupType="0" primaryPort="1" primaryVar="0" subId="61" type="4" varName="mamfr5" visibility="False"/>
+     <Var dupType="0" primaryPort="1" primaryVar="1" subId="16" type="4" varName="maxh5" visibility="False"/>
+     <Var dupType="0" primaryPort="1" primaryVar="2" subId="64" type="4" varName="map5" visibility="False"/>
+     <Var dupType="0" primaryPort="1" primaryVar="3" subId="65" type="4" varName="mat5" visibility="False"/>
+     <Var dimension="1" express2="@_2_5" io="2" subId="111" title="ordinate at port 5" type="8" units="m" unplottable="1" varName="y5" visibility="False"/>
+     <Var dupType="0" primaryPort="1" primaryVar="5" subId="95" type="4" varName="mctfindex5" visibility="False"/>
+    </Vars>
+   </Port>
+  </ExtVars>
+  <ExposedOrder>
+   <Params>
+    <Groups/>
+   </Params>
+   <Vars>
+    <Groups/>
+   </Vars>
+  </ExposedOrder>
+ </Submodel>
+</SPE>
