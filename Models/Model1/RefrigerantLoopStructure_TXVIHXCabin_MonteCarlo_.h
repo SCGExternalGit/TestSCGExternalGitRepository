@@ -1,4 +1,0 @@
-#ifndef __RefrigerantLoopStructure_TXVIHXCabin_MonteCarlo_H__
-#define __RefrigerantLoopStructure_TXVIHXCabin_MonteCarlo_H__
-#define STANDALONESIMULATOR
-#endif
