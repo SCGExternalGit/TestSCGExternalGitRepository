@@ -130,7 +130,7 @@
  </property>
  <property id="id1" name="@special:prepost_tools_document_plots" target="model:">
   <struct>
-   <attribute name="plot_869ab53c">
+   <attribute name="plot_90bfdf40">
     <struct>
      <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
       <data typename="simple-text">all_results</data>
@@ -143,7 +143,7 @@
      </attribute>
     </struct>
    </attribute>
-   <attribute name="plot_f35eb58e">
+   <attribute name="plot_5d6827e7">
     <struct>
      <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
       <data typename="simple-text">PH_diagram</data>

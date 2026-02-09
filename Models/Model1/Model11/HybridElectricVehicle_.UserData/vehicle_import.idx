@@ -1,0 +1,268 @@
+<?xml version="1.0" ?>
+<idx>
+
+<paramlist>
+	<!-- Vehicle -->
+	<param name="massVeh" title="vehicle mass" type="scalar">
+	  <keyword>massVeh</keyword>
+	</param>
+	<param name="c0" title="roller test bench config: coefficient 'a'" type="scalar">
+	  <keyword>c0</keyword>
+	</param>
+	<param name="c1" title="roller test bench config: coefficient 'b'" type="scalar">
+	  <keyword>c1</keyword>
+	</param>
+	<param name="c2" title="roller test bench config: coefficient 'c'" type="scalar">
+	  <keyword>c2</keyword>
+	</param>
+	<param name="f" title="Coulomb friction coefficient (rolling resistance coef - road mode)" type="scalar">
+	  <keyword>f</keyword>
+	</param>
+	<param name="k" title="viscous friction coefficient (rolling resistance coef - road mode)" type="scalar">
+	  <keyword>k</keyword>
+	</param>
+	<param name="wind" title="windage coefficient (rolling resistance coef - road mode)" type="scalar">
+	  <keyword>wind</keyword>
+	</param>
+	<param name="frontintire" title="front wheel inertia" type="scalar">
+	  <keyword>frontintire</keyword>
+	</param>
+	<param name="ntirefront" title="number of wheels on front axle" type="scalar">
+	  <keyword>ntirefront</keyword>
+	</param>
+	<param name="fronttirewidth" title="front tire width" type="scalar">
+	  <keyword>fronttirewidth</keyword>
+	</param>
+	<param name="fronttireheight" title="front tire height" type="scalar">
+	  <keyword>fronttireheight</keyword>
+	</param>
+	<param name="fronttiredrim" title="front wheel rim diameter" type="scalar">
+	  <keyword>fronttiredrim</keyword>
+	</param>
+	<param name="rearintire" title="rear wheel inertia" type="scalar">
+	  <keyword>rearintire</keyword>
+	</param>
+	<param name="ntirerear" title="number of wheels on rear axle" type="scalar">
+	  <keyword>ntirerear</keyword>
+	</param>
+	<param name="reartirewidth" title="rear tire width" type="scalar">
+	  <keyword>reartirewidth</keyword>
+	</param>
+	<param name="reartireheight" title="rear tire height" type="scalar">
+	  <keyword>reartireheight</keyword>
+	</param>
+	<param name="reartiredrim" title="rear wheel rim diameter" type="scalar">
+	  <keyword>reartiredrim</keyword>
+	</param>
+	
+	<param name="maxbrakefront" title="maximum vehicle braking torque" type="scalar">
+	  <keyword>maxbrakefront</keyword>
+	</param>
+	<param name="maxrecfrac" title="maximum regenerative brake torque" type="scalar">
+	  <keyword>maxrecfrac</keyword>
+	</param>
+	
+	<param name="slope" title="road slope" type="expression">
+	  <keyword>slope</keyword>
+	</param>
+	<param name="altitude" title="road altitude" type="expression">
+	  <keyword>altitude</keyword>
+	</param>
+
+	<!-- Driver -->
+	<param name="cycle" title="filename for cycle velocity" type="expression">
+	  <keyword>cycle</keyword>
+	</param>
+	<param name="cycleused" title="cycle type" type="scalar">
+	  <keyword>cycleused</keyword>
+	</param>
+
+	<!-- Auxiliaries -->
+	<param name="pelecFile" title="filename for electrical power" type="expression">
+	  <keyword>pelecFile</keyword>
+	</param>
+	<param name="pmechFile" title="filename for mechanical power" type="expression">
+	  <keyword>pmechFile</keyword>
+	</param>
+
+	<!-- Engine -->
+	<param name="dir_eng" title="directory for engine datafiles" type="expression">
+	  <keyword>dir_eng</keyword>
+	</param>
+	<param name="cyl" title="total engine volume" type="scalar">
+	  <keyword>cyl</keyword>
+	</param>
+	<param name="LHV_fuel" title="fuel lower heating value" type="scalar">
+	  <keyword>LHV_fuel</keyword>
+	</param>
+	<param name="maxspeed" title="engine maximum speed" type="scalar">
+	  <keyword>maxspeed</keyword>
+	</param>
+	<param name="engInertia" title="engine inertia" type="scalar">
+	  <keyword>engInertia</keyword>
+	</param>
+	<param name="maxfrct" title="maximum friction torque" type="scalar">
+	  <keyword>maxfrct</keyword>
+	</param>
+	<param name="fuelden" title="fuel density" type="scalar">
+	  <keyword>fuelden</keyword>
+	</param>
+	<param name="Teng_init" title="engine initial temperature" type="scalar">
+	  <keyword>Teng_init</keyword>
+	</param>
+	
+	<!-- Battery -->
+	<param name="ocvfile" title="filename for battery OCV" type="expression">
+	  <keyword>ocvfile</keyword>
+	</param>
+	<param name="socInit" title="initial state of charge" type="scalar">
+	  <keyword>socInit</keyword>
+	</param>
+	<param name="nbpar" title="number of cells in parallel" type="scalar">
+	  <keyword>nbpar</keyword>
+	</param>
+	<param name="rfile" title="filename for battery resistance" type="expression">
+	  <keyword>rfile</keyword>
+	</param>
+	<param name="nbser" title="number of cells in series" type="scalar">
+	  <keyword>nbser</keyword>
+	</param>
+	<param name="capacell" title="battery cell capacity" type="scalar">
+	  <keyword>capacell</keyword>
+	</param>
+	<param name="umaxBT" title="maximum battery voltage" type="scalar">
+	  <keyword>umaxBT</keyword>
+	</param>
+	<param name="uminBT" title="minimum battery voltage" type="scalar">
+	  <keyword>uminBT</keyword>
+	</param>
+	<param name="methU" title="battery voltage limits computation" type="scalar">
+	  <keyword>methU</keyword>
+	</param>
+	<param name="deltaSOC" title="battery SOC difference" type="scalar">
+	  <keyword>deltaSOC</keyword>
+	</param>
+	
+	<!-- Motor -->
+	<param name="tmaxMotPeak" title="filename for maximum peak motor torque" type="expression">
+	  <keyword>tmaxMotPeak</keyword>
+	</param>
+	<param name="tminMotPeak" title="filename for minimum peak motor torque" type="expression">
+	  <keyword>tminMotPeak</keyword>
+	</param>
+	<param name="motlosses" title="filename for motor losses" type="expression">
+	  <keyword>motlosses</keyword>
+	</param>
+	<param name="tmaxMotC" title="filename for maximum continuous motor torque" type="expression">
+	  <keyword>tmaxMotC</keyword>
+	</param>
+	<param name="tminMotC" title="filename for minimum continuous motor torque" type="expression">
+	  <keyword>tminMotC</keyword>
+	</param>
+	
+	<!-- Gearbox -->
+	<param name="nforratio" title="number of forward gear ratios" type="scalar">
+	  <keyword>nforratio</keyword>
+	</param>
+	<param name="ratiosRd1" title="ratio of 1st gear" type="scalar">
+	  <keyword>ratiosRd1</keyword>
+	</param>
+	<param name="ratiosRd2" title="ratio of 2nd gear" type="scalar">
+	  <keyword>ratiosRd2</keyword>
+	</param>
+	<param name="ratiosRd3" title="ratio of 3rd gear" type="scalar">
+	  <keyword>ratiosRd3</keyword>
+	</param>
+	<param name="ratiosRd4" title="ratio of 4th gear" type="scalar">
+	  <keyword>ratiosRd4</keyword>
+	</param>
+	<param name="ratiosRd5" title="ratio of 5th gear" type="scalar">
+	  <keyword>ratiosRd5</keyword>
+	</param>
+	<param name="ratiosRd6" title="ratio of 6th gear" type="scalar">
+	  <keyword>ratiosRd6</keyword>
+	</param>
+	<param name="ratiosRd7" title="ratio of 7th gear" type="scalar">
+	  <keyword>ratiosRd7</keyword>
+	</param>
+	<param name="ratiosRd8" title="ratio of 8th gear" type="scalar">
+	  <keyword>ratiosRd8</keyword>
+	</param>
+	<param name="ratiosRd9" title="ratio of 9th gear" type="scalar">
+	  <keyword>ratiosRd9</keyword>
+	</param>
+	
+	<param name="effsRd1" title="efficiency of 1st gear" type="scalar">
+	  <keyword>effsRd1</keyword>
+	</param>
+	<param name="effsRd2" title="efficiency of 2nd gear" type="scalar">
+	  <keyword>effsRd2</keyword>
+	</param>
+	<param name="effsRd3" title="efficiency of 3rd gear" type="scalar">
+	  <keyword>effsRd3</keyword>
+	</param>
+	<param name="effsRd4" title="efficiency of 4th gear" type="scalar">
+	  <keyword>effsRd4</keyword>
+	</param>
+	<param name="effsRd5" title="efficiency of 5th gear" type="scalar">
+	  <keyword>effsRd5</keyword>
+	</param>
+	<param name="effsRd6" title="efficiency of 6th gear" type="scalar">
+	  <keyword>effsRd6</keyword>
+	</param>
+	<param name="effsRd7" title="efficiency of 7th gear" type="scalar">
+	  <keyword>effsRd7</keyword>
+	</param>
+	<param name="effsRd8" title="efficiency of 8th gear" type="scalar">
+	  <keyword>effsRd8</keyword>
+	</param>
+	<param name="effsRd9" title="efficiency of 9th gear" type="scalar">
+	  <keyword>effsRd9</keyword>
+	</param>
+	
+	<param name="finalratioRd" title="final ratio" type="scalar">
+	  <keyword>finalratioRd</keyword>
+	</param>
+	<param name="Tslips" title="gearbox maximum friction torque" type="scalar">
+	  <keyword>Tslips</keyword>
+	</param>
+	<param name="Tclutch" title="clutch maximum friction torque" type="scalar">
+	  <keyword>Tclutch</keyword>
+	</param>
+	
+	<!-- ECMS -->
+	<param name="initS" title="initial equivalent factor 's'" type="scalar">
+	  <keyword>initS</keyword>
+	</param>
+	<param name="vmaxel" title="maximum vehicle speed in pure electric mode" type="scalar">
+	  <keyword>vmaxel</keyword>
+	</param>
+
+	<param name="socfinal" title="SOC limit value for depleting" type="scalar">
+	  <keyword>socfinal</keyword>
+	</param>
+	<param name="socf" title="target final state of charge" type="scalar">
+	  <keyword>socf</keyword>
+	</param>
+	<param name="vmaxel" title="maximum vehicle speed in pure electric mode" type="scalar">
+	  <keyword>vmaxel</keyword>
+	</param>
+
+	<param name="qswitchfile" title="filename for transmission matrix" type="expression">
+	  <keyword>qswitchfile</keyword>
+	</param>
+	<param name="tengstart" title="engine starter torque" type="expression">
+	  <keyword>tengstart</keyword>
+	</param>
+	<param name="methqswitch" title="method of computation for switch matrix" type="scalar">
+	  <keyword>methqswitch</keyword>
+	</param>
+	<param name="J_before" title="moment of inertia" type="expression">
+	  <keyword>J_before</keyword>
+	</param>
+	<param name="J_after" title="moment of inertia" type="scalar">
+	  <keyword>J_after</keyword>
+	</param>
+</paramlist>
+
+</idx>

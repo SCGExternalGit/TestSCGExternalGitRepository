@@ -1,0 +1,115 @@
+################### Mercedes C Class C300 Gasoline ###################
+
+################### Vehicle ###################
+initspeed = 0 m/s
+initdisp = 0 m
+massVeh = 2152 kg
+
+c0 = 223.9 N
+c1 = 2.0196 N/(m/s)
+c2 = 0.4339008 N/(m/s)**2
+
+f = 0.00587
+k = 0.000189839248923088
+wind = 4.5e-06
+frontintire = 0.5 kgm**2
+ntirefront = 2
+fronttirewidth = 245 mm
+fronttireheight = 40 %
+fronttiredrim = 18 in
+rearintire = 0.5 kgm**2
+ntirerear = 2
+reartirewidth = 245 mm
+reartireheight = 40 %
+reartiredrim = 18 in
+
+maxbrakefront = 7028.432 Nm
+maxrecfrac = 100 %
+
+slope = ${circuit_name}_.HOT/Mercedes_C_Class_C300_Gasoline/slope.data
+altitude = ${circuit_name}_.HOT/Mercedes_C_Class_C300_Gasoline/altitude.data
+
+################### Driver ###################
+
+cycle = ${circuit_name}_.HOT/Mercedes_C_Class_C300_Gasoline/cycle.data
+cycleused = 1
+
+################### Auxiliaries ###################
+
+pelecFile = ${circuit_name}_.HOT/Mercedes_C_Class_C300_Gasoline/pelec.data
+pmechFile = ${circuit_name}_.HOT/Mercedes_C_Class_C300_Gasoline/pmech.data
+
+################### Engine ###################
+
+dir_eng = ${circuit_name}_.HOT/Mercedes_C_Class_C300_Gasoline/eng
+
+cyl = 1.991 L
+LHV_fuel = 42000 kJ/kg
+maxspeed = 6000 rev/min
+engInertia = 0.1991
+maxfrct = 1050
+fuelden = 750.3
+Teng_init = 22.75
+
+################### Battery ###################
+
+ocvfile = ${circuit_name}_.HOT/Mercedes_C_Class_C300_Gasoline/bat/ocv.data
+socInit = 9 %
+nbpar = 100
+rfile = ${circuit_name}_.HOT/Mercedes_C_Class_C300_Gasoline/bat/resistance.data
+nbser = 100
+capacell = 0.37802846789001
+umaxBT = 628.2
+uminBT = 145.8
+methU = 2
+
+deltaSOC = +7 %
+
+################### Motor ###################
+
+tmaxMotPeak = ${circuit_name}_.HOT/Mercedes_C_Class_C300_Gasoline/mot/tmax_peak.data
+tminMotPeak = ${circuit_name}_.HOT/Mercedes_C_Class_C300_Gasoline/mot/tmin_peak.data
+motlosses = ${circuit_name}_.HOT/Mercedes_C_Class_C300_Gasoline/mot/losses.data
+tmaxMotC = ${circuit_name}_.HOT/Mercedes_C_Class_C300_Gasoline/mot/tmax_continuous.data
+tminMotC = ${circuit_name}_.HOT/Mercedes_C_Class_C300_Gasoline/mot/tmin_continuous.data
+
+################### Gearbox ###################
+
+nforratio = 10
+ratiosRd1 = 5.354
+ratiosRd2 = 3.243
+ratiosRd3 = 2.252
+ratiosRd4 = 1.636
+ratiosRd5 = 1.211
+ratiosRd6 = 1
+ratiosRd7 = 0.865
+ratiosRd8 = 0.717
+ratiosRd9 = 0.601
+effsRd1 = 0.9
+effsRd2 = 0.9
+effsRd3 = 0.9
+effsRd4 = 0.9
+effsRd5 = 0.9
+effsRd6 = 0.9
+effsRd7 = 0.9
+effsRd8 = 0.9
+effsRd9 = 0.9
+finalratioRd = 2.64
+
+Tslips = 10333.214646 Nm
+Tclutch = 1929.999 Nm
+
+################### ECMS ###################
+
+initS = 2.55
+vmaxel = 36 m/s
+socfinal = 16 %
+socf = 13
+
+qswitchfile = ${circuit_name}_.HOT/Mercedes_C_Class_C300_Gasoline/transmission_switch.data
+tengstart = wlaunch*(pi/30.0)*engInertia*4+8.8
+methqswitch = 3
+
+################### Shaft inertias ###################
+J_before = 0.003 kgm**2
+J_after = 0.005 kgm**2
