@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE CIR>
+<CIR AME_VERSION="2604" DOC_VERSION="6" HOTFIX="0" MAJ="20261" UPDATE="0">
+ <Circuit ameApplication="AMESim" execVersion="202610000" highestId="30">
+  <Comps>
+   <Comp alias="component_1" circuitScopeId="2" depth="201" displayName="component_1" geometry="1" hasDefaultIcon="1" iconDescription="description for supercomponent" labelVisible="0" libraryId="gitlib.component_2" name="component_2" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Pos x="198" y="179"/>
+    <LabelPos configured="0" direction="0" x="0" y="0"/>
+    <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
+     <IconMap data="H4sIAAAAAAACCs1TS4/bIBC+91cgcmnV2mB30yaR8UpVtVKvfahnFrBDY4MFJHb+fQfqeLPbbXstkvEw833zhOp26jt0Us5raxgucoqRMsJKbVqGv329yzYY+cCN5J01imFj8W1d+VOLgGj8TgqG9yEMO0KGo+ty61oiBVGd6pUJnhR5QfCMFQ9Y4RQP+qSE7XtrfKIZv7ognWwW6DiO+fg2IYrtdktoScoyA0TmzybwKbviQV7P8UpKKQHbBTZ12hz+GCBZZ+jfvZ20Gj/YiWGKKNqs0Xvo3lUvC4y0ZBigG1xXvQpc8sCT7nJYgwFK2X3+eFdXQuy+W3dAUcHv7TEwjMAuxa6xrueh1j1vVQz9GpKryIMhYsJ5UInqlLdHJ9Szg5Gi1xFJvgTddZ+iQ0x+8XXoFIhkTgOkJTNyybeuWhQcNz4GhjJ4cHp6CdcGOrBs6ViUy/7qH0X+HzUOtjvD5BVqgMTwqkkLp2NmBy7AZ3ohMOTBarjcDN/ka/qGwobe0SfizTrKv4lRWljxaTl7gCpWNK2LIpPc77lzHCI+0tmm8QpaRvMrcMxa8IHh+2MIj7Q/IE+Ykg7KLfp06jT8GC6v3TypcdaOWob9rIuda+GD6dQvfgISzDhBOwQAAA==" format="svgz/base64"/>
+    </CirCompIcon>
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="1" codeGenVersion="1.0" dir="D:/ClienforGitLib/CGLibrary/submodels" gpIdMax="-70" idMax="2" name="SGHH" outputType="0" type="1" unit="0">
+     <ParamsGroups>
+      <Group circuitScopeId="3" editable="1" editableTitle="1" groupHead="" groupHeadIcon="" name="g1" origTitle="g1" subId="1"/>
+      <Group circuitScopeId="4" editable="1" editableTitle="1" groupHead="" groupHeadIcon="" name="g2" origTitle="g2" subId="2"/>
+     </ParamsGroups>
+     <GlobalRealParams>
+      <Param exposed="1" paramName="gp2">
+       <param circuitScopeId="2" defValue="0" maxValue="1e+30" minValue="-1e+30" subId="-2" title="gp2" units="null" usesScGp="1" value="0" varName="gp2" visibility="True"/>
+      </Param>
+     </GlobalRealParams>
+     <GlobalIntParams>
+      <Param exposed="1" paramName="gp1">
+       <param circuitScopeId="1" defValue="0" maxValue="100000" minValue="-100000" subId="-1" title="gp1" usesScGp="1" value="0" varName="gp1" visibility="True"/>
+      </Param>
+     </GlobalIntParams>
+     <ExposedOrder>
+      <Params>
+       <DataPaths>
+        <DataPath>g1</DataPath>
+       </DataPaths>
+       <Groups>
+        <Groups>
+         <Group dataPath="g1">
+          <ExposedDataPaths>
+           <DataPath>g2</DataPath>
+           <DataPath>gp1</DataPath>
+          </ExposedDataPaths>
+         </Group>
+         <Group dataPath="g2">
+          <ExposedDataPaths>
+           <DataPath>gp2</DataPath>
+          </ExposedDataPaths>
+         </Group>
+        </Groups>
+       </Groups>
+      </Params>
+      <Vars>
+       <Groups/>
+      </Vars>
+     </ExposedOrder>
+    </Submodel>
+    <Supercomponent catname="gitlib" scDir="D:/ClienforGitLib/CGLibrary/submodels">
+     <PortsMap/>
+     <Circuit ameApplication="AMESim" highestId="30">
+      <Comps>
+       <Comp alias="runstats" circuitScopeId="1" depth="201" displayName="runstats" geometry="1" iconDescription="statistics of current run" labelVisible="0" libraryId="simu.runstats" name="runstats" scaleX="1.000000" scaleY="1.000000" type="0">
+        <Pos x="135" y="131"/>
+        <LabelPos configured="0" direction="0" x="0" y="0"/>
+        <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
+         <IconMap data="H4sIAAAAAAACCo1SPU/DMBDd+ytO1yEw1PmgpU0VB8HAhBCCMqPQOsmpjl3ZVhL49Thp+RgYeoNPfr577/ns7KZvJLTCWNKKBzGLAhBqq3ekKh68bu5nq+Amn2S2rcBXKrsuGmGp4diqHZONZdQUFSnBjjgeqzjWzh3WYdh1HeuumDZVmERRFHqeU8m6l6T2/xXGaZqG4yn+OMOYJQjvhRVPRpckBUdH6gOBdhwfqBVS6rfYU3OMDj3Cxyl3tHM1x/ly2NSCqtpxTNJh15Lo7vTQABHMl5CkCNrrlVJ3HO3WaClHr2t7KLZe8GCEFaYV6OdR5RMAyIzYulGTLY6aQ/b2JMdpOQaCdUbvffs0GuMbmJ2sxT9AQ04YST55NPr1fv3H+QrDo7ITvQNnCmVLbfxzNIUz1F/EMNwmhjhhi3G59H60crOyaEh6h8GtoUIGJ9TSpxjE/Dzy59fHLBxozxJYef5kfj77y+Z28/LNn4XVsPjPkE++ACmHSEeCAgAA" format="svgz/base64"/>
+        </CirCompIcon>
+        <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libame/submodels" hasTerminate="1" idMax="20" label="statistics of current run" name="RSTAT" outputType="1" rStoresNumber="27" type="0" unit="0">
+         <ParamsGroups>
+          <Group circuitScopeId="22" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="20">
+           <Elements>
+            <Element display="1" varName="cpu"/>
+            <Element display="1" varName="wallTime"/>
+            <Element display="1" varName="step"/>
+            <Element display="1" varName="minh"/>
+            <Element display="1" varName="maxh"/>
+            <Element display="1" varName="minhprint"/>
+            <Element display="1" varName="maxhprint"/>
+            <Element display="1" varName="njacs"/>
+            <Element display="1" varName="nfes"/>
+            <Element display="1" varName="ndisc"/>
+            <Element display="1" varName="nsteps"/>
+            <Element display="1" varName="fetime"/>
+            <Element display="1" varName="stime"/>
+            <Element display="1" varName="nadams"/>
+            <Element display="1" varName="nbdf"/>
+            <Element display="1" varName="adams_1"/>
+            <Element display="1" varName="bdf_1"/>
+           </Elements>
+          </Group>
+         </ParamsGroups>
+         <IntVars>
+          <Vars>
+           <Var circuitScopeId="5" dimension="1" saveValue="1" subId="1" title="CPU time" type="0" units="s" varName="cpu" visibility="True">
+            <LaData>
+             <Data laStatus="0"/>
+            </LaData>
+           </Var>
+           <Var circuitScopeId="6" dimension="1" saveValue="1" subId="15" title="elapsed time" type="0" units="s" varName="wallTime" visibility="True">
+            <LaData>
+             <Data laStatus="0"/>
+            </LaData>
+           </Var>
+           <Var circuitScopeId="7" dimension="1" saveValue="1" subId="2" title="log 10 current integration step" type="0" units="s" varName="step" visibility="True">
+            <LaData>
+             <Data laStatus="0"/>
+            </LaData>
+           </Var>
+           <Var circuitScopeId="8" dimension="1" saveValue="1" subId="3" title="log 10 minimum integration step" type="0" units="s" varName="minh" visibility="True">
+            <LaData>
+             <Data laStatus="0"/>
+            </LaData>
+           </Var>
+           <Var circuitScopeId="9" dimension="1" saveValue="1" subId="4" title="log 10 maximum integration step" type="0" units="s" varName="maxh" visibility="True">
+            <LaData>
+             <Data laStatus="0"/>
+            </LaData>
+           </Var>
+           <Var circuitScopeId="10" dimension="1" saveValue="1" subId="18" title="log 10 minimum integration step since last print" type="0" units="s" varName="minhprint" visibility="True">
+            <LaData>
+             <Data laStatus="0"/>
+            </LaData>
+           </Var>
+           <Var circuitScopeId="11" dimension="1" saveValue="1" subId="19" title="log 10 maximum integration step since last print" type="0" units="s" varName="maxhprint" visibility="True">
+            <LaData>
+             <Data laStatus="0"/>
+            </LaData>
+           </Var>
+           <Var circuitScopeId="12" dimension="1" saveValue="1" subId="6" title="current total number of Jacobians" type="0" units="null" varName="njacs" visibility="True">
+            <LaData>
+             <Data laStatus="0"/>
+            </LaData>
+           </Var>
+           <Var circuitScopeId="13" dimension="1" saveValue="1" subId="5" title="current total number of function evaluations" type="0" units="null" varName="nfes" visibility="True">
+            <LaData>
+             <Data laStatus="0"/>
+            </LaData>
+           </Var>
+           <Var circuitScopeId="14" dimension="1" saveValue="1" subId="7" title="current total number of discontinuities processed" type="0" units="null" varName="ndisc" visibility="True">
+            <LaData>
+             <Data laStatus="0"/>
+            </LaData>
+           </Var>
+           <Var circuitScopeId="15" dimension="1" saveValue="1" subId="8" title="current total number of steps" type="0" units="null" varName="nsteps" visibility="True">
+            <LaData>
+             <Data laStatus="0"/>
+            </LaData>
+           </Var>
+           <Var circuitScopeId="16" dimension="1" saveValue="1" subId="9" title="mean CPU time per function evaluation" type="0" units="s" varName="fetime" visibility="True">
+            <LaData>
+             <Data laStatus="0"/>
+            </LaData>
+           </Var>
+           <Var circuitScopeId="17" dimension="1" saveValue="1" subId="10" title="mean CPU time per step" type="0" units="s" varName="stime" visibility="True">
+            <LaData>
+             <Data laStatus="0"/>
+            </LaData>
+           </Var>
+           <Var circuitScopeId="18" dimension="1" saveValue="1" subId="11" title="total number of Adams steps" type="0" units="null" varName="nadams" visibility="True">
+            <LaData>
+             <Data laStatus="0"/>
+            </LaData>
+           </Var>
+           <Var circuitScopeId="19" dimension="1" saveValue="1" subId="12" title="total number of bdf steps" type="0" units="null" varName="nbdf" visibility="True">
+            <LaData>
+             <Data laStatus="0"/>
+            </LaData>
+           </Var>
+           <Var circuitScopeId="20" dimension="12" saveValue="1" subId="13" title="number of Adams steps of order" type="0" units="null" varName="adams" visibility="True">
+            <TitleList>
+             <Title>number of Adams steps of order</Title>
+             <Title>number of Adams steps of order</Title>
+             <Title>number of Adams steps of order</Title>
+             <Title>number of Adams steps of order</Title>
+             <Title>number of Adams steps of order</Title>
+             <Title>number of Adams steps of order</Title>
+             <Title>number of Adams steps of order</Title>
+             <Title>number of Adams steps of order</Title>
+             <Title>number of Adams steps of order</Title>
+             <Title>number of Adams steps of order</Title>
+             <Title>number of Adams steps of order</Title>
+             <Title>number of Adams steps of order</Title>
+            </TitleList>
+            <LaData>
+             <Data laStatus="0"/>
+             <Data laStatus="0"/>
+             <Data laStatus="0"/>
+             <Data laStatus="0"/>
+             <Data laStatus="0"/>
+             <Data laStatus="0"/>
+             <Data laStatus="0"/>
+             <Data laStatus="0"/>
+             <Data laStatus="0"/>
+             <Data laStatus="0"/>
+             <Data laStatus="0"/>
+             <Data laStatus="0"/>
+            </LaData>
+           </Var>
+           <Var circuitScopeId="21" dimension="5" saveValue="1" subId="14" title="number of BDF steps of order" type="0" units="null" varName="bdf" visibility="True">
+            <TitleList>
+             <Title>number of BDF steps of order</Title>
+             <Title>number of BDF steps of order</Title>
+             <Title>number of BDF steps of order</Title>
+             <Title>number of BDF steps of order</Title>
+             <Title>number of BDF steps of order</Title>
+            </TitleList>
+            <LaData>
+             <Data laStatus="0"/>
+             <Data laStatus="0"/>
+             <Data laStatus="0"/>
+             <Data laStatus="0"/>
+             <Data laStatus="0"/>
+            </LaData>
+           </Var>
+          </Vars>
+         </IntVars>
+         <ExposedOrder>
+          <Params>
+           <Groups/>
+          </Params>
+          <Vars>
+           <Groups/>
+          </Vars>
+         </ExposedOrder>
+        </Submodel>
+       </Comp>
+      </Comps>
+      <animationProperties loop="0" speed="1"/>
+      <globalParams>
+       <Param defValue="" exposed="1" maxValue="" minValue="" paramId="2" paramName="gp2" title="gp2" type="Real" units="null" value="0"/>
+       <Param defValue="" exposed="1" maxValue="" minValue="" paramId="1" paramName="gp1" title="gp1" type="Integer" value="0"/>
+      </globalParams>
+     </Circuit>
+    </Supercomponent>
+   </Comp>
+   <Comp alias="constant" circuitScopeId="4" depth="202" displayName="constant" geometry="1" iconDescription="constant signal source" labelVisible="0" libraryId="sig.constant" name="constant" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Pos x="632" y="153"/>
+    <LabelPos configured="0" direction="0" x="0" y="0"/>
+    <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIzIiB0eXBlPSJzaWduYWwiIHg9IjQwIiB5PSIxNSI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL3NpZ25hbDFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KIDwvUE9SVFM+Cg==" cirPortHidden="0">
+     <IconMap data="H4sIAAAAAAACCo1SsY7bMAzd8xUEb3ALXGTLzqF2EOVwHTp16NDOgevIDhFZMiSd7fTrKzlOu3SoIIDUE/XIR/HwOvcKRmkdGS0SzrIEpG7MmXQnkh/fv2zL5PW4ObixgxCp3b7upaNe4KjPTPWOUV93pCW743iPEnjxftin6TRNbCqYsV2aZ1mWBp41ZD8r0td/BfKqqtLlFv9UhpzlCD9rJ79Z05KSAj3pGwKdBX6lUSplTjxQC8yGGeG22onO/iJwtxwukrqLF5hX8TSSnD6b+AAy2GWQVwgm5GuVmQS6xhqlllr3bqibkHCw0kk7Sgz96I4bADg0ZBslIRSkBD61y0Jw3pprePCULesBbHvy0ioKJugJcBOS8x17Cd7t4dnoYHqn93L24G2tXWts6Hlfe0vzBw6xZA487JLlxY5/RGiN9tu27kkFruTNUq2SFXX0S0baoPp4PaSRNUhIu6hjaWDz7vyJnxx1ulZ4zx36/xCmjZb/r2rmAosifAF/aJrz+AMByVdklTcYdeuMhsGQ9mFm8vKZc/YCRc74cwyEiHxabclKKApW/b3JWA4Qye5a4nAdN78BjYBj0dICAAA=" format="svgz/base64"/>
+    </CirCompIcon>
+    <Ports>
+     <Port connect="1" decorationOrientation="0" decorationVisible="0" face="3" name="" type="signal">
+      <Pos x="40" y="15"/>
+      <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+      <Connects>
+       <Connect num="3" port="0"/>
+      </Connects>
+     </Port>
+    </Ports>
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" discontinuity="1" hasTerminate="1" idMax="29" idsReset="0" label="constant signal" name="CONS00" outputType="1" type="0" unit="1">
+     <RealParams>
+      <Params>
+       <Param circuitScopeId="27" defValue="1" historyVariable="k0GEN" maxValue="1e+30" minValue="-1e+30" subId="3" title="constant value" tunable="True" units="null" value="1" varName="k" visibility="True"/>
+      </Params>
+     </RealParams>
+     <ParamsGroups>
+      <Group circuitScopeId="30" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="29">
+       <Elements>
+        <Element display="0" varName="k"/>
+        <Element display="1" varName="out"/>
+       </Elements>
+      </Group>
+     </ParamsGroups>
+     <IntVars>
+      <Vars>
+       <Var circuitScopeId="28" defValue="0" dimension="1" maxValue="1e+30" minValue="-1e+30" saveValue="1" subId="28" title="constant value - Linked variable" type="10" units="null" value="0" varName="k0GEN" visibility="False">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+      </Vars>
+     </IntVars>
+     <ExtVars>
+      <Port tag="signal">
+       <Vars>
+        <Var circuitScopeId="29" dimension="1" io="2" saveValue="1" subId="24" title="output" type="0" units="null" varName="out" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+     </ExtVars>
+    </Submodel>
+   </Comp>
+   <Comp alias="signalsink" catname="sig" circuitScopeId="5" depth="203" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Pos x="672" y="163"/>
+    <LabelPos configured="0" direction="0" x="0" y="0"/>
+    <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjUiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
+     <IconMap data="H4sIAAAAAAACCp1RuVLDMBDt+YqdpXATfHEk9kTJDAUVBQXUGWMr9k5kySMJH3/P2gkZCipUaA89vbdP2u7HVkEvrSOjRZCEcQBSl6YiXYvg4/3lbhPsdzdb19fASO3yopWOWoG9rkLVupDaoiYtw3MfzyiBjfddHkXDMITDfWhsHaVxHEfMc4HkoyJ9+guYZFkWLad4nQyTMEX4LJx8s+ZISgr0pCcEqgS+Ui+VMoeEqQXG3YgwXeJAlW8EZnPeSKobfyl6ksOzmeEQQwYZgmGtozKDQFdao9QyZ+66omSxzkonbS+R38LK0s9C6yt9+oscI4bUy1zll/OH5OCo1oXimwCwZVsS2IASqI2WCM5bc2KF23hZP427lry0ijiweW6PCc/Kxjg8hI9cpwKf5mRKz53oLNAZNf1bpDOkPf9eukpgvWJWSFcbgMVTVM8bf+DuG+p4C5w1AgAA" format="svgz/base64"/>
+    </CirCompIcon>
+    <Ports>
+     <Port connect="1" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
+      <Pos x="1" y="5"/>
+      <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+      <Connects>
+       <Connect num="2" port="0"/>
+      </Connects>
+     </Port>
+    </Ports>
+   </Comp>
+  </Comps>
+  <animationProperties loop="0" speed="1"/>
+  <globalParams/>
+ </Circuit>
+ <CircuitExtensions>
+  <compCrossList/>
+  <StickerDefinitions>
+   <Sticker color="880015ff" isFactory="1" label="sticker 1" name="High importance"/>
+   <Sticker color="ed1c24ff" isFactory="1" label="sticker 2" name="Low confidence"/>
+   <Sticker color="ff7f27ff" isFactory="1" label="sticker 3" name="Follow-up"/>
+   <Sticker color="fff200ff" isFactory="1" label="sticker 4" name="From specification"/>
+   <Sticker color="b5e61dff" isFactory="1" label="sticker 5" name="From literature"/>
+   <Sticker color="22b14cff" isFactory="1" label="sticker 6" name="From experiment"/>
+   <Sticker color="99d9eaff" isFactory="1" label="sticker 7" name="From CAD"/>
+  </StickerDefinitions>
+  <modelExplorerFilters>
+   <Filters>
+    <Filter showComponentsWithoutParams="1"/>
+    <Filter showComponentsWithAllDefaultParams="1"/>
+    <Filter showComponentsWithNonDefaultParams="1"/>
+    <Filter showComponentsWithNoAssignedParameterSet="1"/>
+    <Filter showComponentsWithAssignedAndFullySyncParameterSet="1"/>
+    <Filter showComponentsWithAssignedAndPartiallySyncParameterSet="1"/>
+    <Filter showComponentsWithAssignedButMissingParameterSet="1"/>
+   </Filters>
+   <Nodes>
+    <Node compExpanded="1"/>
+    <Node parVarExpanded="1"/>
+   </Nodes>
+  </modelExplorerFilters>
+  <RunParameterOptions>
+   <Option printIntervalAltOption="0"/>
+  </RunParameterOptions>
+  <simuSettings export_csv="0"/>
+  <saveStrategyOptions otherVariables="1" variablesInSc="1" watchVariables="1"/>
+  <overlayConfiguration>
+   <osrColor autoscale="1" colormap_name="stream" title="pressure" unit_name="bar"/>
+   <osrGlyph autoscale="1" title="flow rate" unit_name="L/min"/>
+   <osrOption option_color="1" option_glyph="1" option_gray_inactives="1" option_gray_inactives_value="0.5"/>
+   <osrData dataset=""/>
+   <osrScene alias="root" colorscale_corner="1"/>
+  </overlayConfiguration>
+ </CircuitExtensions>
+</CIR>
