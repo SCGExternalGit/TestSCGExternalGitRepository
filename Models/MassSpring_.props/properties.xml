@@ -6,7 +6,21 @@
   <struct/>
  </property>
  <property id="id1" name="@special:prepost_tools_document_plots" target="model:">
-  <struct/>
+  <struct>
+   <attribute name="plot_f6b90bb6">
+    <struct>
+     <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
+      <data typename="simple-text">MassSpring</data>
+     </attribute>
+     <attribute name="PP_TOOLS_AOPEN_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_FILE_ATTRIBUTE">
+      <data typename="simple-text">MassSpring__upgraded.plt</data>
+     </attribute>
+    </struct>
+   </attribute>
+  </struct>
  </property>
  <property id="id5" name="@special:prepost_tools_document_3d_visualizations" target="model:">
   <struct/>
