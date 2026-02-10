@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE CIR>
 <CIR AME_VERSION="2604" DOC_VERSION="6" HOTFIX="0" MAJ="20261" UPDATE="0">
- <Circuit ameApplication="AMESim" execVersion="202610000" highestId="30">
+ <Circuit ameApplication="AMESim" execVersion="202610000" highestId="48">
   <Comps>
    <Comp alias="component_1" circuitScopeId="2" depth="201" displayName="component_1" geometry="1" hasDefaultIcon="1" iconDescription="description for supercomponent" labelVisible="0" libraryId="gitlib.component_2" name="component_2" scaleX="1.000000" scaleY="1.000000" type="0">
     <Pos x="199" y="99"/>
@@ -52,7 +52,7 @@
     </Submodel>
     <Supercomponent catname="gitlib" scDir="D:/ClienforGitLib/CGLibrary/submodels">
      <PortsMap/>
-     <Circuit ameApplication="AMESim" highestId="30">
+     <Circuit ameApplication="AMESim" highestId="48">
       <Comps>
        <Comp alias="runstats" circuitScopeId="1" depth="201" displayName="runstats" geometry="1" iconDescription="statistics of current run" labelVisible="0" libraryId="simu.runstats" name="runstats" scaleX="1.000000" scaleY="1.000000" type="0">
         <Pos x="135" y="131"/>
@@ -294,6 +294,163 @@
       </Connects>
      </Port>
     </Ports>
+   </Comp>
+   <Comp alias="runstats" circuitScopeId="6" depth="204" displayName="runstats" geometry="1" iconDescription="statistics of current run" labelVisible="0" libraryId="simu.runstats" name="runstats" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Pos x="450" y="115"/>
+    <LabelPos configured="0" direction="0" x="0" y="0"/>
+    <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
+     <IconMap data="H4sIAAAAAAACCo1SPU/DMBDd+ytO1yEw1PmgpU0VB8HAhBCCMqPQOsmpjl3ZVhL49Thp+RgYeoNPfr577/ns7KZvJLTCWNKKBzGLAhBqq3ekKh68bu5nq+Amn2S2rcBXKrsuGmGp4diqHZONZdQUFSnBjjgeqzjWzh3WYdh1HeuumDZVmERRFHqeU8m6l6T2/xXGaZqG4yn+OMOYJQjvhRVPRpckBUdH6gOBdhwfqBVS6rfYU3OMDj3Cxyl3tHM1x/ly2NSCqtpxTNJh15Lo7vTQABHMl5CkCNrrlVJ3HO3WaClHr2t7KLZe8GCEFaYV6OdR5RMAyIzYulGTLY6aQ/b2JMdpOQaCdUbvffs0GuMbmJ2sxT9AQ04YST55NPr1fv3H+QrDo7ITvQNnCmVLbfxzNIUz1F/EMNwmhjhhi3G59H60crOyaEh6h8GtoUIGJ9TSpxjE/Dzy59fHLBxozxJYef5kfj77y+Z28/LNn4XVsPjPkE++ACmHSEeCAgAA" format="svgz/base64"/>
+    </CirCompIcon>
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libame/submodels" hasTerminate="1" idMax="20" label="statistics of current run" name="RSTAT" outputType="1" rStoresNumber="27" type="0" unit="0">
+     <ParamsGroups>
+      <Group circuitScopeId="48" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="20">
+       <Elements>
+        <Element display="1" varName="cpu"/>
+        <Element display="1" varName="wallTime"/>
+        <Element display="1" varName="step"/>
+        <Element display="1" varName="minh"/>
+        <Element display="1" varName="maxh"/>
+        <Element display="1" varName="minhprint"/>
+        <Element display="1" varName="maxhprint"/>
+        <Element display="1" varName="njacs"/>
+        <Element display="1" varName="nfes"/>
+        <Element display="1" varName="ndisc"/>
+        <Element display="1" varName="nsteps"/>
+        <Element display="1" varName="fetime"/>
+        <Element display="1" varName="stime"/>
+        <Element display="1" varName="nadams"/>
+        <Element display="1" varName="nbdf"/>
+        <Element display="1" varName="adams_1"/>
+        <Element display="1" varName="bdf_1"/>
+       </Elements>
+      </Group>
+     </ParamsGroups>
+     <IntVars>
+      <Vars>
+       <Var circuitScopeId="31" dimension="1" saveValue="1" subId="1" title="CPU time" type="0" units="s" varName="cpu" visibility="True">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="32" dimension="1" saveValue="1" subId="15" title="elapsed time" type="0" units="s" varName="wallTime" visibility="True">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="33" dimension="1" saveValue="1" subId="2" title="log 10 current integration step" type="0" units="s" varName="step" visibility="True">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="34" dimension="1" saveValue="1" subId="3" title="log 10 minimum integration step" type="0" units="s" varName="minh" visibility="True">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="35" dimension="1" saveValue="1" subId="4" title="log 10 maximum integration step" type="0" units="s" varName="maxh" visibility="True">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="36" dimension="1" saveValue="1" subId="18" title="log 10 minimum integration step since last print" type="0" units="s" varName="minhprint" visibility="True">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="37" dimension="1" saveValue="1" subId="19" title="log 10 maximum integration step since last print" type="0" units="s" varName="maxhprint" visibility="True">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="38" dimension="1" saveValue="1" subId="6" title="current total number of Jacobians" type="0" units="null" varName="njacs" visibility="True">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="39" dimension="1" saveValue="1" subId="5" title="current total number of function evaluations" type="0" units="null" varName="nfes" visibility="True">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="40" dimension="1" saveValue="1" subId="7" title="current total number of discontinuities processed" type="0" units="null" varName="ndisc" visibility="True">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="41" dimension="1" saveValue="1" subId="8" title="current total number of steps" type="0" units="null" varName="nsteps" visibility="True">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="42" dimension="1" saveValue="1" subId="9" title="mean CPU time per function evaluation" type="0" units="s" varName="fetime" visibility="True">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="43" dimension="1" saveValue="1" subId="10" title="mean CPU time per step" type="0" units="s" varName="stime" visibility="True">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="44" dimension="1" saveValue="1" subId="11" title="total number of Adams steps" type="0" units="null" varName="nadams" visibility="True">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="45" dimension="1" saveValue="1" subId="12" title="total number of bdf steps" type="0" units="null" varName="nbdf" visibility="True">
+        <LaData>
+         <Data laStatus="0"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="46" dimension="12" saveValue="1" subId="13" title="number of Adams steps of order" type="0" units="null" varName="adams" visibility="True">
+        <TitleList>
+         <Title>number of Adams steps of order</Title>
+         <Title>number of Adams steps of order</Title>
+         <Title>number of Adams steps of order</Title>
+         <Title>number of Adams steps of order</Title>
+         <Title>number of Adams steps of order</Title>
+         <Title>number of Adams steps of order</Title>
+         <Title>number of Adams steps of order</Title>
+         <Title>number of Adams steps of order</Title>
+         <Title>number of Adams steps of order</Title>
+         <Title>number of Adams steps of order</Title>
+         <Title>number of Adams steps of order</Title>
+         <Title>number of Adams steps of order</Title>
+        </TitleList>
+        <LaData>
+         <Data laStatus="0"/>
+         <Data laStatus="6"/>
+         <Data laStatus="6"/>
+         <Data laStatus="6"/>
+         <Data laStatus="6"/>
+         <Data laStatus="6"/>
+         <Data laStatus="6"/>
+         <Data laStatus="6"/>
+         <Data laStatus="6"/>
+         <Data laStatus="6"/>
+         <Data laStatus="6"/>
+         <Data laStatus="6"/>
+        </LaData>
+       </Var>
+       <Var circuitScopeId="47" dimension="5" saveValue="1" subId="14" title="number of BDF steps of order" type="0" units="null" varName="bdf" visibility="True">
+        <TitleList>
+         <Title>number of BDF steps of order</Title>
+         <Title>number of BDF steps of order</Title>
+         <Title>number of BDF steps of order</Title>
+         <Title>number of BDF steps of order</Title>
+         <Title>number of BDF steps of order</Title>
+        </TitleList>
+        <LaData>
+         <Data laStatus="0"/>
+         <Data laStatus="6"/>
+         <Data laStatus="6"/>
+         <Data laStatus="6"/>
+         <Data laStatus="6"/>
+        </LaData>
+       </Var>
+      </Vars>
+     </IntVars>
+    </Submodel>
    </Comp>
   </Comps>
   <animationProperties loop="0" speed="1"/>
