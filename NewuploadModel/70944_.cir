@@ -4,7 +4,7 @@
  <Circuit ameApplication="AMESim" execVersion="202610000" highestId="30">
   <Comps>
    <Comp alias="component_1" circuitScopeId="2" depth="201" displayName="component_1" geometry="1" hasDefaultIcon="1" iconDescription="description for supercomponent" labelVisible="0" libraryId="gitlib.component_2" name="component_2" scaleX="1.000000" scaleY="1.000000" type="0">
-    <Pos x="198" y="179"/>
+    <Pos x="199" y="99"/>
     <LabelPos configured="0" direction="0" x="0" y="0"/>
     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
      <IconMap data="H4sIAAAAAAACCs1TS4/bIBC+91cgcmnV2mB30yaR8UpVtVKvfahnFrBDY4MFJHb+fQfqeLPbbXstkvEw833zhOp26jt0Us5raxgucoqRMsJKbVqGv329yzYY+cCN5J01imFj8W1d+VOLgGj8TgqG9yEMO0KGo+ty61oiBVGd6pUJnhR5QfCMFQ9Y4RQP+qSE7XtrfKIZv7ognWwW6DiO+fg2IYrtdktoScoyA0TmzybwKbviQV7P8UpKKQHbBTZ12hz+GCBZZ+jfvZ20Gj/YiWGKKNqs0Xvo3lUvC4y0ZBigG1xXvQpc8sCT7nJYgwFK2X3+eFdXQuy+W3dAUcHv7TEwjMAuxa6xrueh1j1vVQz9GpKryIMhYsJ5UInqlLdHJ9Szg5Gi1xFJvgTddZ+iQ0x+8XXoFIhkTgOkJTNyybeuWhQcNz4GhjJ4cHp6CdcGOrBs6ViUy/7qH0X+HzUOtjvD5BVqgMTwqkkLp2NmBy7AZ3ohMOTBarjcDN/ka/qGwobe0SfizTrKv4lRWljxaTl7gCpWNK2LIpPc77lzHCI+0tmm8QpaRvMrcMxa8IHh+2MIj7Q/IE+Ykg7KLfp06jT8GC6v3TypcdaOWob9rIuda+GD6dQvfgISzDhBOwQAAA==" format="svgz/base64"/>
