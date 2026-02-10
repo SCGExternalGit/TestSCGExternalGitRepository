@@ -1739,13 +1739,13 @@
      </ParamsGroups>
     </Submodel>
    </Comp>
-   <Comp alias="component_7" circuitScopeId="18" depth="212" displayName="component_7" geometry="1" hasDefaultIcon="1" iconDescription="description for supercomponent" isTextShown="1" labelVisible="0" libraryId="local_category.component_7" name="component_7" scaleX="1.000000" scaleY="1.000000" text="SC_4" type="0">
+   <Comp alias="component_7" circuitScopeId="18" depth="212" displayName="component_7" geometry="1" hasDefaultIcon="1" iconDescription="description for supercomponent" labelVisible="0" libraryId="catapult_lib.component_7" name="component_7" scaleX="1.000000" scaleY="1.000000" type="0">
     <Pos x="84" y="50"/>
     <LabelPos configured="0" direction="0" x="0" y="0"/>
     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
      <IconMap data="H4sIAAAAAAACCs1TTY/bIBC991cgcmnV2mBvoiaW8UpVtVKv7VY9s4AdGhssIHHy7zvQxJuNtu21SMYzb958MVDfH4ceHZTz2hqGi5xipIywUpuO4e+PD9kaIx+4kby3RjFsLL5van/oEDgaX0nB8DaEsSJk3Ls+t64jUhDVq0GZ4EmRFwSfueKZK5ziQR+UsMNgjU9uxi8uTCfbmTpNUz7dJUax2WwILUlZZsDI/MkEfsyu/KCu1/xKSikB24V27LXZ/TFBsp6pf4920Gr6ZI8MU0TR+g59XOLrsyww0pJhoK5xUw8qcMkDT9hFWYEBWqm+fn5oaiGqH9btUAT4k90HhhHYpaha6wYeGj3wTsXU76G4mjwbIiecRpVcnfJ274R6dTBSDDoyybeg+/5LDIjJb38degUiOZcB0lwZudTb1B0KjhsfE0MbPDh9fAvXBk5g3pJalPP+7h9N/h89jrY/weQVasGJ4UWbFk5qZkcuIGZ6IfBERqvhcjO8zFf0A4UNrdY34nITZXorRmn2ik/L2R10saBpXYBMcr/lznHI+AKzbesVHBnNr8ixasFHhp/2IbxAf0KdMCUdlJvxpPUafgyX12Fuejyjk5Zhe8biyXXwwXSaN78AUoubQDsEAAA=" format="svgz/base64"/>
     </CirCompIcon>
-    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="1" codeGenVersion="1.0" name="SC_4" outputType="0" type="1" unit="0">
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="1" codeGenVersion="1.0" dir="D:/TestSCGExternalGitRepository/Models/Model1/catapult_lib/submodels" name="SC_4" outputType="0" type="1" unit="0">
      <ExposedOrder>
       <Params>
        <Groups/>
@@ -1755,7 +1755,7 @@
       </Vars>
      </ExposedOrder>
     </Submodel>
-    <Supercomponent catname="local_category" scLocal="1">
+    <Supercomponent catname="catapult_lib" scDir="D:/TestSCGExternalGitRepository/Models/Model1/catapult_lib/submodels">
      <PortsMap/>
      <Circuit ameApplication="AMESim" highestId="1724">
       <Comps>

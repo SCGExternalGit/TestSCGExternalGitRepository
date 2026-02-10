@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE SUB>
+<SUB AME_VERSION="2604" DOC_VERSION="6" HOTFIX="0" MAJ="20261" UPDATE="0">
+ <Supercomponent catname="catapult_lib" scSubName="SC_4">
+  <PortsMap/>
+  <Circuit ameApplication="AMESim" highestId="1745">
+   <Comps>
+    <Comp alias="gravityicon_1" circuitScopeId="15" depth="201" displayName="gravityicon" geometry="1" iconDescription="sets the gravity" labelVisible="0" libraryId="meca.gravityicon" name="gravityicon" scaleX="1.000000" scaleY="1.000000" type="0">
+     <Pos x="67" y="67"/>
+     <LabelPos configured="0" direction="0" x="0" y="0"/>
+     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
+      <IconMap data="H4sIAAAAAAACCrWTTY/TMBCG7/srLO+hF9uxnY+tq82uBBInkJAKZ1RctzXrxJUdkpZfzzgfK1EBEgesTt/JZDLzzCh5fL40DvUmROvbeiUYXyHTar+37bFeff70jq5Xz093j7E/Ishs42bXmGibGvftnrkmMtvsjrY1bIrjKavGp647b7JsGAY25MyHYyY55xnUmVM2F2fbl98lCqVUNt7Fr2RYMInR1100H4M/WGdq3Nn2ipHd1/i97Y1z/ouA0jXm5wtG11kHu+9ONc5VujgZezx1y1VvzfDGpwcQR7mCH0Ye+h2cH2ocdfDOjaybeN5paHgOJprQGwz70DZoZxCQuBrfH8aDUeyCf4HMez6eJUBnCvkaaGxngrMgMBnkacAQipXgXRcvgLMGJ4N25113Wprp8WAEg3+QgshK05zlhLM1rZgisCiqWAVaaEkkeCUTpABNUVAtOOFESFbSh0mEYGWkkkI3WoIphDTlTIEJKqBuUskeoIfQAqolk6wAW5MUL5h6K9cQSOREKiLhXkL7cUvf+tb8eU+3axlHBNaclRqgR0CRjEMbCG6FILlMrXIZbydC6JeZtnMhMus/osHraL55C29i8N/b/V+RSyLKiRg2U9IEW9E8Jl+CJ4AMIGGLADMpkM6cVfqPdASlJSm2UzEyyX+Elqll1ct51TLZAgf7TZY2KmieBqLFdnqATDKBpc/76e4nFuwrrlQEAAA=" format="svgz/base64"/>
+     </CirCompIcon>
+     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libmec/submodels" hasTerminate="1" iStoresNumber="1" idMax="10" idsReset="0" label="sets the gravity of the whole system" name="GRAV0" outputType="1" timeRequired="1" type="0" unit="1">
+      <RealParams>
+       <Params>
+        <Param defValue="9.80665" maxValue="1e+06" minValue="0" subId="5" title="constant gravity value" units="m/s/s" value="9.80665" varName="fixedg" visibility="(gtype == 1)"/>
+       </Params>
+      </RealParams>
+      <IntParams>
+       <Params>
+        <Param defValue="1" maxValue="2" minValue="1" subId="1" title="setting type" value="1" varName="gtype" visibility="True">
+         <Enums>
+          <Enum string="constant"/>
+          <Enum string="from file"/>
+         </Enums>
+        </Param>
+        <Param defValue="1" maxValue="3" minValue="1" subId="8" title="data out of range mode" value="1" varName="mode" visibility="(gtype == 2)">
+         <Enums>
+          <Enum string="extrapolation"/>
+          <Enum string="extreme value"/>
+          <Enum string="cyclic"/>
+         </Enums>
+        </Param>
+        <Param defValue="2" maxValue="2" minValue="1" subId="6" title="discontinuity handling" value="2" varName="disc" visibility="(gtype == 2)">
+         <Enums>
+          <Enum string="inactive"/>
+          <Enum string="active"/>
+         </Enums>
+        </Param>
+       </Params>
+      </IntParams>
+      <TextParams>
+       <Params>
+        <Param defValue="file.data" subId="2" textType="1" title="filename for g = f(t)" value="file.data" varName="gfile" visibility="(gtype == 2)"/>
+       </Params>
+      </TextParams>
+      <ParamsGroups>
+       <Group circuitScopeId="1670" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="10">
+        <Elements>
+         <Element display="0" varName="gtype"/>
+         <Element display="0" varName="mode"/>
+         <Element display="0" varName="disc"/>
+         <Element display="0" varName="fixedg"/>
+         <Element display="0" varName="gfile"/>
+         <Element display="1" varName="g"/>
+        </Elements>
+       </Group>
+      </ParamsGroups>
+      <IntVars>
+       <Vars>
+        <Var dimension="1" saveValue="1" subId="3" title="value of gravity" type="0" units="m/s/s" varName="g" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </IntVars>
+     </Submodel>
+    </Comp>
+    <Comp alias="runstats" circuitScopeId="16" depth="202" displayName="runstats" geometry="1" iconDescription="statistics of current run" labelVisible="0" libraryId="simu.runstats" name="runstats" scaleX="1.000000" scaleY="1.000000" type="0">
+     <Pos x="502" y="117"/>
+     <LabelPos configured="0" direction="0" x="0" y="0"/>
+     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
+      <IconMap data="H4sIAAAAAAACCo1SPU/DMBDd+ytO1yEw1PmgpU0VB8HAhBCCMqPQOsmpjl3ZVhL49Thp+RgYeoNPfr577/ns7KZvJLTCWNKKBzGLAhBqq3ekKh68bu5nq+Amn2S2rcBXKrsuGmGp4diqHZONZdQUFSnBjjgeqzjWzh3WYdh1HeuumDZVmERRFHqeU8m6l6T2/xXGaZqG4yn+OMOYJQjvhRVPRpckBUdH6gOBdhwfqBVS6rfYU3OMDj3Cxyl3tHM1x/ly2NSCqtpxTNJh15Lo7vTQABHMl5CkCNrrlVJ3HO3WaClHr2t7KLZe8GCEFaYV6OdR5RMAyIzYulGTLY6aQ/b2JMdpOQaCdUbvffs0GuMbmJ2sxT9AQ04YST55NPr1fv3H+QrDo7ITvQNnCmVLbfxzNIUz1F/EMNwmhjhhi3G59H60crOyaEh6h8GtoUIGJ9TSpxjE/Dzy59fHLBxozxJYef5kfj77y+Z28/LNn4XVsPjPkE++ACmHSEeCAgAA" format="svgz/base64"/>
+     </CirCompIcon>
+     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libame/submodels" hasTerminate="1" idMax="20" label="statistics of current run" name="RSTAT" outputType="1" rStoresNumber="27" type="0" unit="0">
+      <ParamsGroups>
+       <Group circuitScopeId="1724" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="20">
+        <Elements>
+         <Element display="1" varName="cpu"/>
+         <Element display="1" varName="wallTime"/>
+         <Element display="1" varName="step"/>
+         <Element display="1" varName="minh"/>
+         <Element display="1" varName="maxh"/>
+         <Element display="1" varName="minhprint"/>
+         <Element display="1" varName="maxhprint"/>
+         <Element display="1" varName="njacs"/>
+         <Element display="1" varName="nfes"/>
+         <Element display="1" varName="ndisc"/>
+         <Element display="1" varName="nsteps"/>
+         <Element display="1" varName="fetime"/>
+         <Element display="1" varName="stime"/>
+         <Element display="1" varName="nadams"/>
+         <Element display="1" varName="nbdf"/>
+         <Element display="1" varName="adams_1"/>
+         <Element display="1" varName="bdf_1"/>
+        </Elements>
+       </Group>
+      </ParamsGroups>
+      <IntVars>
+       <Vars>
+        <Var dimension="1" saveValue="1" subId="1" title="CPU time" type="0" units="s" varName="cpu" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" saveValue="1" subId="15" title="elapsed time" type="0" units="s" varName="wallTime" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" saveValue="1" subId="2" title="log 10 current integration step" type="0" units="s" varName="step" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" saveValue="1" subId="3" title="log 10 minimum integration step" type="0" units="s" varName="minh" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" saveValue="1" subId="4" title="log 10 maximum integration step" type="0" units="s" varName="maxh" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" saveValue="1" subId="18" title="log 10 minimum integration step since last print" type="0" units="s" varName="minhprint" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" saveValue="1" subId="19" title="log 10 maximum integration step since last print" type="0" units="s" varName="maxhprint" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" saveValue="1" subId="6" title="current total number of Jacobians" type="0" units="null" varName="njacs" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" saveValue="1" subId="5" title="current total number of function evaluations" type="0" units="null" varName="nfes" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" saveValue="1" subId="7" title="current total number of discontinuities processed" type="0" units="null" varName="ndisc" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" saveValue="1" subId="8" title="current total number of steps" type="0" units="null" varName="nsteps" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" saveValue="1" subId="9" title="mean CPU time per function evaluation" type="0" units="s" varName="fetime" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" saveValue="1" subId="10" title="mean CPU time per step" type="0" units="s" varName="stime" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" saveValue="1" subId="11" title="total number of Adams steps" type="0" units="null" varName="nadams" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" saveValue="1" subId="12" title="total number of bdf steps" type="0" units="null" varName="nbdf" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="12" saveValue="1" subId="13" title="number of Adams steps of order" type="0" units="null" varName="adams" visibility="True">
+         <TitleList>
+          <Title>number of Adams steps of order</Title>
+          <Title>number of Adams steps of order</Title>
+          <Title>number of Adams steps of order</Title>
+          <Title>number of Adams steps of order</Title>
+          <Title>number of Adams steps of order</Title>
+          <Title>number of Adams steps of order</Title>
+          <Title>number of Adams steps of order</Title>
+          <Title>number of Adams steps of order</Title>
+          <Title>number of Adams steps of order</Title>
+          <Title>number of Adams steps of order</Title>
+          <Title>number of Adams steps of order</Title>
+          <Title>number of Adams steps of order</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="6"/>
+          <Data laStatus="6"/>
+          <Data laStatus="6"/>
+          <Data laStatus="6"/>
+          <Data laStatus="6"/>
+          <Data laStatus="6"/>
+          <Data laStatus="6"/>
+          <Data laStatus="6"/>
+          <Data laStatus="6"/>
+          <Data laStatus="6"/>
+          <Data laStatus="6"/>
+         </LaData>
+        </Var>
+        <Var dimension="5" saveValue="1" subId="14" title="number of BDF steps of order" type="0" units="null" varName="bdf" visibility="True">
+         <TitleList>
+          <Title>number of BDF steps of order</Title>
+          <Title>number of BDF steps of order</Title>
+          <Title>number of BDF steps of order</Title>
+          <Title>number of BDF steps of order</Title>
+          <Title>number of BDF steps of order</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="6"/>
+          <Data laStatus="6"/>
+          <Data laStatus="6"/>
+          <Data laStatus="6"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </IntVars>
+     </Submodel>
+    </Comp>
+    <Comp alias="print_interval" circuitScopeId="1" depth="203" displayName="print_interval" geometry="1" iconDescription="set a print interval" labelVisible="0" libraryId="simu.print_interval" name="print_interval" scaleX="1.000000" scaleY="1.000000" type="0">
+     <Pos x="222" y="97"/>
+     <LabelPos configured="0" direction="0" x="0" y="0"/>
+     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
+      <IconMap data="H4sIAAAAAAACCo1Ry07DMBC89ytW20Pg0DxFS6u4VZFAQkIIIeCKQuukqzp2ZVtJ4OvZpAUuHOrLatezM+NxvupqBY20jowWQRLGAUi9MVvSlQheX+4m18FqOcpdUwEjtVsUtXRUC2z0NlS1C6kuKtIyPM7xiBK48/6wiKK2bcM2C42tojSO44h5TpBFp0jv/wMm8/k8Gm7x1xkmYYrwUTj5ZE1JSgr0pD8RaCvwgRqplHlPmFpgfOgQPk+1pa3fCcxmfbOTVO08d0nfNSTbG9MvQAzZDDJeN6xXKtMKdBtrlBq8Ltyh2LDgwUonbSOR86iWIwDIrdz4QTO8GjRnfWV7SuC4HA6C89bseX0cD+dnMKnJS6uIC78u/rM6/TOaZhgdhbzsPHhbaFcay+nXhbfUXSTQm09gBglLX7K20X5SFjUpdhOsLRUqOE0dfbGLPojl0/P940se9aRn0aeQTs8mZ+rb57f1ww//KI84rbz/+uXoG8Ohki1wAgAA" format="svgz/base64"/>
+     </CirCompIcon>
+     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libame/submodels" discontinuity="1" hasContextPtr="1" hasTerminate="1" iStoresNumber="1" idMax="21" idsReset="0" label="print interval selection" name="TI001" outputType="1" rStoresNumber="11" timeRequired="1" type="0" unit="0">
+      <RealParams>
+       <Params>
+        <Param defValue="0" maxValue="1e+06" minValue="-1e-06" subId="2" title="time at which duty cycle starts" units="s" value="0" varName="phase" visibility="True"/>
+        <Param defValue="0.1" maxValue="1e+06" minValue="1e-10" subId="3" title="print interval for stage 1" units="s" value="0.1" varName="pInt1" visibility="True"/>
+        <Param defValue="1000000" maxValue="1e+06" minValue="1e-06" subId="4" title="duration of stage 1" units="s" value="1000000" varName="tStage1" visibility="True"/>
+        <Param defValue="0.1" maxValue="1e+06" minValue="1e-10" subId="5" title="print interval for stage 2" units="s" value="0.1" varName="pInt2" visibility="(nstages>=2)&amp;&amp;(nstages&lt;=8)"/>
+        <Param defValue="1000000" maxValue="1e+06" minValue="1e-06" subId="6" title="duration of stage 2" units="s" value="1000000" varName="tStage2" visibility="(nstages>=2)&amp;&amp;(nstages&lt;=8)"/>
+        <Param defValue="0.1" maxValue="1e+06" minValue="1e-10" subId="7" title="print interval for stage 3" units="s" value="0.1" varName="pInt3" visibility="(nstages>=3)&amp;&amp;(nstages&lt;=8)"/>
+        <Param defValue="1000000" maxValue="1e+06" minValue="0" subId="8" title="duration of stage 3" units="s" value="1000000" varName="tStage3" visibility="(nstages>=3)&amp;&amp;(nstages&lt;=8)"/>
+        <Param defValue="0.1" maxValue="1e+06" minValue="1e-10" subId="9" title="print interval for stage 4" units="s" value="0.1" varName="pInt4" visibility="(nstages>=4)&amp;&amp;(nstages&lt;=8)"/>
+        <Param defValue="1000000" maxValue="1e+06" minValue="1e-06" subId="10" title="duration of stage 4" units="s" value="1000000" varName="tStage4" visibility="(nstages>=4)&amp;&amp;(nstages&lt;=8)"/>
+        <Param defValue="0.1" maxValue="1e+06" minValue="1e-10" subId="11" title="print interval for stage 5" units="s" value="0.1" varName="pInt5" visibility="(nstages>=5)&amp;&amp;(nstages&lt;=8)"/>
+        <Param defValue="1000000" maxValue="1e+06" minValue="1e-06" subId="12" title="duration of stage 5" units="s" value="1000000" varName="tStage5" visibility="(nstages>=5)&amp;&amp;(nstages&lt;=8)"/>
+        <Param defValue="0.1" maxValue="1e+06" minValue="1e-10" subId="13" title="print interval for stage 6" units="s" value="0.1" varName="pInt6" visibility="(nstages>=6)&amp;&amp;(nstages&lt;=8)"/>
+        <Param defValue="1000000" maxValue="1e+06" minValue="1e-06" subId="14" title="duration of stage 6" units="s" value="1000000" varName="tStage6" visibility="(nstages>=6)&amp;&amp;(nstages&lt;=8)"/>
+        <Param defValue="0.1" maxValue="1e+06" minValue="1e-10" subId="15" title="print interval for stage 7" units="s" value="0.1" varName="pInt7" visibility="(nstages>=7)&amp;&amp;(nstages&lt;=8)"/>
+        <Param defValue="1000000" maxValue="1e+06" minValue="1e-06" subId="16" title="duration of stage 7" units="s" value="1000000" varName="tStage7" visibility="(nstages>=7)&amp;&amp;(nstages&lt;=8)"/>
+        <Param defValue="0.1" maxValue="1e+06" minValue="1e-10" subId="17" title="print interval for stage 8" units="s" value="0.1" varName="pInt8" visibility="(nstages==8)"/>
+        <Param defValue="1000000" maxValue="1e+06" minValue="1e-06" subId="18" title="duration of stage 8" units="s" value="1000000" varName="tStage8" visibility="(nstages==8)"/>
+       </Params>
+      </RealParams>
+      <IntParams>
+       <Params>
+        <Param defValue="3" maxValue="8" minValue="1" subId="19" title="number of stages" value="3" varName="nstages" visibility="True">
+         <Enums>
+          <Enum string="1"/>
+          <Enum string="2"/>
+          <Enum string="3"/>
+          <Enum string="4"/>
+          <Enum string="5"/>
+          <Enum string="6"/>
+          <Enum string="7"/>
+          <Enum string="8"/>
+         </Enums>
+        </Param>
+        <Param defValue="1" maxValue="2" minValue="1" subId="20" title="cyclic" value="1" varName="iscyclic" visibility="True">
+         <Enums>
+          <Enum string="no"/>
+          <Enum string="yes"/>
+         </Enums>
+        </Param>
+       </Params>
+      </IntParams>
+      <ParamsGroups>
+       <Group circuitScopeId="1745" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="21">
+        <Elements>
+         <Element display="0" varName="nstages"/>
+         <Element display="0" varName="iscyclic"/>
+         <Element display="0" varName="phase"/>
+         <Element display="0" varName="pInt1"/>
+         <Element display="0" varName="tStage1"/>
+         <Element display="0" varName="pInt2"/>
+         <Element display="0" varName="tStage2"/>
+         <Element display="0" varName="pInt3"/>
+         <Element display="0" varName="tStage3"/>
+         <Element display="0" varName="pInt4"/>
+         <Element display="0" varName="tStage4"/>
+         <Element display="0" varName="pInt5"/>
+         <Element display="0" varName="tStage5"/>
+         <Element display="0" varName="pInt6"/>
+         <Element display="0" varName="tStage6"/>
+         <Element display="0" varName="pInt7"/>
+         <Element display="0" varName="tStage7"/>
+         <Element display="0" varName="pInt8"/>
+         <Element display="0" varName="tStage8"/>
+         <Element display="1" varName="comint"/>
+        </Elements>
+       </Group>
+      </ParamsGroups>
+      <IntVars>
+       <Vars>
+        <Var dimension="1" saveValue="1" subId="1" title="print interval" type="0" units="s" varName="comint" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </IntVars>
+     </Submodel>
+    </Comp>
+   </Comps>
+   <animationProperties loop="0" speed="1"/>
+   <globalParams/>
+  </Circuit>
+ </Supercomponent>
+</SUB>
