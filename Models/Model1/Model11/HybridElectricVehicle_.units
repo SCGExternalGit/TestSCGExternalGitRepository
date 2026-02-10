@@ -424,8 +424,8 @@
     <Imported_Legacy_Configurations/>
     <Local_Customization_Definition>
         <Local_Customization Custom_Unit="%" Data_Path="delta_SOC_exp"/>
-        <Local_Customization Custom_Unit="s" Data_Path="#&amp;simulation_time_unit&amp;#"/>
         <Local_Customization Custom_Unit="%" Data_Path="delta_SOC_simu"/>
+        <Local_Customization Custom_Unit="s" Data_Path="#&amp;simulation_time_unit&amp;#"/>
         <Local_Customization Custom_Unit="s" Data_Path="ame_simulation_time"/>
     </Local_Customization_Definition>
 </Unit_Configuration>
