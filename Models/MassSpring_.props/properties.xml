@@ -7,7 +7,7 @@
  </property>
  <property id="id1" name="@special:prepost_tools_document_plots" target="model:">
   <struct>
-   <attribute name="plot_beb61d0d">
+   <attribute name="plot_f5e3f0c4">
     <struct>
      <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
       <data typename="simple-text">MassSpring</data>
