@@ -1450,7 +1450,7 @@
     </Submodel>
    </Comp>
    <Comp alias="gravityicon" circuitScopeId="14" depth="209" displayName="gravityicon" geometry="1" iconDescription="sets the gravity" labelVisible="0" libraryId="meca.gravityicon" name="gravityicon" scaleX="1.000000" scaleY="1.000000" type="0">
-    <Pos x="525" y="121"/>
+    <Pos x="383" y="269"/>
     <LabelPos configured="0" direction="0" x="0" y="0"/>
     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
      <IconMap data="H4sIAAAAAAACCrWTTY/TMBCG7/srLO+hF9uxnY+tq82uBBInkJAKZ1RctzXrxJUdkpZfzzgfK1EBEgesTt/JZDLzzCh5fL40DvUmROvbeiUYXyHTar+37bFeff70jq5Xz093j7E/Ishs42bXmGibGvftnrkmMtvsjrY1bIrjKavGp647b7JsGAY25MyHYyY55xnUmVM2F2fbl98lCqVUNt7Fr2RYMInR1100H4M/WGdq3Nn2ipHd1/i97Y1z/ouA0jXm5wtG11kHu+9ONc5VujgZezx1y1VvzfDGpwcQR7mCH0Ye+h2cH2ocdfDOjaybeN5paHgOJprQGwz70DZoZxCQuBrfH8aDUeyCf4HMez6eJUBnCvkaaGxngrMgMBnkacAQipXgXRcvgLMGJ4N25113Wprp8WAEg3+QgshK05zlhLM1rZgisCiqWAVaaEkkeCUTpABNUVAtOOFESFbSh0mEYGWkkkI3WoIphDTlTIEJKqBuUskeoIfQAqolk6wAW5MUL5h6K9cQSOREKiLhXkL7cUvf+tb8eU+3axlHBNaclRqgR0CRjEMbCG6FILlMrXIZbydC6JeZtnMhMus/osHraL55C29i8N/b/V+RSyLKiRg2U9IEW9E8Jl+CJ4AMIGGLADMpkM6cVfqPdASlJSm2UzEyyX+Elqll1ct51TLZAgf7TZY2KmieBqLFdnqATDKBpc/76e4nFuwrrlQEAAA=" format="svgz/base64"/>
