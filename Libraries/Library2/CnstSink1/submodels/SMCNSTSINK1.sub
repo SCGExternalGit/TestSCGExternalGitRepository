@@ -6,17 +6,17 @@
   <Circuit ameApplication="AMESim" highestId="51">
    <Comps>
     <Comp alias="constant" circuitScopeId="1" depth="201" displayName="constant" geometry="1" iconDescription="constant signal source" labelVisible="0" libraryId="sig.constant" name="constant" scaleX="1.000000" scaleY="1.000000" type="0">
-     <Pos x="67" y="96"/>
+     <Pos x="351" y="239"/>
      <LabelPos configured="0" direction="0" x="0" y="0"/>
      <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIzIiB0eXBlPSJzaWduYWwiIHg9IjQwIiB5PSIxNSI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL3NpZ25hbDFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KIDwvUE9SVFM+Cg==" cirPortHidden="0">
       <IconMap data="H4sIAAAAAAACCo1SwY7bIBC95ytGswe30gYbO6vaUchqe+iphx7ac+Q62EHBYAFrO/36Do7TXnooQprh8XgzDzi8zr2GUTqvrBEJZ1kC0jT2rEwnkh/fv2zL5PW4OfixA2IaL/ASwrBP02ma2FQw67o0z7IsJQbeKftZK3P9F5FXVZUuu/inJnKWI/ysvfzmbKu0FBiUuSGos8CvapRa2xMnaYHZMCPc1jipc7gI3C2Li1TdJQjMq7galZw+23gAMthlkFcIluq12k4CfeOs1kuvez/UDRUcnPTSjRLJaXfcAMChUa7REqghLfCpXQaCD85e6cBTtowHsO1VkE4rCuSH4IaK8x17oez2yFxMML3LBzkHCK42vrWuF9jXwan5A4fYMgdOs2R5seMfEVprwrate6VJK3lzqtbJinr1S0ZZcn28HtKoShbSLvpYLrB59+HET151ptZ4r033/zBmrJH/72rmAouCnoA/PM15fAFC8hVZ7Q1W3zprYLDKBPozefnMOXuBImf8ORIhIp/WWLISioJVf3cylgNEsbuX+LmOm9+vXzT5rAIAAA==" format="svgz/base64"/>
      </CirCompIcon>
      <Ports>
-      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="3" name="" type="signal">
+      <Port connect="2" decorationOrientation="0" decorationVisible="0" face="3" name="" type="signal">
        <Pos x="40" y="15"/>
        <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
        <Connects>
-        <Connect num="1" port="0"/>
+        <Connect num="0" port="1"/>
        </Connects>
       </Port>
      </Ports>
@@ -63,7 +63,7 @@
       <IconMap data="H4sIAAAAAAACCp1RPW/DIBDd+ytO18FLaoz7kTgKidShU4cO7RylDsEoBCygxv73PTtp1KFTGbgPHu/d0602/clAJ33QzoqM50UG0tZur60S2cf7y90i26xvVqFTQEgbBDYxtkvGUkp5us+dV6wsioIRAs+QZW+0Pf4F5FVVsekVr5rI8xLhcxfkm3cHbaTAqO2AoPcCX3UnjXFbTtQCi7ZHGC4x6X1sBFZj3kitmngpOi3TsxvhUEAFFYIjrYNxSWCovTNmmnMZ2l1NYq2XQfpOIrn0so6j0PxKX/4iR0YQNc1Vf4W45dugld0Z+gkAK7IlgQwYgdZZiRCid0dSuC2m89O4O+kovdEUyDy1e06zkjEKD/kj1aXApzEZynOHnQVaZ4Z/i7RO20jbK2cc5jNihXK2AJg8MTVetMD1NyXBqRUPAgAA" format="svgz/base64"/>
      </CirCompIcon>
      <Ports>
-      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
+      <Port connect="2" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
        <Pos x="1" y="5"/>
        <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
        <Connects>
@@ -465,6 +465,17 @@
      </Submodel>
     </Comp>
    </Comps>
+   <Lines>
+    <Line alias="control" circuitScopeId="1" endEntity="0" endPort="0" endType="0" labelVisible="0" startEntity="1" startPort="0" startType="0" type="2">
+     <pos configured="0" direction="0" x="0" y="0"/>
+     <Points>
+      <Point x="107" y="110"/>
+      <Point x="395" y="110"/>
+      <Point x="395" y="253"/>
+      <Point x="390" y="253"/>
+     </Points>
+    </Line>
+   </Lines>
    <animationProperties loop="0" speed="1"/>
    <globalParams/>
   </Circuit>
