@@ -1,3 +1,4 @@
 ./submodels
 ScCnstSink1
+&SMCNSTSINK23 CnstSink1
 &SMCNSTSINK1 CnstSink1
