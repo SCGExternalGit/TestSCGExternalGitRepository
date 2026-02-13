@@ -2889,6 +2889,22 @@
       </ExtVars>
      </Submodel>
     </Comp>
+    <Comp alias="signalsink" catname="sig" circuitScopeId="1" depth="208" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
+     <Pos x="426" y="30"/>
+     <LabelPos configured="0" direction="0" x="0" y="0"/>
+     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjUiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
+      <IconMap data="H4sIAAAAAAACCp1RuVLDMBDt+YqdpXATfHEk9kTJDAUVBQXUGWMr9k5kySMJH3/P2gkZCipUaA89vbdP2u7HVkEvrSOjRZCEcQBSl6YiXYvg4/3lbhPsdzdb19fASO3yopWOWoG9rkLVupDaoiYtw3MfzyiBjfddHkXDMITDfWhsHaVxHEfMc4HkoyJ9+guYZFkWLad4nQyTMEX4LJx8s+ZISgr0pCcEqgS+Ui+VMoeEqQXG3YgwXeJAlW8EZnPeSKobfyl6ksOzmeEQQwYZgmGtozKDQFdao9QyZ+66omSxzkonbS+R38LK0s9C6yt9+oscI4bUy1zll/OH5OCo1oXimwCwZVsS2IASqI2WCM5bc2KF23hZP427lry0ijiweW6PCc/Kxjg8hI9cpwKf5mRKz53oLNAZNf1bpDOkPf9eukpgvWJWSFcbgMVTVM8bf+DuG+p4C5w1AgAA" format="svgz/base64"/>
+     </CirCompIcon>
+     <Ports>
+      <Port connect="0" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
+       <Pos x="1" y="5"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="-1" port="-1"/>
+       </Connects>
+      </Port>
+     </Ports>
+    </Comp>
    </Comps>
    <Lines>
     <Line alias="pneumatic" circuitScopeId="324" endEntity="11" endPort="2" endType="0" labelVisible="0" startEntity="2" startPort="1" startType="0" type="0">
