@@ -4,10 +4,10 @@
  <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="1" codeGenVersion="1.0" defaultIcon="ScCnstSink1" idsReset="0" outputType="0" type="1" unit="0">
   <ExposedOrder>
    <Params>
-    <Groups/>
+    <Groups />
    </Params>
    <Vars>
-    <Groups/>
+    <Groups />
    </Vars>
   </ExposedOrder>
  </Submodel>
