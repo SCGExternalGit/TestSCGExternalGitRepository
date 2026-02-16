@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ParameterSet name="master_ps" id="{07dd2201-f3c7-4231-a6ca-88eb06acb280}" description="">
+    <ToolInfo ToolName="AMESim">
+        <ToolDetails ToolDetail="AME_VERSION">2604</ToolDetails>
+        <ToolDetails ToolDetail="MAJ">20261</ToolDetails>
+        <ToolDetails ToolDetail="UPDATE">0</ToolDetails>
+        <ToolDetails ToolDetail="HOTFIX">0</ToolDetails>
+    </ToolInfo>
+    <ParameterData name="dp">
+        <value type="2">22.2</value>
+        <unit>mm</unit>
+        <description dimension="1">
+            <item>piston diameter</item>
+        </description>
+    </ParameterData>
+    <ParameterData name="k">
+        <value type="2">55</value>
+        <unit>null</unit>
+        <description dimension="1">
+            <item>spring force preload in N</item>
+        </description>
+    </ParameterData>
+    <ParameterData name="srate">
+        <value type="2">3800</value>
+        <unit>N/m</unit>
+        <description dimension="1">
+            <item>spring rate</item>
+        </description>
+    </ParameterData>
+</ParameterSet>

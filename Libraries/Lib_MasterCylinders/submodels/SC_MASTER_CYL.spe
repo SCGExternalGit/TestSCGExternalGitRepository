@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE SPE>
+<SPE AME_VERSION="2604" DOC_VERSION="6" HOTFIX="0" MAJ="20261" UPDATE="0">
+ <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="1.0" defaultIcon="SC_MASTER_CYL" idMax="18" idsReset="0" outputType="0" type="1" unit="0">
+  <RealParams>
+   <ExposedList>
+    <Exposed exposedVar="dp@bap2_4" origVarName="" subId="16" title="piston diameter" varName="dp"/>
+    <Exposed exposedVar="srate@spring01_9" origVarName="" subId="17" title="spring rate" varName="srate"/>
+    <Exposed exposedVar="k@constant_9" origVarName="" subId="18" title="spring force preload in N" varName="k"/>
+   </ExposedList>
+  </RealParams>
+  <ExtVars>
+   <Port tag="hflow">
+    <Vars>
+     <Var express2="@_1_1" subId="16" title="pressure at port 4" type="7" units="bar" varName="p4" visibility="True"/>
+     <Var dimension="1" io="1" subId="15" title="flow rate at port 4" type="0" units="L/min" varName="q4" visibility="True"/>
+     <Var dimension="1" io="1" subId="14" title="volume at port 4" type="0" units="cm**3" varName="vol4" visibility="True"/>
+    </Vars>
+   </Port>
+   <Port tag="hflow">
+    <Vars>
+     <Var express2="@_1_1" subId="16" title="pressure at port 4" type="7" units="bar" varName="p4" visibility="True"/>
+     <Var dimension="1" io="1" subId="15" title="flow rate at port 4" type="0" units="L/min" varName="q4" visibility="True"/>
+     <Var dimension="1" io="1" subId="14" title="volume at port 4" type="0" units="cm**3" varName="vol4" visibility="True"/>
+    </Vars>
+   </Port>
+   <Port tag="hflow">
+    <Vars>
+     <Var defValue="0" dimension="1" io="2" maxValue="1000" minValue="-1" subId="1" title="tank pressure" type="5" units="bar" value="0" varName="press" visibility="True"/>
+    </Vars>
+   </Port>
+   <Port tag="hflow">
+    <Vars>
+     <Var defValue="0" dimension="1" io="2" maxValue="1000" minValue="-1" subId="1" title="tank pressure" type="5" units="bar" value="0" varName="press" visibility="True"/>
+    </Vars>
+   </Port>
+   <Port tag="lshaft">
+    <Vars>
+     <Var express2="@_1_2" subId="5" title="velocity at port 3" type="7" units="m/s" varName="vdup" visibility="True"/>
+     <Var express2="@_1_3" subId="6" title="displacement port 3" type="7" units="m" varName="xdup" visibility="True"/>
+     <Var dimension="1" io="1" subId="7" title="force at port 3" type="0" units="N" varName="force" visibility="True"/>
+    </Vars>
+   </Port>
+  </ExtVars>
+  <ExposedOrder>
+   <Params>
+    <DataPaths>
+     <DataPath>dp</DataPath>
+     <DataPath>srate</DataPath>
+     <DataPath>k</DataPath>
+    </DataPaths>
+    <Groups/>
+   </Params>
+   <Vars>
+    <Groups/>
+   </Vars>
+  </ExposedOrder>
+ </Submodel>
+</SPE>
