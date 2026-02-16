@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" baseProfile="tiny" id="Livello_1" x="0px" y="0px" width="39px" height="39px" viewBox="0 0 39 39" overflow="scroll" xml:space="preserve">
-<g>
-   <path fill="#FFFFFF" stroke="#00AA7F" stroke-width="2" stroke-linejoin="round" d="M5,2h29c1.7,0,3,1.3,3,3v29c0,1.7-1.3,3-3,3H5   c-1.7,0-3-1.3-3-3V5C2,3.3,3.3,2,5,2z"/>
-   <text fill="#00AA7F" transform="matrix(1 0 0 1 6.9999 22.9999)" font-family="'Arial'" font-size="12px">H</text>
-   <text fill="#00AA7F" transform="matrix(1 0 0 1 15.6659 22.9999)" font-family="'Arial'" font-size="12px">O</text>
-   <text fill="#00AA7F" transform="matrix(1 0 0 1 24.9999 22.9999)" font-family="'Arial'" font-size="12px">T</text>
-</g>
-</svg>
