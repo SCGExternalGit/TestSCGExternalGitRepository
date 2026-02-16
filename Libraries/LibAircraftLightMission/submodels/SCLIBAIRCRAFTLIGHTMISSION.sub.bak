@@ -3,7 +3,7 @@
 <SUB AME_VERSION="2604" DOC_VERSION="6" HOTFIX="0" MAJ="20261" UPDATE="0">
  <Supercomponent catname="LibAircraftLightMission" scSubName="SCLIBAIRCRAFTLIGHTMISSION">
   <PortsMap />
-  <Circuit ameApplication="AMESim" highestId="447286">
+  <Circuit ameApplication="AMESim" highestId="447368">
    <Comps>
     <Comp alias="aero_mission" circuitScopeId="10782" depth="201" displayName="aero_mission" geometry="1" iconDescription="aircraft flight mission" labelVisible="0" libraryId="aero.aero_mission" name="aero_mission" scaleX="1.000000" scaleY="1.000000" type="0">
      <Pos x="67" y="67" />

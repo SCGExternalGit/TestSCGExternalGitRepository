@@ -1,0 +1,370 @@
+<properties xmlns="amesim-property-instances" version="1">
+ <property id="id0" name="@special:model_history" sticker="" target="model:">
+  <struct/>
+ </property>
+ <property id="id5" name="@special:App name_databaseIndex" sticker="" target="model:">
+  <data typename="simple-text">0</data>
+ </property>
+ <property id="id6" name="@special:App name_Utarget" sticker="" target="model:">
+  <data typename="simple-text">360.0</data>
+ </property>
+ <property id="id7" name="@special:App name_Ptarget" sticker="" target="model:">
+  <data typename="simple-text">45000.0</data>
+ </property>
+ <property id="id8" name="@special:App name_peakNomRatio" sticker="" target="model:">
+  <data typename="simple-text">1.5</data>
+ </property>
+ <property id="id9" name="@special:App name_Etarget" sticker="" target="model:">
+  <data typename="simple-text">8699.999999999998</data>
+ </property>
+ <property id="id10" name="@special:App name_np" sticker="" target="model:">
+  <data typename="simple-text">96</data>
+ </property>
+ <property id="id11" name="@special:App name_Raddexpr" sticker="" target="model:">
+  <data typename="simple-text">0*ns/np+0</data>
+ </property>
+ <property id="id12" name="@special:App name_SOCrefU" sticker="" target="model:">
+  <data typename="simple-text">50.0</data>
+ </property>
+ <property id="id13" name="@special:App name_SOCrefP" sticker="" target="model:">
+  <data typename="simple-text">50.0</data>
+ </property>
+ <property id="id14" name="@special:App name_TemprefP" sticker="" target="model:">
+  <data typename="simple-text">20.0</data>
+ </property>
+ <property id="id15" name="@special:App name_TemprefE" sticker="" target="model:">
+  <data typename="simple-text">20.0</data>
+ </property>
+ <property id="id16" name="@special:App name_CraterefE" sticker="" target="model:">
+  <data typename="simple-text">0.5</data>
+ </property>
+ <property id="id17" name="@special:App name_outfolder" sticker="" target="model:">
+  <data typename="simple-text">${circuit_name}_.datafiles/</data>
+ </property>
+ <property id="id18" name="@special:App name_FlagFolder" sticker="" target="model:">
+  <data typename="simple-text">0.0</data>
+ </property>
+ <property id="id19" name="@special:App name_TempCrate" sticker="" target="model:">
+  <data typename="simple-text">20.0</data>
+ </property>
+ <property id="id20" name="@special:App name_CrateTemp" sticker="" target="model:">
+  <data typename="simple-text">1.0</data>
+ </property>
+ <property id="id21" name="@special:App name_Temp1" sticker="" target="model:">
+  <data typename="simple-text">10.0</data>
+ </property>
+ <property id="id22" name="@special:App name_Temp2" sticker="" target="model:">
+  <data typename="simple-text">20.0</data>
+ </property>
+ <property id="id23" name="@special:App name_Temp3" sticker="" target="model:">
+  <data typename="simple-text">40.0</data>
+ </property>
+ <property id="id24" name="@special:App name_Crate1" sticker="" target="model:">
+  <data typename="simple-text">0.5</data>
+ </property>
+ <property id="id25" name="@special:App name_Crate2" sticker="" target="model:">
+  <data typename="simple-text">1.0</data>
+ </property>
+ <property id="id26" name="@special:App name_Crate3" sticker="" target="model:">
+  <data typename="simple-text">2.0</data>
+ </property>
+ <property id="id27" name="@special:App name_U" sticker="" target="model:">
+  <data typename="simple-text">361.41337591333337</data>
+ </property>
+ <property id="id28" name="@special:App name_P" sticker="" target="model:">
+  <data typename="simple-text">67499.99457605698</data>
+ </property>
+ <property id="id29" name="@special:App name_E" sticker="" target="model:">
+  <data typename="simple-text">8699.999999999998</data>
+ </property>
+ <property id="id30" name="@special:App name_PsE" sticker="" target="model:">
+  <data typename="simple-text">7.758620066213448</data>
+ </property>
+ <property id="id31" name="@special:App name_mass" sticker="" target="model:">
+  <data typename="simple-text">0.006212296455311775</data>
+ </property>
+ <property id="id32" name="@special:App name_masstot" sticker="" target="model:">
+  <data typename="simple-text">65.60185056809235</data>
+ </property>
+ <property id="id33" name="@special:App name_Raddexpr_out" sticker="" target="model:">
+  <data typename="simple-text">0*ns/np+0</data>
+ </property>
+ <property id="id34" name="@special:App name_cnomtot" sticker="" target="model:">
+  <data typename="simple-text">24.67873941592716</data>
+ </property>
+ <property id="id35" name="@special:App name_Umin" sticker="" target="model:">
+  <data typename="simple-text">2.0</data>
+ </property>
+ <property id="id36" name="@special:App name_Umax" sticker="" target="model:">
+  <data typename="simple-text">3.6</data>
+ </property>
+ <property id="id37" name="@special:App name_dUdTpath" sticker="" target="model:">
+  <data typename="simple-text">${circuit_name}_.datafiles/dUdT.data</data>
+ </property>
+ <property id="id38" name="@special:App name_Rcpath" sticker="" target="model:">
+  <data typename="simple-text">${circuit_name}_.datafiles/Rch.data</data>
+ </property>
+ <property id="id39" name="@special:App name_Ecrate1" sticker="" target="model:">
+  <data typename="simple-text">19999.99999999998</data>
+ </property>
+ <property id="id40" name="@special:App name_Ecrate2" sticker="" target="model:">
+  <data typename="simple-text">19650.79029440209</data>
+ </property>
+ <property id="id41" name="@special:App name_Ecrate3" sticker="" target="model:">
+  <data typename="simple-text">18952.370883206277</data>
+ </property>
+ <property id="id42" name="@special:App name_Etemp1" sticker="" target="model:">
+  <data typename="simple-text">19543.217760859658</data>
+ </property>
+ <property id="id43" name="@special:App name_Etemp2" sticker="" target="model:">
+  <data typename="simple-text">19650.79029440209</data>
+ </property>
+ <property id="id44" name="@special:App name_Etemp3" sticker="" target="model:">
+  <data typename="simple-text">19750.910282382527</data>
+ </property>
+ <property id="id45" name="@special:App name_faradefftype" sticker="" target="model:">
+  <data typename="simple-text">1</data>
+ </property>
+ <property id="id46" name="@special:App name_dUdTtype" sticker="" target="model:">
+  <data typename="simple-text">2</data>
+ </property>
+ <property id="id47" name="@special:App name_hysttype" sticker="" target="model:">
+  <data typename="simple-text">1</data>
+ </property>
+ <property id="id48" name="@special:App name_restype" sticker="" target="model:">
+  <data typename="simple-text">2</data>
+ </property>
+ <property id="id49" name="@special:App name_cttype" sticker="" target="model:">
+  <data typename="simple-text">1</data>
+ </property>
+ <property id="id50" name="@special:App name_trtype" sticker="" target="model:">
+  <data typename="simple-text">1</data>
+ </property>
+ <property id="id51" name="@special:App name_agingtype" sticker="" target="model:">
+  <data typename="simple-text">1</data>
+ </property>
+ <property id="id52" name="@special:App name_difftype" sticker="" target="model:">
+  <data typename="simple-text">1</data>
+ </property>
+ <property id="id53" name="@special:App name_limittype" sticker="" target="model:">
+  <data typename="simple-text">3</data>
+ </property>
+ <property id="id54" name="@special:App name_scopelimits" sticker="" target="model:">
+  <data typename="simple-text">1</data>
+ </property>
+ <property id="id55" name="@special:App name_Tref" sticker="" target="model:">
+  <data typename="simple-text">20.0</data>
+ </property>
+ <property id="id56" name="@special:App name_iminfileexpr" sticker="" target="model:">
+  <data typename="simple-text">-1e+30</data>
+ </property>
+ <property id="id57" name="@special:App name_imaxfileexpr" sticker="" target="model:">
+  <data typename="simple-text">1e+30</data>
+ </property>
+ <property id="id58" name="@special:App name_CurrentFunctionIndex" sticker="" target="model:">
+  <data typename="simple-text">0</data>
+ </property>
+ <property id="id59" name="@special:prepost_tools_element_apps" sticker="" target="aliaspath:datafile_import_tool_1">
+  <struct>
+   <attribute name="handle_468a4961">
+    <struct>
+     <attribute name="PP_TOOLS_ID_ATTRIBUTE">
+      <data typename="simple-text">Id1</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
+      <data typename="simple-text">parameters import tool</data>
+     </attribute>
+     <attribute name="PP_TOOLS_AOPEN_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STATIC_ATTRIBUTE">
+      <data typename="simple-text">true</data>
+     </attribute>
+     <attribute name="PP_TOOLS_LINKED_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TOOLCONFIGURATION_ATTRIBUTE">
+      <data typename="simple-text">ILApp $AME/libtrdv/utils/TRVDIMPORT01_app/TRVDIMPORT01.app</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STORAGEDIRECTORY_ATTRIBUTE">
+      <data typename="simple-text">state_EyLMWL</data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLSTORAGEID_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLICON_ATTRIBUTE">
+      <data typename="simple-text">52ac843f54794d7d85422f291241c3fa71c26438</data>
+     </attribute>
+     <attribute name="PP_TOOLS_REPLACEDEFAULTACTIONMODES_ATTRIBUTE">
+      <data typename="simple-text">12</data>
+     </attribute>
+     <attribute name="PP_TOOLS_UNIQUEKEY_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+    </struct>
+   </attribute>
+  </struct>
+ </property>
+ <property id="id60" name="@special:prepost_tools_element_apps" sticker="" target="aliaspath:datafile_import_tool_2">
+  <struct>
+   <attribute name="handle_81eeb41f">
+    <struct>
+     <attribute name="PP_TOOLS_ID_ATTRIBUTE">
+      <data typename="simple-text">Id1</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
+      <data typename="simple-text">parameters import tool</data>
+     </attribute>
+     <attribute name="PP_TOOLS_AOPEN_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STATIC_ATTRIBUTE">
+      <data typename="simple-text">true</data>
+     </attribute>
+     <attribute name="PP_TOOLS_LINKED_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TOOLCONFIGURATION_ATTRIBUTE">
+      <data typename="simple-text">ILApp $AME/libtrdv/utils/TRVDIMPORT01_app/TRVDIMPORT01.app</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STORAGEDIRECTORY_ATTRIBUTE">
+      <data typename="simple-text">state_XTOyhP</data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLSTORAGEID_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLICON_ATTRIBUTE">
+      <data typename="simple-text">52ac843f54794d7d85422f291241c3fa71c26438</data>
+     </attribute>
+     <attribute name="PP_TOOLS_REPLACEDEFAULTACTIONMODES_ATTRIBUTE">
+      <data typename="simple-text">12</data>
+     </attribute>
+     <attribute name="PP_TOOLS_UNIQUEKEY_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+    </struct>
+   </attribute>
+  </struct>
+ </property>
+ <property id="id61" name="@special:prepost_tools_element_apps" sticker="" target="aliaspath:datafile_import_tool_3">
+  <struct>
+   <attribute name="handle_7b1aa8fe">
+    <struct>
+     <attribute name="PP_TOOLS_ID_ATTRIBUTE">
+      <data typename="simple-text">Id1</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
+      <data typename="simple-text">parameters import tool</data>
+     </attribute>
+     <attribute name="PP_TOOLS_AOPEN_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STATIC_ATTRIBUTE">
+      <data typename="simple-text">true</data>
+     </attribute>
+     <attribute name="PP_TOOLS_LINKED_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TOOLCONFIGURATION_ATTRIBUTE">
+      <data typename="simple-text">ILApp $AME/libtrdv/utils/TRVDIMPORT01_app/TRVDIMPORT01.app</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STORAGEDIRECTORY_ATTRIBUTE">
+      <data typename="simple-text">state_82631</data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLSTORAGEID_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLICON_ATTRIBUTE">
+      <data typename="simple-text">52ac843f54794d7d85422f291241c3fa71c26438</data>
+     </attribute>
+     <attribute name="PP_TOOLS_REPLACEDEFAULTACTIONMODES_ATTRIBUTE">
+      <data typename="simple-text">12</data>
+     </attribute>
+     <attribute name="PP_TOOLS_UNIQUEKEY_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+    </struct>
+   </attribute>
+  </struct>
+ </property>
+ <property id="id4" name="@special:prepost_tools_element_apps" sticker="" target="aliaspath:datafile_import_tool">
+  <struct>
+   <attribute name="handle_7b1aa8fe">
+    <struct>
+     <attribute name="PP_TOOLS_ID_ATTRIBUTE">
+      <data typename="simple-text">Id1</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
+      <data typename="simple-text">parameters import tool</data>
+     </attribute>
+     <attribute name="PP_TOOLS_AOPEN_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STATIC_ATTRIBUTE">
+      <data typename="simple-text">true</data>
+     </attribute>
+     <attribute name="PP_TOOLS_LINKED_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_TOOLCONFIGURATION_ATTRIBUTE">
+      <data typename="simple-text">ILApp $AME/libtrdv/utils/TRVDIMPORT01_app/TRVDIMPORT01.app</data>
+     </attribute>
+     <attribute name="PP_TOOLS_STORAGEDIRECTORY_ATTRIBUTE">
+      <data typename="simple-text">state_33932</data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLSTORAGEID_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+     <attribute name="PP_TOOLS_EMBEDDEDTOOLICON_ATTRIBUTE">
+      <data typename="simple-text">52ac843f54794d7d85422f291241c3fa71c26438</data>
+     </attribute>
+     <attribute name="PP_TOOLS_REPLACEDEFAULTACTIONMODES_ATTRIBUTE">
+      <data typename="simple-text">12</data>
+     </attribute>
+     <attribute name="PP_TOOLS_UNIQUEKEY_ATTRIBUTE">
+      <data typename="simple-text"></data>
+     </attribute>
+    </struct>
+   </attribute>
+  </struct>
+ </property>
+ <property id="id1" name="@special:prepost_tools_document_plots" target="model:">
+  <struct>
+   <attribute name="plot_c5f4489">
+    <struct>
+     <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
+      <data typename="simple-text">delta SOC</data>
+     </attribute>
+     <attribute name="PP_TOOLS_AOPEN_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_FILE_ATTRIBUTE">
+      <data typename="simple-text">plot_delta_SOC_.plt</data>
+     </attribute>
+    </struct>
+   </attribute>
+   <attribute name="plot_baed51e9">
+    <struct>
+     <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
+      <data typename="simple-text">plots configuration</data>
+     </attribute>
+     <attribute name="PP_TOOLS_AOPEN_ATTRIBUTE">
+      <data typename="simple-text">false</data>
+     </attribute>
+     <attribute name="PP_TOOLS_FILE_ATTRIBUTE">
+      <data typename="simple-text">plot_plots_configuration_.plt</data>
+     </attribute>
+    </struct>
+   </attribute>
+  </struct>
+ </property>
+ <property id="id62" name="@special:prepost_tools_document_3d_visualizations" target="model:">
+  <struct/>
+ </property>
+ <property id="id2" name="@special:prepost_tools_document_animations" target="model:">
+  <struct/>
+ </property>
+ <property id="id3" name="@special:prepost_tools_document_dashboards" target="model:">
+  <struct/>
+ </property>
+</properties>

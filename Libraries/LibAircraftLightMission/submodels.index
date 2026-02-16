@@ -1,3 +1,5 @@
 ./submodels
 component_1
 &SCLIBAIRCRAFTLIGHTMISSION LibAircraftLightMission
+SCSUBMASTERCYLINDER
+&SUBMASTERCYLINDER LibAircraftLightMission

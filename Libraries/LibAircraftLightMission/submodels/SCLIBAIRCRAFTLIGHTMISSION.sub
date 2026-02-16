@@ -3,7 +3,7 @@
 <SUB AME_VERSION="2604" DOC_VERSION="6" HOTFIX="0" MAJ="20261" UPDATE="0">
  <Supercomponent catname="LibAircraftLightMission" scSubName="SCLIBAIRCRAFTLIGHTMISSION">
   <PortsMap />
-  <Circuit ameApplication="AMESim" highestId="447359">
+  <Circuit ameApplication="AMESim" highestId="447368">
    <Comps>
     <Comp alias="aero_mission" circuitScopeId="10782" depth="201" displayName="aero_mission" geometry="1" iconDescription="aircraft flight mission" labelVisible="0" libraryId="aero.aero_mission" name="aero_mission" scaleX="1.000000" scaleY="1.000000" type="0">
      <Pos x="67" y="67" />
@@ -350,69 +350,6 @@
         </Vars>
        </Port>
       </ExtVars>
-     </Submodel>
-    </Comp>
-    <Comp alias="gravityicon" circuitScopeId="3" depth="204" displayName="gravityicon" geometry="1" iconDescription="sets the gravity" labelVisible="0" libraryId="meca.gravityicon" name="gravityicon" scaleX="1.000000" scaleY="1.000000" type="0">
-     <Pos x="623" y="261" />
-     <LabelPos configured="0" direction="0" x="0" y="0" />
-     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
-      <IconMap data="H4sIAAAAAAACCrWTTY/TMBCG7/srLO+hF9uxnY+tq82uBBInkJAKZ1RctzXrxJUdkpZfzzgfK1EBEgesTt/JZDLzzCh5fL40DvUmROvbeiUYXyHTar+37bFeff70jq5Xz093j7E/Ishs42bXmGibGvftnrkmMtvsjrY1bIrjKavGp647b7JsGAY25MyHYyY55xnUmVM2F2fbl98lCqVUNt7Fr2RYMInR1100H4M/WGdq3Nn2ipHd1/i97Y1z/ouA0jXm5wtG11kHu+9ONc5VujgZezx1y1VvzfDGpwcQR7mCH0Ye+h2cH2ocdfDOjaybeN5paHgOJprQGwz70DZoZxCQuBrfH8aDUeyCf4HMez6eJUBnCvkaaGxngrMgMBnkacAQipXgXRcvgLMGJ4N25113Wprp8WAEg3+QgshK05zlhLM1rZgisCiqWAVaaEkkeCUTpABNUVAtOOFESFbSh0mEYGWkkkI3WoIphDTlTIEJKqBuUskeoIfQAqolk6wAW5MUL5h6K9cQSOREKiLhXkL7cUvf+tb8eU+3axlHBNaclRqgR0CRjEMbCG6FILlMrXIZbydC6JeZtnMhMus/osHraL55C29i8N/b/V+RSyLKiRg2U9IEW9E8Jl+CJ4AMIGGLADMpkM6cVfqPdASlJSm2UzEyyX+Elqll1ct51TLZAgf7TZY2KmieBqLFdnqATDKBpc/76e4nFuwrrlQEAAA=" format="svgz/base64" />
-     </CirCompIcon>
-     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libmec/submodels" hasTerminate="1" iStoresNumber="1" idMax="10" idsReset="0" label="sets the gravity of the whole system" name="GRAV0" outputType="1" timeRequired="1" type="0" unit="1">
-      <RealParams>
-       <Params>
-        <Param defValue="9.80665" maxValue="1e+06" minValue="0" subId="5" title="constant gravity value" units="m/s/s" value="9.80665" varName="fixedg" visibility="(gtype == 1)" />
-       </Params>
-      </RealParams>
-      <IntParams>
-       <Params>
-        <Param defValue="1" maxValue="2" minValue="1" subId="1" title="setting type" value="1" varName="gtype" visibility="True">
-         <Enums>
-          <Enum string="constant" />
-          <Enum string="from file" />
-         </Enums>
-        </Param>
-        <Param defValue="1" maxValue="3" minValue="1" subId="8" title="data out of range mode" value="1" varName="mode" visibility="(gtype == 2)">
-         <Enums>
-          <Enum string="extrapolation" />
-          <Enum string="extreme value" />
-          <Enum string="cyclic" />
-         </Enums>
-        </Param>
-        <Param defValue="2" maxValue="2" minValue="1" subId="6" title="discontinuity handling" value="2" varName="disc" visibility="(gtype == 2)">
-         <Enums>
-          <Enum string="inactive" />
-          <Enum string="active" />
-         </Enums>
-        </Param>
-       </Params>
-      </IntParams>
-      <TextParams>
-       <Params>
-        <Param defValue="file.data" subId="2" textType="1" title="filename for g = f(t)" value="file.data" varName="gfile" visibility="(gtype == 2)" />
-       </Params>
-      </TextParams>
-      <ParamsGroups>
-       <Group circuitScopeId="447286" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="10">
-        <Elements>
-         <Element display="0" varName="gtype" />
-         <Element display="0" varName="mode" />
-         <Element display="0" varName="disc" />
-         <Element display="0" varName="fixedg" />
-         <Element display="0" varName="gfile" />
-         <Element display="1" varName="g" />
-        </Elements>
-       </Group>
-      </ParamsGroups>
-      <IntVars>
-       <Vars>
-        <Var dimension="1" saveValue="1" subId="3" title="value of gravity" type="0" units="m/s/s" varName="g" visibility="True">
-         <LaData>
-          <Data laStatus="0" />
-         </LaData>
-        </Var>
-       </Vars>
-      </IntVars>
      </Submodel>
     </Comp>
    </Comps>
