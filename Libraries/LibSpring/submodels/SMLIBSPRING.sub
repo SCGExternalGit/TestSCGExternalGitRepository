@@ -8,7 +8,7 @@
     <PortMap component="0" face="0" labelX="0.000000" labelY="0.000000" port="1" type="lshaft" x="92" y="68" />
    </Map>
   </PortsMap>
-  <Circuit ameApplication="AMESim" highestId="1674">
+  <Circuit ameApplication="AMESim" highestId="1686">
    <Comps>
     <Comp alias="mass_friction_endstops_1" circuitScopeId="12" depth="201" displayName="mass_friction_endstops" geometry="2" iconDescription="linear mass with 2 ports and endstops" labelVisible="0" libraryId="meca.mass_friction_endstops" name="mass_friction_endstops" scaleX="1.000000" scaleY="1.000000" type="0">
      <Pos x="67" y="67" />
@@ -394,6 +394,114 @@
      <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" hasNoCalc="1" hasTerminate="1" idMax="2" idsReset="0" label="plug for signal port" name="SSINK" outputType="1" type="0" unit="1">
       <ParamsGroups>
        <Group circuitScopeId="1674" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="2">
+        <Elements>
+         <Element display="1" varName="sink" />
+        </Elements>
+       </Group>
+      </ParamsGroups>
+      <ExtVars>
+       <Port tag="signal">
+        <Vars>
+         <Var dimension="1" io="1" saveValue="1" subId="1" title="signal input" type="0" units="null" varName="sink" visibility="True">
+          <LaData>
+           <Data laStatus="0" />
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+      </ExtVars>
+     </Submodel>
+    </Comp>
+    <Comp alias="sinewave" circuitScopeId="3" depth="204" displayName="sinewave" geometry="1" iconDescription="sine wave signal source" labelVisible="0" libraryId="sig.sinewave" name="sinewave" scaleX="1.000000" scaleY="1.000000" type="0">
+     <Pos x="529" y="250" />
+     <LabelPos configured="0" direction="0" x="0" y="0" />
+     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIzIiB0eXBlPSJzaWduYWwiIHg9IjQwIiB5PSIxNSI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL3NpZ25hbDFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KIDwvUE9SVFM+Cg==" cirPortHidden="0">
+      <IconMap data="H4sIAAAAAAACCp1SPW/bMBDd/SsOl8GLTJGS1ViG6QAZOrVAh3Y2VJmWiFCkQCqS/O97+nCzZChKDu/u8fG+yNPL2BjolQ/aWbkVjG9B2dJdta3k9tfPr7vD9uW8OYW+AlLacCwaFXQjsbdXZprAdFNU2iq28LioJNZd1x7jeBgGNqTM+SpOOOcxxVklx9Fo+/aZUOR5Hs+n+LcyFCxB+F0E9cO7mzZKYqftHUFfJX7TvTLGXQSFlsjbEeG+4qCvXS1xPzu10lXdSUzyyeu1Gl7ddAE47DkkOYKjfDfjBomh9M6YudZjaIuSErZeBeV7hTSP6rwBgFOpfWkUUEFG4tNtXgih8+6NLjzxeT2IXaM75Y0moH6ILim52LOMrPvD8pOB8RK+Lbp6DW6dVf8emYby/ZllkchKHtFm2S4nN10wEEYJj77MEPY7QYJogSn1Ka6mFufZlu+hu4hL0JUtDC5l0dOo/yprFBLTlF5HPNodk+lxiElW5tG5M/fKWWidth19p+QQCcEySBMmokkIE/O84oEdIE1Z/nHCWQLw0cv0786bPyrPLlrtAgAA" format="svgz/base64" />
+     </CirCompIcon>
+     <Ports>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="3" name="" type="signal">
+       <Pos x="40" y="15" />
+       <DecorationBoundingRect height="0" width="0" x="0" y="0" />
+       <Connects>
+        <Connect num="4" port="0" />
+       </Connects>
+      </Port>
+     </Ports>
+     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="1" codeGenVersion="2.0" dir="$AME/libsig/submodels" discontinuity="1" hasTerminate="1" idMax="63" idsReset="0" label="sine signal source" name="SIN0" outputType="1" rStoresNumber="2" timeRequired="1" type="0" unit="0">
+      <RealParams>
+       <Params>
+        <Param defValue="1" historyVariable="f0GEN" maxValue="1e+06" minValue="1e-06" paramImage="${library_node}/embedded_files/images/SIN0_period.png" subId="2" title="sine wave frequency" tunable="True" units="Hz" value="1" varName="f" visibility="True" />
+        <Param defValue="0" historyVariable="level00GEN" maxValue="1e+30" minValue="-1e+30" paramImage="${library_node}/embedded_files/images/SIN0_level0.png" subId="3" title="mean level" tunable="True" units="null" value="0" varName="level0" visibility="True" />
+        <Param defValue="1" historyVariable="a0GEN" maxValue="1e+30" minValue="0" paramImage="${library_node}/embedded_files/images/SIN0_amplitude.png" subId="4" title="sine wave amplitude" tunable="True" units="null" value="1" varName="a" visibility="True" />
+        <Param defValue="0" historyVariable="phi0GEN" maxValue="360" minValue="-360" paramImage="${library_node}/embedded_files/images/SIN0_phase.png" subId="5" title="phase shift" tunable="True" units="degree" value="0" varName="phi" visibility="True" />
+       </Params>
+      </RealParams>
+      <ParamsGroups>
+       <Group circuitScopeId="1684" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="63">
+        <Elements>
+         <Element display="0" varName="f" />
+         <Element display="0" varName="level0" />
+         <Element display="0" varName="a" />
+         <Element display="0" varName="phi" />
+         <Element display="1" varName="output" />
+        </Elements>
+       </Group>
+      </ParamsGroups>
+      <IntVars>
+       <Vars>
+        <Var defValue="1" dimension="1" maxValue="1e+06" minValue="1e-06" saveValue="1" subId="59" title="sine wave frequency - Linked variable" type="10" units="Hz" value="1" varName="f0GEN" visibility="False">
+         <LaData>
+          <Data laStatus="0" />
+         </LaData>
+        </Var>
+        <Var defValue="0" dimension="1" maxValue="1e+30" minValue="-1e+30" saveValue="1" subId="60" title="mean level - Linked variable" type="10" units="null" value="0" varName="level00GEN" visibility="False">
+         <LaData>
+          <Data laStatus="0" />
+         </LaData>
+        </Var>
+        <Var defValue="1" dimension="1" maxValue="1e+30" minValue="0" saveValue="1" subId="61" title="sine wave amplitude - Linked variable" type="10" units="null" value="1" varName="a0GEN" visibility="False">
+         <LaData>
+          <Data laStatus="0" />
+         </LaData>
+        </Var>
+        <Var defValue="0" dimension="1" maxValue="360" minValue="-360" saveValue="1" subId="62" title="phase shift - Linked variable" type="10" units="degree" value="0" varName="phi0GEN" visibility="False">
+         <LaData>
+          <Data laStatus="0" />
+         </LaData>
+        </Var>
+       </Vars>
+      </IntVars>
+      <ExtVars>
+       <Port tag="signal">
+        <Vars>
+         <Var dimension="1" io="2" saveValue="1" subId="1" title="sine wave output" type="0" units="null" varName="output" visibility="True">
+          <LaData>
+           <Data laStatus="0" />
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+      </ExtVars>
+     </Submodel>
+    </Comp>
+    <Comp alias="signalsink_1" circuitScopeId="4" depth="205" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
+     <Pos x="569" y="260" />
+     <LabelPos configured="0" direction="0" x="0" y="0" />
+     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjUiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
+      <IconMap data="H4sIAAAAAAACCp1RuVLDMBDt+YqdpXATfHEk9kTJDAUVBQXUGWMr9k5kySMJH3/P2gkZCipUaA89vbdP2u7HVkEvrSOjRZCEcQBSl6YiXYvg4/3lbhPsdzdb19fASO3yopWOWoG9rkLVupDaoiYtw3MfzyiBjfddHkXDMITDfWhsHaVxHEfMc4HkoyJ9+guYZFkWLad4nQyTMEX4LJx8s+ZISgr0pCcEqgS+Ui+VMoeEqQXG3YgwXeJAlW8EZnPeSKobfyl6ksOzmeEQQwYZgmGtozKDQFdao9QyZ+66omSxzkonbS+R38LK0s9C6yt9+oscI4bUy1zll/OH5OCo1oXimwCwZVsS2IASqI2WCM5bc2KF23hZP427lry0ijiweW6PCc/Kxjg8hI9cpwKf5mRKz53oLNAZNf1bpDOkPf9eukpgvWJWSFcbgMVTVM8bf+DuG+p4C5w1AgAA" format="svgz/base64" />
+     </CirCompIcon>
+     <Ports>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
+       <Pos x="1" y="5" />
+       <DecorationBoundingRect height="0" width="0" x="0" y="0" />
+       <Connects>
+        <Connect num="3" port="0" />
+       </Connects>
+      </Port>
+     </Ports>
+     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" hasNoCalc="1" hasTerminate="1" idMax="2" idsReset="0" label="plug for signal port" name="SSINK" outputType="1" type="0" unit="1">
+      <ParamsGroups>
+       <Group circuitScopeId="1686" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="2">
         <Elements>
          <Element display="1" varName="sink" />
         </Elements>
