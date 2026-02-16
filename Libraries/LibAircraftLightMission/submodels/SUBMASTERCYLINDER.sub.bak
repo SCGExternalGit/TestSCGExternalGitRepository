@@ -11,7 +11,7 @@
     <PortMap component="16" face="2" labelX="0.000000" labelY="0.000000" port="2" type="lshaft" x="664" y="183" />
    </Map>
   </PortsMap>
-  <Circuit ameApplication="AMESim" highestId="18328">
+  <Circuit ameApplication="AMESim" highestId="18332">
    <Comps>
     <Comp alias="linear2signal3_4" circuitScopeId="793" depth="201" displayName="linear2signal3" geometry="8" iconDescription="conversion between linear mechanical and signal variables (with displacement)" labelVisible="0" libraryId="meca.linear2signal3" name="linear2signal3" scaleX="1.000000" scaleY="1.000000" type="0">
      <Pos x="688" y="158" />
@@ -1595,6 +1595,78 @@
         </Colors>
        </Animation>
       </Animations>
+     </Submodel>
+    </Comp>
+    <Comp alias="clock" circuitScopeId="1" depth="220" displayName="clock" geometry="1" iconDescription="signal time source" labelVisible="0" libraryId="sig.clock" name="clock" scaleX="1.000000" scaleY="1.000000" type="0">
+     <Pos x="507" y="432" />
+     <LabelPos configured="0" direction="0" x="0" y="0" />
+     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIzIiB0eXBlPSJzaWduYWwiIHg9IjQwIiB5PSIxNSI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL3NpZ25hbDFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KIDwvUE9SVFM+Cg==" cirPortHidden="0">
+      <IconMap data="H4sIAAAAAAACCqVUS4+bMBC+768YeQ9ppWBsAwlEISu1Uk9bqYf2HFHiEGuNHRkakv76jk1IKrWV2i0vD/P6vhnGrJ/OrYaTdJ2yppxxymYgTW13yjTl7MvnD1E+e9o8rLtTA+hpulXVyk61JTmZHdVtR1VbNcpIOurJ6FWSQ98fV3E8DAMdEmpdEwvGWIx5ri6rs1bm5XeOvCiKOFjJjRnhVBD4WnXyk7N7pWVJemUuBNSuJM/qJLW2W46pS8KOZwKX6zqoXX8oSRpeDlI1h74kovBvJyWHd9YHAIOUgSgIWMTbazuUpKud1TpwXXXHqkbAo5OddCdJsB/N5gEA1rVytZaAhHRJHvfhIND1zr5gwCMLx6SIWtVLpxUuWA+qawTnKc1QukyS8wKJx/RO1j0Ep1BRQiaknPnzVh6/15b9IVbw1wSLJARz7H3vKtPtrcNP31a9U+c3Ead5siiWTEZ8ARwif/2sSnKIirevwc3+B1Yw+DfUY9UfAOfoI1/SfM5p8TwJdcRohjePUprMuaDJTfAmPkcz3gJ9vbzEVRxYPWq510ajVeC6RKz3PEMbfmpMn9N0LrzXFez7L3wE92BLuni+SZhbBFILmkbp+JxYiijQiLwvajSbszrgBz5XjohOk8Ak9diZJ+EtSIfPbzCByzpu/KiHPVZ/6/ot33aqMZUmI0/cotPsG2vk3w/+meMw+9Hi09ifhd+kqBFXzdQKqy+NNXC0yvT4WxHYKU4zSELj0BG8Znldc5pDktDibsHqAe61+P/P5uEHPzI83PUEAAA=" format="svgz/base64" />
+     </CirCompIcon>
+     <Ports>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="3" name="" type="signal">
+       <Pos x="40" y="15" />
+       <DecorationBoundingRect height="0" width="0" x="0" y="0" />
+       <Connects>
+        <Connect num="20" port="0" />
+       </Connects>
+      </Port>
+     </Ports>
+     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="1" codeGenVersion="2.0" dir="$AME/libsig/submodels" hasTerminate="1" idMax="2" idsReset="0" label="signal source giving time" name="CLOC" outputType="1" timeRequired="1" type="0" unit="0">
+      <ParamsGroups>
+       <Group circuitScopeId="18330" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="2">
+        <Elements>
+         <Element display="1" varName="tout" />
+        </Elements>
+       </Group>
+      </ParamsGroups>
+      <ExtVars>
+       <Port tag="signal">
+        <Vars>
+         <Var dimension="1" io="2" origVarName="" saveValue="1" subId="1" title="simulation time in s" type="0" units="null" varName="tout" visibility="True">
+          <LaData>
+           <Data laStatus="0" />
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+      </ExtVars>
+     </Submodel>
+    </Comp>
+    <Comp alias="signalsink" circuitScopeId="2" depth="221" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
+     <Pos x="547" y="442" />
+     <LabelPos configured="0" direction="0" x="0" y="0" />
+     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjUiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
+      <IconMap data="H4sIAAAAAAACCp1RuVLDMBDt+YqdpXATfHEk9kTJDAUVBQXUGWMr9k5kySMJH3/P2gkZCipUaA89vbdP2u7HVkEvrSOjRZCEcQBSl6YiXYvg4/3lbhPsdzdb19fASO3yopWOWoG9rkLVupDaoiYtw3MfzyiBjfddHkXDMITDfWhsHaVxHEfMc4HkoyJ9+guYZFkWLad4nQyTMEX4LJx8s+ZISgr0pCcEqgS+Ui+VMoeEqQXG3YgwXeJAlW8EZnPeSKobfyl6ksOzmeEQQwYZgmGtozKDQFdao9QyZ+66omSxzkonbS+R38LK0s9C6yt9+oscI4bUy1zll/OH5OCo1oXimwCwZVsS2IASqI2WCM5bc2KF23hZP427lry0ijiweW6PCc/Kxjg8hI9cpwKf5mRKz53oLNAZNf1bpDOkPf9eukpgvWJWSFcbgMVTVM8bf+DuG+p4C5w1AgAA" format="svgz/base64" />
+     </CirCompIcon>
+     <Ports>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
+       <Pos x="1" y="5" />
+       <DecorationBoundingRect height="0" width="0" x="0" y="0" />
+       <Connects>
+        <Connect num="19" port="0" />
+       </Connects>
+      </Port>
+     </Ports>
+     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" hasNoCalc="1" hasTerminate="1" idMax="2" idsReset="0" label="plug for signal port" name="SSINK" outputType="1" type="0" unit="1">
+      <ParamsGroups>
+       <Group circuitScopeId="18332" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="2">
+        <Elements>
+         <Element display="1" varName="sink" />
+        </Elements>
+       </Group>
+      </ParamsGroups>
+      <ExtVars>
+       <Port tag="signal">
+        <Vars>
+         <Var dimension="1" io="1" saveValue="1" subId="1" title="signal input" type="0" units="null" varName="sink" visibility="True">
+          <LaData>
+           <Data laStatus="0" />
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+      </ExtVars>
      </Submodel>
     </Comp>
    </Comps>

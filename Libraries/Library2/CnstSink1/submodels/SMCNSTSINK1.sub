@@ -3,7 +3,7 @@
 <SUB AME_VERSION="2604" DOC_VERSION="6" HOTFIX="0" MAJ="20261" UPDATE="0">
  <Supercomponent catname="CnstSink1" scSubName="SMCNSTSINK1">
   <PortsMap />
-  <Circuit ameApplication="AMESim" highestId="61">
+  <Circuit ameApplication="AMESim" highestId="65">
    <Comps>
     <Comp alias="constant" circuitScopeId="1" depth="201" displayName="constant" geometry="1" iconDescription="constant signal source" labelVisible="0" libraryId="sig.constant" name="constant" scaleX="1.000000" scaleY="1.000000" type="0">
      <Pos x="351" y="239" />
@@ -110,7 +110,7 @@
      </Submodel>
      <Supercomponent catname="StepSnk1" scDir="D:/Test_Libraries/StepSnk1/submodels">
       <PortsMap />
-      <Circuit ameApplication="AMESim" highestId="61">
+      <Circuit ameApplication="AMESim" highestId="65">
        <Comps>
         <Comp alias="step" circuitScopeId="1" depth="201" displayName="step" geometry="1" iconDescription="step signal source" labelVisible="0" libraryId="sig.step" name="step" scaleX="1.000000" scaleY="1.000000" type="0">
          <Pos x="67" y="67" />
@@ -284,7 +284,7 @@
       </ExtVars>
      </Submodel>
     </Comp>
-    <Comp alias="signalsink_1" catname="sig" circuitScopeId="2" depth="205" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Comp alias="signalsink_1" circuitScopeId="2" depth="205" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
      <Pos x="173" y="210" />
      <LabelPos configured="0" direction="0" x="0" y="0" />
      <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjUiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
@@ -299,6 +299,26 @@
        </Connects>
       </Port>
      </Ports>
+     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" hasNoCalc="1" hasTerminate="1" idMax="2" idsReset="0" label="plug for signal port" name="SSINK" outputType="1" type="0" unit="1">
+      <ParamsGroups>
+       <Group circuitScopeId="63" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="2">
+        <Elements>
+         <Element display="1" varName="sink" />
+        </Elements>
+       </Group>
+      </ParamsGroups>
+      <ExtVars>
+       <Port tag="signal">
+        <Vars>
+         <Var dimension="1" io="1" saveValue="1" subId="1" title="signal input" type="0" units="null" varName="sink" visibility="True">
+          <LaData>
+           <Data laStatus="0" />
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+      </ExtVars>
+     </Submodel>
     </Comp>
     <Comp alias="sim_params" circuitScopeId="1" depth="206" displayName="sim_params" geometry="1" iconDescription="set simulation parameters from submodel" labelVisible="0" libraryId="simu.sim_params" name="sim_params" scaleX="1.000000" scaleY="1.000000" type="0">
      <Pos x="467" y="96" />
@@ -482,7 +502,7 @@
      <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" discontinuity="1" hasTerminate="1" idMax="29" idsReset="0" label="constant signal" name="CONS00" outputType="1" type="0" unit="1">
       <RealParams>
        <Params>
-        <Param defValue="1" historyVariable="k0GEN" maxValue="1e+30" minValue="-1e+30" subId="3" title="constant value" tunable="True" units="null" value="1" varName="k" visibility="True" />
+        <Param defValue="4" historyVariable="k0GEN" maxValue="1e+30" minValue="-1e+30" subId="3" title="constant value" tunable="True" units="null" usesScGp="1" value="4" varName="k" visibility="True" />
        </Params>
       </RealParams>
       <ParamsGroups>
@@ -561,6 +581,28 @@
       <Point x="395" y="253" />
       <Point x="390" y="253" />
      </Points>
+     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="1" codeGenVersion="1.0" idMax="2" label="Direct connection" name="DIRECT" outputType="1" type="0" unit="0">
+      <ExtVars>
+       <Port tag="undefined">
+        <Vars>
+         <Var dimension="1" io="2" saveValue="1" subId="1" title="output" type="0" units="null" visibility="True">
+          <LaData>
+           <Data laStatus="0" />
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+       <Port tag="undefined">
+        <Vars>
+         <Var dimension="1" io="1" saveValue="1" subId="2" title="signal input" type="0" units="null" visibility="True">
+          <LaData>
+           <Data laStatus="0" />
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+      </ExtVars>
+     </Submodel>
     </Line>
    </Lines>
    <animationProperties loop="0" speed="1" />
