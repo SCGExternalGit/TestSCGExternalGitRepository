@@ -7,16 +7,16 @@
  </property>
  <property id="id1" name="@special:prepost_tools_document_plots" target="model:">
   <struct>
-   <attribute name="plot_dbe73284">
+   <attribute name="plot_d675949">
     <struct>
      <attribute name="PP_TOOLS_TITLE_ATTRIBUTE">
-      <data typename="simple-text">MassSpring</data>
+      <data typename="simple-text">Anti-Pulsating Accumulator</data>
      </attribute>
      <attribute name="PP_TOOLS_AOPEN_ATTRIBUTE">
       <data typename="simple-text">false</data>
      </attribute>
      <attribute name="PP_TOOLS_FILE_ATTRIBUTE">
-      <data typename="simple-text">MassSpring__upgraded.plt</data>
+      <data typename="simple-text">AntiPulsatingAccumulator__upgraded.plt</data>
      </attribute>
     </struct>
    </attribute>
