@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ParameterSetsIndex ContainerName="Lib_MasterCylinders">
+<ParameterSetsIndex ContainerName="Lib_Boosters">
  <ModelParameterSetsGroup/>
  <SubmodelParameterSetsGroup>
-  <SubmodelParameterSet id="{07dd2201-f3c7-4231-a6ca-88eb06acb280}">
-   <Submodel id="SC_MASTER_CYL_1"/>
+  <SubmodelParameterSet id="{6f0696ad-9984-42d0-bc11-d59cc17d630e}">
+   <Submodel id="SC_BOOSTER_1"/>
   </SubmodelParameterSet>
  </SubmodelParameterSetsGroup>
 </ParameterSetsIndex>

@@ -1,0 +1,1 @@
+*.add_your_file_pattern_for_lfs_files filter=lfs diff=lfs merge=lfs -text
