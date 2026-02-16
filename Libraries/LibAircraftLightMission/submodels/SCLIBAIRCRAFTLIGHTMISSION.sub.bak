@@ -3,7 +3,7 @@
 <SUB AME_VERSION="2604" DOC_VERSION="6" HOTFIX="0" MAJ="20261" UPDATE="0">
  <Supercomponent catname="LibAircraftLightMission" scSubName="SCLIBAIRCRAFTLIGHTMISSION">
   <PortsMap />
-  <Circuit ameApplication="AMESim" highestId="447368">
+  <Circuit ameApplication="AMESim" highestId="447542">
    <Comps>
     <Comp alias="aero_mission" circuitScopeId="10782" depth="201" displayName="aero_mission" geometry="1" iconDescription="aircraft flight mission" labelVisible="0" libraryId="aero.aero_mission" name="aero_mission" scaleX="1.000000" scaleY="1.000000" type="0">
      <Pos x="67" y="67" />
@@ -283,7 +283,7 @@
      <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" discontinuity="1" hasTerminate="1" idMax="29" idsReset="0" label="constant signal" name="CONS00" outputType="1" type="0" unit="1">
       <RealParams>
        <Params>
-        <Param defValue="1" historyVariable="k0GEN" maxValue="1e+30" minValue="-1e+30" subId="3" title="constant value" tunable="True" units="null" value="1" varName="k" visibility="True" />
+        <Param defValue="8" historyVariable="k0GEN" maxValue="1e+30" minValue="-1e+30" subId="3" title="constant value" tunable="True" units="null" usesScGp="1" value="8" varName="k" visibility="True" />
        </Params>
       </RealParams>
       <ParamsGroups>
@@ -334,6 +334,121 @@
      <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" hasNoCalc="1" hasTerminate="1" idMax="2" idsReset="0" label="plug for signal port" name="SSINK" outputType="1" type="0" unit="1">
       <ParamsGroups>
        <Group circuitScopeId="447279" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="2">
+        <Elements>
+         <Element display="1" varName="sink" />
+        </Elements>
+       </Group>
+      </ParamsGroups>
+      <ExtVars>
+       <Port tag="signal">
+        <Vars>
+         <Var dimension="1" io="1" saveValue="1" subId="1" title="signal input" type="0" units="null" varName="sink" visibility="True">
+          <LaData>
+           <Data laStatus="0" />
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+      </ExtVars>
+     </Submodel>
+    </Comp>
+    <Comp alias="step" circuitScopeId="1" depth="204" displayName="step" geometry="1" iconDescription="step signal source" labelVisible="0" libraryId="sig.step" name="step" scaleX="1.000000" scaleY="1.000000" type="0">
+     <Pos x="539" y="153" />
+     <LabelPos configured="0" direction="0" x="0" y="0" />
+     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIzIiB0eXBlPSJzaWduYWwiIHg9IjQwIiB5PSIxNSI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL3NpZ25hbDFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KIDwvUE9SVFM+Cg==" cirPortHidden="0">
+      <IconMap data="H4sIAAAAAAACCp1SPZPbIBDt/St29go3PgTInkge45tJkeqKKy61R5ExZg6BBogk//sD2b64SJEJzT4e+/F2l93L1BkYpA/aWbFkhC5B2tYdtVVi+fP9x3O1fNkvdmFQkDxt2DadDLoTONgjMV0gumuUtpJcebx6CTzH2G+LYhxHMpbEeVVwSmmR8txctpPR9uNvjqyu62J+xS9lyAhH+NUE+ebdSRspMGp7QdBHga96kMa4A0upBdJ+Qrjc7KiP8SxwPV/OUqtzFMjrfBu0HL+7HAAU1hR4jeBSvZNxo8DQemfMrHUb+qZNBXsvg/SDxDQPtV8AwK7VvjUSkiAj8Ok0H4QQvftIAU90PnfiudNReqOTSf0kuk3F2ZpsErrckc8Ai2v63plLmsO9gHVW/nv23mkb0yY2K1aRDTBKHlEGvJwN5HK7QuW25nm2v0M8sEPQyjYGr1L+W8bEBJZl2gi7tzjxvJDE8Bvz0K1y9ks4r1aMJX0lJ2yVHSEz3262IhWUJan/vFDCH3vJf22/+ASWVpF34QIAAA==" format="svgz/base64" />
+     </CirCompIcon>
+     <Ports>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="3" name="" type="signal">
+       <Pos x="40" y="15" />
+       <DecorationBoundingRect height="0" width="0" x="0" y="0" />
+       <Connects>
+        <Connect num="4" port="0" />
+       </Connects>
+      </Port>
+     </Ports>
+     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" discontinuity="1" hasTerminate="1" iStoresNumber="1" idMax="38" idsReset="0" label="step function" name="STEP0" outputType="1" rStoresNumber="6" timeRequired="1" type="0" unit="0">
+      <RealParams>
+       <Params>
+        <Param defValue="0" historyVariable="out00GEN" maxValue="1e+30" minValue="-1e+30" paramImage="${library_node}/embedded_files/images/STEP0_out0.png" subId="2" title="value before step" tunable="True" units="null" value="0" varName="out0" visibility="True" />
+        <Param defValue="1" historyVariable="out10GEN" maxValue="1e+30" minValue="-1e+30" paramImage="${library_node}/embedded_files/images/STEP0_out1.png" subId="3" title="value after step" tunable="True" units="null" value="1" varName="out1" visibility="True" />
+        <Param defValue="0" historyVariable="t00GEN" maxValue="1e+30" minValue="-1e+30" paramImage="${library_node}/embedded_files/images/STEP0_t0.png" subId="4" title="step time" tunable="True" units="s" value="0" varName="t0" visibility="True" />
+        <Param defValue="0.1" maxValue="1e+30" minValue="0" paramImage="${library_node}/embedded_files/images/SQW00_transition.png" subId="7" title="transition duration" units="s" value="0.1" varName="td" visibility="transitionType>1" />
+       </Params>
+      </RealParams>
+      <IntParams>
+       <Params>
+        <Param defValue="1" maxValue="3" minValue="1" paramImage="${library_node}/embedded_files/images/SQW00_transition.png" subId="5" title="transition type" value="1" varName="transitionType" visibility="True">
+         <Enums>
+          <Enum string="discontinuous" />
+          <Enum string="polynomial (order 3)" />
+          <Enum string="polynomial (order 5)" />
+         </Enums>
+        </Param>
+       </Params>
+      </IntParams>
+      <ParamsGroups>
+       <Group circuitScopeId="447540" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="38">
+        <Elements>
+         <Element display="0" varName="transitionType" />
+         <Element display="0" varName="out0" />
+         <Element display="0" varName="out1" />
+         <Element display="0" varName="t0" />
+         <Element display="0" varName="td" />
+         <Element display="1" varName="out" />
+        </Elements>
+       </Group>
+      </ParamsGroups>
+      <IntVars>
+       <Vars>
+        <Var defValue="0" dimension="1" maxValue="1e+30" minValue="-1e+30" saveValue="1" subId="35" title="value before step - Linked variable" type="10" units="null" value="0" varName="out00GEN" visibility="False">
+         <LaData>
+          <Data laStatus="0" />
+         </LaData>
+        </Var>
+        <Var defValue="0" dimension="1" maxValue="1e+30" minValue="-1e+30" saveValue="1" subId="36" title="value after step - Linked variable" type="10" units="null" value="0" varName="out10GEN" visibility="False">
+         <LaData>
+          <Data laStatus="0" />
+         </LaData>
+        </Var>
+        <Var defValue="0" dimension="1" maxValue="1e+30" minValue="-1e+30" saveValue="1" subId="37" title="step time - Linked variable" type="10" units="s" value="0" varName="t00GEN" visibility="False">
+         <LaData>
+          <Data laStatus="0" />
+         </LaData>
+        </Var>
+       </Vars>
+      </IntVars>
+      <ExtVars>
+       <Port tag="signal">
+        <Vars>
+         <Var dimension="1" io="2" saveValue="1" subId="1" title="step output" type="0" units="null" varName="out" visibility="True">
+          <LaData>
+           <Data laStatus="0" />
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+      </ExtVars>
+     </Submodel>
+    </Comp>
+    <Comp alias="signalsink_1" circuitScopeId="2" depth="205" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
+     <Pos x="579" y="163" />
+     <LabelPos configured="0" direction="0" x="0" y="0" />
+     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjUiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
+      <IconMap data="H4sIAAAAAAACCp1RuVLDMBDt+YqdpXATfHEk9kTJDAUVBQXUGWMr9k5kySMJH3/P2gkZCipUaA89vbdP2u7HVkEvrSOjRZCEcQBSl6YiXYvg4/3lbhPsdzdb19fASO3yopWOWoG9rkLVupDaoiYtw3MfzyiBjfddHkXDMITDfWhsHaVxHEfMc4HkoyJ9+guYZFkWLad4nQyTMEX4LJx8s+ZISgr0pCcEqgS+Ui+VMoeEqQXG3YgwXeJAlW8EZnPeSKobfyl6ksOzmeEQQwYZgmGtozKDQFdao9QyZ+66omSxzkonbS+R38LK0s9C6yt9+oscI4bUy1zll/OH5OCo1oXimwCwZVsS2IASqI2WCM5bc2KF23hZP427lry0ijiweW6PCc/Kxjg8hI9cpwKf5mRKz53oLNAZNf1bpDOkPf9eukpgvWJWSFcbgMVTVM8bf+DuG+p4C5w1AgAA" format="svgz/base64" />
+     </CirCompIcon>
+     <Ports>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
+       <Pos x="1" y="5" />
+       <DecorationBoundingRect height="0" width="0" x="0" y="0" />
+       <Connects>
+        <Connect num="3" port="0" />
+       </Connects>
+      </Port>
+     </Ports>
+     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" hasNoCalc="1" hasTerminate="1" idMax="2" idsReset="0" label="plug for signal port" name="SSINK" outputType="1" type="0" unit="1">
+      <ParamsGroups>
+       <Group circuitScopeId="447542" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="2">
         <Elements>
          <Element display="1" varName="sink" />
         </Elements>

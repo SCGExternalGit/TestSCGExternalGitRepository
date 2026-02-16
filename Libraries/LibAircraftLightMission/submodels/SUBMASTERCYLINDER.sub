@@ -1687,7 +1687,7 @@
      <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="1" codeGenVersion="2.0" dir="$AME/libsig/submodels" discontinuity="1" hasTerminate="1" idMax="63" idsReset="0" label="sine signal source" name="SIN0" outputType="1" rStoresNumber="2" timeRequired="1" type="0" unit="0">
       <RealParams>
        <Params>
-        <Param defValue="1" historyVariable="f0GEN" maxValue="1e+06" minValue="1e-06" paramImage="${library_node}/embedded_files/images/SIN0_period.png" subId="2" title="sine wave frequency" tunable="True" units="Hz" value="1" varName="f" visibility="True" />
+        <Param defValue="8" historyVariable="f0GEN" maxValue="1e+06" minValue="1e-06" paramImage="${library_node}/embedded_files/images/SIN0_period.png" subId="2" title="sine wave frequency" tunable="True" units="Hz" usesScGp="1" value="8" varName="f" visibility="True" />
         <Param defValue="0" historyVariable="level00GEN" maxValue="1e+30" minValue="-1e+30" paramImage="${library_node}/embedded_files/images/SIN0_level0.png" subId="3" title="mean level" tunable="True" units="null" value="0" varName="level0" visibility="True" />
         <Param defValue="1" historyVariable="a0GEN" maxValue="1e+30" minValue="0" paramImage="${library_node}/embedded_files/images/SIN0_amplitude.png" subId="4" title="sine wave amplitude" tunable="True" units="null" value="1" varName="a" visibility="True" />
         <Param defValue="0" historyVariable="phi0GEN" maxValue="360" minValue="-360" paramImage="${library_node}/embedded_files/images/SIN0_phase.png" subId="5" title="phase shift" tunable="True" units="degree" value="0" varName="phi" visibility="True" />

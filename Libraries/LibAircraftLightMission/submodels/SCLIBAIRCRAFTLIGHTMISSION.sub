@@ -283,7 +283,7 @@
      <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" discontinuity="1" hasTerminate="1" idMax="29" idsReset="0" label="constant signal" name="CONS00" outputType="1" type="0" unit="1">
       <RealParams>
        <Params>
-        <Param defValue="6" historyVariable="k0GEN" maxValue="1e+30" minValue="-1e+30" subId="3" title="constant value" tunable="True" units="null" usesScGp="1" value="6" varName="k" visibility="True" />
+        <Param defValue="8" historyVariable="k0GEN" maxValue="1e+30" minValue="-1e+30" subId="3" title="constant value" tunable="True" units="null" usesScGp="1" value="8" varName="k" visibility="True" />
        </Params>
       </RealParams>
       <ParamsGroups>
@@ -371,7 +371,7 @@
       <RealParams>
        <Params>
         <Param defValue="0" historyVariable="out00GEN" maxValue="1e+30" minValue="-1e+30" paramImage="${library_node}/embedded_files/images/STEP0_out0.png" subId="2" title="value before step" tunable="True" units="null" value="0" varName="out0" visibility="True" />
-        <Param defValue="1" historyVariable="out10GEN" maxValue="1e+30" minValue="-1e+30" paramImage="${library_node}/embedded_files/images/STEP0_out1.png" subId="3" title="value after step" tunable="True" units="null" value="1" varName="out1" visibility="True" />
+        <Param defValue="8" historyVariable="out10GEN" maxValue="1e+30" minValue="-1e+30" paramImage="${library_node}/embedded_files/images/STEP0_out1.png" subId="3" title="value after step" tunable="True" units="null" usesScGp="1" value="8" varName="out1" visibility="True" />
         <Param defValue="0" historyVariable="t00GEN" maxValue="1e+30" minValue="-1e+30" paramImage="${library_node}/embedded_files/images/STEP0_t0.png" subId="4" title="step time" tunable="True" units="s" value="0" varName="t0" visibility="True" />
         <Param defValue="0.1" maxValue="1e+30" minValue="0" paramImage="${library_node}/embedded_files/images/SQW00_transition.png" subId="7" title="transition duration" units="s" value="0.1" varName="td" visibility="transitionType>1" />
        </Params>
