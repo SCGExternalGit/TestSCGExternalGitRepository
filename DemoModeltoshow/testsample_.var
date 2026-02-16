@@ -1,0 +1,42 @@
+HLLW1 instance 1 flow rate at port 1 [L/min] Data_Path=q1@component_1.hydraulic
+PS00 instance 1 user defined duty cycle pressure [bar] Data_Path=pout@component_1.pressuresource
+HLLW1 instance 1 flow rate at port 2 [L/min] Data_Path=q2@component_1.hydraulic
+TK000 instance 1 tank pressure [bar] Data_Path=press@component_1.tank01
+FP04 instance 1 volume of fluid [L] Data_Path=volume@component_1.elementaryhydraulicprops
+FP04 instance 1 mass of fluid [kg] Data_Path=mass@component_1.elementaryhydraulicprops
+HLLW1 instance 1 [1] pressure at internal node [bar] Data_Path=pdiscrete_1@component_1.hydraulic
+HLLW1 instance 1 [2] pressure at internal node [bar] Data_Path=pdiscrete_2@component_1.hydraulic
+HLLW1 instance 1 [3] pressure at internal node [bar] Data_Path=pdiscrete_3@component_1.hydraulic
+HLLW1 instance 1 [4] pressure at internal node [bar] Data_Path=pdiscrete_4@component_1.hydraulic
+HLLW1 instance 1 [5] pressure at internal node [bar] Data_Path=pdiscrete_5@component_1.hydraulic
+HLLW1 instance 1 [6] pressure at internal node [bar] Data_Path=pdiscrete_6@component_1.hydraulic
+HLLW1 instance 1 [7] pressure at internal node [bar] Data_Path=pdiscrete_7@component_1.hydraulic
+HLLW1 instance 1 [8] pressure at internal node [bar] Data_Path=pdiscrete_8@component_1.hydraulic
+HLLW1 instance 1 [9] pressure at internal node [bar] Data_Path=pdiscrete_9@component_1.hydraulic
+HLLW1 instance 1 [10] pressure at internal node [bar] Data_Path=pdiscrete_10@component_1.hydraulic
+HLLW1 instance 1 [1] flow rate at internal node [L/min] Data_Path=qdiscrete_1@component_1.hydraulic
+HLLW1 instance 1 [2] flow rate at internal node [L/min] Data_Path=qdiscrete_2@component_1.hydraulic
+HLLW1 instance 1 [3] flow rate at internal node [L/min] Data_Path=qdiscrete_3@component_1.hydraulic
+HLLW1 instance 1 [4] flow rate at internal node [L/min] Data_Path=qdiscrete_4@component_1.hydraulic
+HLLW1 instance 1 [5] flow rate at internal node [L/min] Data_Path=qdiscrete_5@component_1.hydraulic
+HLLW1 instance 1 [6] flow rate at internal node [L/min] Data_Path=qdiscrete_6@component_1.hydraulic
+HLLW1 instance 1 [7] flow rate at internal node [L/min] Data_Path=qdiscrete_7@component_1.hydraulic
+HLLW1 instance 1 [8] flow rate at internal node [L/min] Data_Path=qdiscrete_8@component_1.hydraulic
+HLLW1 instance 1 [9] flow rate at internal node [L/min] Data_Path=qdiscrete_9@component_1.hydraulic
+HLLW1 instance 1 [10] flow rate at internal node [L/min] Data_Path=qdiscrete_10@component_1.hydraulic
+HLLW1 instance 1 [1] position of internal nodes [m] Data_Path=xdiscrete_1@component_1.hydraulic
+HLLW1 instance 1 [2] position of internal nodes [m] Data_Path=xdiscrete_2@component_1.hydraulic
+HLLW1 instance 1 [3] position of internal nodes [m] Data_Path=xdiscrete_3@component_1.hydraulic
+HLLW1 instance 1 [4] position of internal nodes [m] Data_Path=xdiscrete_4@component_1.hydraulic
+HLLW1 instance 1 [5] position of internal nodes [m] Data_Path=xdiscrete_5@component_1.hydraulic
+HLLW1 instance 1 [6] position of internal nodes [m] Data_Path=xdiscrete_6@component_1.hydraulic
+HLLW1 instance 1 [7] position of internal nodes [m] Data_Path=xdiscrete_7@component_1.hydraulic
+HLLW1 instance 1 [8] position of internal nodes [m] Data_Path=xdiscrete_8@component_1.hydraulic
+HLLW1 instance 1 [9] position of internal nodes [m] Data_Path=xdiscrete_9@component_1.hydraulic
+HLLW1 instance 1 [10] position of internal nodes [m] Data_Path=xdiscrete_10@component_1.hydraulic
+HIDDEN
+HIDDEN
+HIDDEN
+HIDDEN
+HIDDEN
+HIDDEN
