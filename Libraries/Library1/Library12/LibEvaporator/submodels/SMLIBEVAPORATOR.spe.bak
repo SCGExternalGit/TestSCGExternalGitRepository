@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE SPE>
+<SPE AME_VERSION="2604" DOC_VERSION="6" HOTFIX="0" MAJ="20261" UPDATE="0">
+ <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="1" codeGenVersion="1.0" defaultIcon="SCLibEvaporator" outputType="0" type="1" unit="0">
+  <ExtVars>
+   <Port tag="pflow">
+    <Vars>
+     <Var dimension="1" io="1" subId="50" title="inlet moist air mass flow rate at port 1" type="0" units="kg/s" varName="mamfr" visibility="True"/>
+     <Var dimension="1" io="1" subId="52" title="inlet moist air relative humidity at port 1" type="0" units="%" varName="marh" visibility="True"/>
+     <Var dimension="1" io="1" subId="53" title="inlet moist air pressure at port 1" type="0" units="barA" varName="map" visibility="True"/>
+     <Var dimension="1" io="1" subId="54" title="inlet moist air temperature at port 1" type="0" units="degC" varName="mat" visibility="True"/>
+    </Vars>
+   </Port>
+   <Port tag="hflow">
+    <Vars>
+     <Var defValue="0" dimension="1" io="2" maxValue="0" minValue="0" subId="5" title="pressure at port 2" type="1" units="barA" value="0" varName="p2" varName2="dp2" visibility="True"/>
+     <Var defValue="0" dimension="1" io="2" maxValue="0" minValue="0" subId="6" title="density at port 2" type="1" units="kg/m**3" value="0" varName="rho2" varName2="drho2" visibility="True"/>
+     <Var defValue="0" dimension="1" io="2" maxValue="0" minValue="0" subId="7" title="com index at port 2" type="5" units="tpfnull" unplottable="1" value="0" varName="com2" visibility="True"/>
+     <Var dimension="1" io="1" subId="8" title="enthalpy flow rate at port 2" type="0" units="W" varName="dmh2" visibility="True"/>
+     <Var dimension="1" io="1" subId="9" title="mass flow rate at port 2" type="0" units="kg/s" varName="dm2" visibility="True"/>
+    </Vars>
+   </Port>
+   <Port tag="hflow">
+    <Vars>
+     <Var dimension="1" express2="@_3_5,@_3_6,@_3_7" io="2" subId="87" title="pressure at port 1" type="8" units="barA" unplottable="1" varName="p1" visibility="True"/>
+     <Var dimension="1" express2="@_1_1" io="2" subId="88" title="density at port 1" type="12" units="kg/m**3" unplottable="1" varName="rho1" visibility="True"/>
+     <Var dimension="1" express2="@_1_1" io="2" subId="89" title="com index at port 1" type="12" units="tpfnull" unplottable="1" varName="com1" visibility="True"/>
+     <Var dimension="1" io="1" subId="4" title="enthalpy flow rate at port 1" type="0" units="W" varName="dmh1" visibility="True"/>
+     <Var dimension="1" io="1" subId="5" title="mass flow rate at port 1" type="0" units="kg/s" varName="dm1" visibility="True"/>
+     <Var defValue="0" dimension="1" io="3" subId="36" title="volume at port 1" type="0" units="cm**3" unplottable="1" varName="vol1" visibility="True"/>
+     <Var defValue="0" dimension="1" io="3" subId="37" title="derivative of volume at port 1" type="0" units="L/min" unplottable="1" varName="dvol1" visibility="True"/>
+    </Vars>
+   </Port>
+   <Port tag="pflow">
+    <Vars>
+     <Var dupType="0" primaryPort="2" primaryVar="0" subId="1" type="4" varName="dm1" visibility="True"/>
+     <Var dupType="0" primaryPort="2" primaryVar="1" subId="2" type="4" varName="rh1" visibility="True"/>
+     <Var dupType="0" primaryPort="2" primaryVar="2" subId="3" type="4" varName="p1" visibility="True"/>
+     <Var dupType="0" primaryPort="2" primaryVar="3" subId="4" type="4" varName="t1" visibility="True"/>
+    </Vars>
+   </Port>
+  </ExtVars>
+  <ExposedOrder>
+   <Params>
+    <Groups/>
+   </Params>
+   <Vars>
+    <Groups/>
+   </Vars>
+  </ExposedOrder>
+ </Submodel>
+</SPE>
