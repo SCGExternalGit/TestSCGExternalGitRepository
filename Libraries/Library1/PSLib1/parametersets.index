@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ParameterSetsIndex ContainerName="PSLib1">
+ <ModelParameterSetsGroup/>
+ <SubmodelParameterSetsGroup>
+  <SubmodelParameterSet id="{879e3649-4a16-4b40-b0d0-04608cca35ef}">
+   <Submodel id="CONS00USER1"/>
+  </SubmodelParameterSet>
+  <SubmodelParameterSet id="{f4a2dd97-0c0c-4410-9934-bd80453b9322}">
+   <Submodel id="CONS00"/>
+  </SubmodelParameterSet>
+ </SubmodelParameterSetsGroup>
+</ParameterSetsIndex>

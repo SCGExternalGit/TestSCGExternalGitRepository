@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ParameterSet name="TestParameterSet2" id="{879e3649-4a16-4b40-b0d0-04608cca35ef}" description="">
+    <ToolInfo ToolName="AMESim">
+        <ToolDetails ToolDetail="AME_VERSION">2604</ToolDetails>
+        <ToolDetails ToolDetail="MAJ">20261</ToolDetails>
+        <ToolDetails ToolDetail="UPDATE">0</ToolDetails>
+        <ToolDetails ToolDetail="HOTFIX">0</ToolDetails>
+    </ToolInfo>
+    <ParameterData name="k">
+        <value type="2">1.000000</value>
+        <unit>null</unit>
+        <description dimension="1">
+            <description>constant value</description>
+        </description>
+    </ParameterData>
+</ParameterSet>
