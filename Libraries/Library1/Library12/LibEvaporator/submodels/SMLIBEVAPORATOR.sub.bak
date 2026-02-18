@@ -2889,23 +2889,7 @@
       </ExtVars>
      </Submodel>
     </Comp>
-    <Comp alias="signalsink_1" catname="sig" circuitScopeId="1" depth="208" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
-     <Pos x="300" y="67" />
-     <LabelPos configured="0" direction="0" x="0" y="0" />
-     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjUiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
-      <IconMap data="H4sIAAAAAAACCp1RuVLDMBDt+YqdpXATfHEk9kTJDAUVBQXUGWMr9k5kySMJH3/P2gkZCipUaA89vbdP2u7HVkEvrSOjRZCEcQBSl6YiXYvg4/3lbhPsdzdb19fASO3yopWOWoG9rkLVupDaoiYtw3MfzyiBjfddHkXDMITDfWhsHaVxHEfMc4HkoyJ9+guYZFkWLad4nQyTMEX4LJx8s+ZISgr0pCcEqgS+Ui+VMoeEqQXG3YgwXeJAlW8EZnPeSKobfyl6ksOzmeEQQwYZgmGtozKDQFdao9QyZ+66omSxzkonbS+R38LK0s9C6yt9+oscI4bUy1zll/OH5OCo1oXimwCwZVsS2IASqI2WCM5bc2KF23hZP427lry0ijiweW6PCc/Kxjg8hI9cpwKf5mRKz53oLNAZNf1bpDOkPf9eukpgvWJWSFcbgMVTVM8bf+DuG+p4C5w1AgAA" format="svgz/base64" />
-     </CirCompIcon>
-     <Ports>
-      <Port connect="2" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
-       <Pos x="1" y="5" />
-       <DecorationBoundingRect height="0" width="0" x="0" y="0" />
-       <Connects>
-        <Connect num="1" port="0" />
-       </Connects>
-      </Port>
-     </Ports>
-    </Comp>
-    <Comp alias="constant" circuitScopeId="2" depth="209" displayName="constant" geometry="1" iconDescription="constant signal source" labelVisible="0" libraryId="sig.constant" name="constant" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Comp alias="constant" circuitScopeId="2" depth="208" displayName="constant" geometry="1" iconDescription="constant signal source" labelVisible="0" libraryId="sig.constant" name="constant" scaleX="1.000000" scaleY="1.000000" type="0">
      <Pos x="381" y="215" />
      <LabelPos configured="0" direction="0" x="0" y="0" />
      <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIzIiB0eXBlPSJzaWduYWwiIHg9IjQwIiB5PSIxNSI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL3NpZ25hbDFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KIDwvUE9SVFM+Cg==" cirPortHidden="0">
@@ -2916,7 +2900,7 @@
        <Pos x="40" y="15" />
        <DecorationBoundingRect height="0" width="0" x="0" y="0" />
        <Connects>
-        <Connect num="15" port="0" />
+        <Connect num="14" port="0" />
        </Connects>
       </Port>
      </Ports>
@@ -2956,7 +2940,7 @@
       </ExtVars>
      </Submodel>
     </Comp>
-    <Comp alias="signalsink" circuitScopeId="3" depth="210" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Comp alias="signalsink" circuitScopeId="3" depth="209" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
      <Pos x="421" y="225" />
      <LabelPos configured="0" direction="0" x="0" y="0" />
      <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjUiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
@@ -2967,7 +2951,7 @@
        <Pos x="1" y="5" />
        <DecorationBoundingRect height="0" width="0" x="0" y="0" />
        <Connects>
-        <Connect num="14" port="0" />
+        <Connect num="13" port="0" />
        </Connects>
       </Port>
      </Ports>
@@ -3053,15 +3037,6 @@
        </Port>
       </ExtVars>
      </Submodel>
-    </Line>
-    <Line alias="control" circuitScopeId="6" endEntity="-1" endPort="-1" endType="2" labelVisible="0" startEntity="13" startPort="0" startType="0" type="2">
-     <pos configured="0" direction="0" x="0" y="0" />
-     <Points>
-      <Point x="300" y="71" />
-      <Point x="347" y="71" />
-      <Point x="347" y="88" />
-      <Point x="380" y="88" />
-     </Points>
     </Line>
    </Lines>
    <animationProperties loop="0" speed="1" />
