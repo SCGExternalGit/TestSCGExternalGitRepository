@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE GP>
+<GLOBAL_PARAMS_LIST>
+	<PARAMETER EVAL_ORDER="-1">
+		<TYPE>2</TYPE>
+		<VARNAME>mode</VARNAME>
+		<TITLE>selection of number of nodes</TITLE>
+		<VALUE>1</VALUE>
+		<DEFAULT>1</DEFAULT>
+		<MIN_VALUE>1</MIN_VALUE>
+		<MAX_VALUE>2</MAX_VALUE>
+		<ENUM_LIST>
+			<ENUM>
+				<ENUM_STRING>automatic based on aspect ratio</ENUM_STRING>
+			</ENUM>
+			<ENUM>
+				<ENUM_STRING>use maximum number of nodes defined by user</ENUM_STRING>
+			</ENUM>
+		</ENUM_LIST>
+	</PARAMETER>
+</GLOBAL_PARAMS_LIST>

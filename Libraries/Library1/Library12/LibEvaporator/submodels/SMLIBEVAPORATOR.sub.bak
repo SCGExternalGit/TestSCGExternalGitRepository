@@ -1,0 +1,2975 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE SUB>
+<SUB AME_VERSION="2604" DOC_VERSION="6" HOTFIX="0" MAJ="20261" UPDATE="0">
+ <Supercomponent catname="LibEvaporator" scSubName="SMLIBEVAPORATOR">
+  <PortsMap>
+   <Map>
+    <PortMap component="5" face="1" labelX="0.000000" labelY="0.000000" port="0" type="pflow" x="172" y="222"/>
+    <PortMap component="5" face="3" labelX="0.000000" labelY="0.000000" port="1" type="hflow" x="197" y="146"/>
+    <PortMap component="0" face="2" labelX="0.000000" labelY="0.000000" port="0" type="hflow" x="68" y="137"/>
+    <PortMap component="3" face="2" labelX="0.000000" labelY="0.000000" port="2" type="pflow" x="93" y="96"/>
+   </Map>
+  </PortsMap>
+  <Circuit ameApplication="AMESim" highestId="91515">
+   <Comps>
+    <Comp alias="tpf_generic_sensor_extra_3" circuitScopeId="184" depth="201" displayName="tpf_generic_sensor_extra" geometry="3" iconDescription="" labelVisible="0" libraryId="tpf.tpf_generic_sensor_extra" name="tpf_generic_sensor_extra" scaleX="1.000000" scaleY="1.000000" type="0">
+     <Pos x="67" y="124"/>
+     <LabelPos configured="0" direction="0" x="0" y="0"/>
+     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJoZmxvdyIgeD0iMSIgeT0iMTMiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9oZmxvdzFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KICA8UE9SVCBmYWNlPSIxIiB0eXBlPSJzaWduYWwiIHg9IjEzIiB5PSI0OSI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL3NpZ25hbDFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KICA8UE9SVCBmYWNlPSIzIiB0eXBlPSJoZmxvdyIgeD0iMjUiIHk9IjEzIj4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvaGZsb3cxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
+      <IconMap data="H4sIAAAAAAACCrVUTXPbIBC951cw24MvCRLISiSPcWZ66KmHHtqzx5GxzASDBhTL/vddkGRPEreTyQcHWFbLvveWRfP7w06TvXReWSMmjKYTIk1l18rUYvLn94+bYnK/uJr7fU0w0ngB27ZtZknSdR3tMmpdnfA0TROMgD5kdtDKPF4KZGVZJvErnDCBUQ7kYeXlL2c3SksBrTJHIGot4KfaS63tkmFqAWlzAHIc1k6t260AnofNVqp62wqYlmG3V7L7bsMBkhKek2kJxCLeRttOgK+c1TpynflmVSFg46SXbi8BldYRuLK7xhppWiDISQv4lsYBxLfOPsqzIxxZXBFC5pVylZZj/CaOMf5mpHty7FQrnVa4YAkwb4V8Gac5WiiRFcFyAkpckz4/1m3MbpDbPzMd2JjpiBaPmQ785EMruz1nHVi/iVU8F1jx8/le/P/4BX+1agQ4+2TWb6TNMlq8pM0zmg2wn4WX03LAyynr8cpgRDiGHz8X7g4F9HCnW7kLOgNcdH2RuijlubooeLjDBC+xn4buf/LtMltuw4OBdzRfOt5i3zABN33eea/Q+NKr2qw0fKTXpy87Jh0VNlYfa2tIY5VpfXxW1yUJgddTikbe729pMbozykhBOW7JRcLs/eWZvi4Pzy/Vp5/wz7r4C/TChmyoBQAA" format="svgz/base64"/>
+     </CirCompIcon>
+     <Ports>
+      <Port connect="0" decorationOrientation="0" decorationVisible="0" face="2" name="" type="hflow">
+       <Pos x="1" y="13"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="-1" port="2"/>
+       </Connects>
+      </Port>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="1" name="" type="signal">
+       <Pos x="13" y="49"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="1" port="0"/>
+       </Connects>
+      </Port>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="3" name="" type="hflow">
+       <Pos x="25" y="13"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="10" port="3"/>
+       </Connects>
+      </Port>
+     </Ports>
+     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libtpf/submodels" hasTerminate="1" idMax="89" idsReset="0" label="generic sensor with additional thermodynamic state variable" name="TPFGS010" outputType="1" pStoresNumber="2" type="0" unit="0">
+      <RealParams>
+       <Params>
+        <Param defValue="0" maxValue="1e+10" minValue="-1e+10" subId="22" title="offset to be subtracted from signal output" units="null" value="0" varName="offset" visibility="True"/>
+        <Param defValue="1" maxValue="1e+08" minValue="1e-08" subId="23" title="gain for signal output" units="null" value="1" varName="gain" visibility="True"/>
+       </Params>
+      </RealParams>
+      <IntParams>
+       <Params>
+        <Param defValue="1" maxValue="99" minValue="1" subId="24" title="index of fluid" value="1" varName="fi" visibility="True"/>
+        <Param defValue="1" maxValue="23" minValue="1" subId="25" title="fluid property observed at port 2 " value="1" varName="indata" visibility="True">
+         <Enums>
+          <Enum string="pressure [barA]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_P.svg" format="path"/>
+          </Enum>
+          <Enum string="density [kg/m**3]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_rho.svg" format="path"/>
+          </Enum>
+          <Enum string="specific volume [m**3/kg]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_v.svg" format="path"/>
+          </Enum>
+          <Enum string="temperature [degC]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_T.svg" format="path"/>
+          </Enum>
+          <Enum string="specific internal energy [kJ/kg]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_u.svg" format="path"/>
+          </Enum>
+          <Enum string="specific enthalpy [kJ/kg]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_h.svg" format="path"/>
+          </Enum>
+          <Enum string="specific entropy [kJ/kg/K]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_s.svg" format="path"/>
+          </Enum>
+          <Enum string="specific helmholtz energy [kJ/kg]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_f.svg" format="path"/>
+          </Enum>
+          <Enum string="specific gibbs energy [kJ/kg]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_g.svg" format="path"/>
+          </Enum>
+          <Enum string="specific heat (cp) [J/kg/degC]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_cp.svg" format="path"/>
+          </Enum>
+          <Enum string="specific heat (cv) [J/kg/degC]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_cv.svg" format="path"/>
+          </Enum>
+          <Enum string="gas mass fraction [null]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_x.svg" format="path"/>
+          </Enum>
+          <Enum string="gas volume fraction [null]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_alpha.svg" format="path"/>
+          </Enum>
+          <Enum string="subcooling/superheat [degC]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_deltaT.svg" format="path"/>
+          </Enum>
+          <Enum string="(p3-pcrit) [barA]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_deltaP.svg" format="path"/>
+          </Enum>
+          <Enum string="absolute viscosity [kg/m/s]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_mu.svg" format="path"/>
+          </Enum>
+          <Enum string="kinematic viscosity [cSt]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_nu.svg" format="path"/>
+          </Enum>
+          <Enum string="thermal conductivity [W/m/degC]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_lambda.svg" format="path"/>
+          </Enum>
+          <Enum string="Prandtl number [null]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_Pr.svg" format="path"/>
+          </Enum>
+          <Enum string="surface tension [N/m]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_sigma.svg" format="path"/>
+          </Enum>
+          <Enum string="oil mass fraction [null]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_w.svg" format="path"/>
+          </Enum>
+          <Enum string="isothermal bulk modulus [bar]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_Beta_T.svg" format="path"/>
+          </Enum>
+          <Enum string="sonic velocity [m/s]">
+           <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS01x_indata_sound_speed.svg" format="path"/>
+          </Enum>
+         </Enums>
+        </Param>
+       </Params>
+      </IntParams>
+      <ParamsGroups>
+       <Group circuitScopeId="89816" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="85">
+        <Elements>
+         <Element display="0" varName="fi"/>
+         <Element display="0" varName="indata"/>
+         <Element display="0" varName="offset"/>
+         <Element display="0" varName="gain"/>
+         <Element display="1" varName="dmh1"/>
+         <Element display="1" varName="dm1"/>
+         <Element display="1" varName="sig"/>
+         <Element display="1" varName="p3"/>
+         <Element display="1" varName="rho3"/>
+         <Element display="1" varName="v"/>
+         <Element display="1" varName="temp"/>
+         <Element display="1" varName="uspe"/>
+         <Element display="1" varName="hspe"/>
+         <Element display="1" varName="sspe"/>
+         <Element display="1" varName="fspe"/>
+         <Element display="1" varName="gspe"/>
+         <Element display="1" varName="cp"/>
+         <Element display="1" varName="cv"/>
+         <Element display="1" varName="xx"/>
+         <Element display="1" varName="alpha"/>
+         <Element display="1" varName="shsc"/>
+         <Element display="1" varName="dpc"/>
+         <Element display="1" varName="mu"/>
+         <Element display="1" varName="nu"/>
+         <Element display="1" varName="lambda"/>
+         <Element display="1" varName="pr"/>
+         <Element display="1" varName="sigma"/>
+         <Element display="1" varName="region"/>
+         <Element display="1" varName="wOil"/>
+         <Element display="1" varName="bmod"/>
+         <Element display="1" varName="svel"/>
+        </Elements>
+       </Group>
+      </ParamsGroups>
+      <IntVars>
+       <Vars>
+        <Var dimension="1" express2="@_2_1" saveValue="1" subId="49" title="specific volume" type="12" units="m**3/kg" varName="v" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" saveValue="1" subId="50" title="temperature" type="12" units="degC" varName="temp" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" saveValue="1" subId="51" title="specific internal energy" type="12" units="kJ/kg" varName="uspe" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" saveValue="1" subId="52" title="specific enthalpy" type="12" units="kJ/kg" varName="hspe" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" saveValue="1" subId="53" title="specific entropy" type="12" units="kJ/kg/K" varName="sspe" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" saveValue="1" subId="54" title="specific helmholtz energy" type="12" units="kJ/kg" varName="fspe" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" saveValue="1" subId="55" title="specific gibbs energy" type="12" units="kJ/kg" varName="gspe" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" saveValue="1" subId="56" title="specific heat at constant pressure" type="12" units="J/kg/degC" varName="cp" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" saveValue="1" subId="57" title="specific heat at constant volume" type="12" units="J/kg/degC" varName="cv" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" saveValue="1" subId="58" title="gas mass fraction" type="12" units="null" varName="xx" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" saveValue="1" subId="59" title="gas volume fraction" type="12" units="null" varName="alpha" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" isDelta="1" saveValue="1" subId="60" title="superheat / subcooling" type="12" units="degC" varName="shsc" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" isDelta="1" saveValue="1" subId="61" title="(p - pcrit)" type="12" units="barA" varName="dpc" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" saveValue="1" subId="62" title="absolute viscosity" type="12" units="kg/m/s" varName="mu" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" saveValue="1" subId="70" title="kinematic viscosity" type="12" units="cSt" varName="nu" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" saveValue="1" subId="63" title="thermal conductivity" type="12" units="W/m/degC" varName="lambda" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" saveValue="1" subId="64" title="Prandtl number" type="12" units="null" varName="pr" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" saveValue="1" subId="65" title="surface tension" type="12" units="N/m" varName="sigma" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" saveValue="1" subId="66" title="fluid state (see description)" type="12" units="null" varName="region" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" saveValue="1" subId="68" title="oil mass fraction (in liquid phase)" type="12" units="null" varName="wOil" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" isDelta="1" saveValue="1" subId="72" title="isothermal bulk modulus" type="12" units="bar" varName="bmod" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" express2="@_2_1" saveValue="1" subId="84" title="sonic velocity" type="12" units="m/s" varName="svel" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </IntVars>
+      <ExtVars>
+       <Port tag="hflow">
+        <Vars>
+         <Var dimension="1" express2="@_3_5,@_3_6,@_3_7" io="2" saveValue="1" subId="87" title="pressure at port 1" type="8" units="barA" unplottable="1" varName="p1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" express2="@_1_1" io="2" saveValue="1" subId="88" title="density at port 1" type="12" units="kg/m**3" unplottable="1" varName="rho1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" express2="@_1_1" io="2" saveValue="1" subId="89" title="com index at port 1" type="12" units="tpfnull" unplottable="1" varName="com1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="4" title="enthalpy flow rate at port 1" type="0" units="W" varName="dmh1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="5" title="mass flow rate at port 1" type="0" units="kg/s" varName="dm1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var defValue="0" dimension="1" io="3" saveValue="1" subId="36" title="volume at port 1" type="0" units="cm**3" unplottable="1" varName="vol1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var defValue="0" dimension="1" io="3" saveValue="1" subId="37" title="derivative of volume at port 1" type="0" units="L/min" unplottable="1" varName="dvol1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+       <Port tag="signal">
+        <Vars>
+         <Var dimension="1" express2="@_3_5,@_3_6,@_3_7" io="2" saveValue="1" subId="6" title="output signal at port 2" type="8" units="null" varName="sig" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+       <Port tag="hflow">
+        <Vars>
+         <Var dupType="0" primaryPort="0" primaryVar="3" saveValue="1" subId="7" title="enthalpy flow rate at port 1" type="4" varName="dmh3" visibility="True"/>
+         <Var dupType="0" primaryPort="0" primaryVar="4" saveValue="1" subId="8" title="mass flow rate at port 1" type="4" varName="dm3" visibility="True"/>
+         <Var dupType="0" primaryPort="0" primaryVar="5" saveValue="1" subId="42" title="volume at port 1" type="4" varName="vol3" visibility="True"/>
+         <Var dupType="0" primaryPort="0" primaryVar="6" saveValue="1" subId="43" title="derivative of volume at port 1" type="4" varName="dvol3" visibility="True"/>
+         <Var dimension="1" io="1" saveValue="1" subId="9" title="pressure at port 3" type="0" units="barA" varName="p3" visibility="True">
+          <LaData>
+           <Data laStatus="3"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="10" title="density at port 3" type="0" units="kg/m**3" varName="rho3" visibility="True">
+          <LaData>
+           <Data laStatus="3"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="11" title="com index at port 3" type="0" units="tpfnull" unplottable="1" varName="com3" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+      </ExtVars>
+      <IconMap data="$AME/libtpf/Icons/layers/tpf_generic_sensor_extra/TPFGS010.svg" format="path"/>
+      <Animations>
+       <Animation>
+        <Icons>
+         <Icon id="tpf_generic_sensor_extra"/>
+        </Icons>
+        <Variables>
+         <Variable name="pressure_a" value="p3"/>
+         <Variable name="temperature_c" value="temp"/>
+        </Variables>
+        <Colors>
+         <Color attribute="fill" domain="pressure" id="component" value="${pressure_a}"/>
+         <Color attribute="stroke" domain="pressure" id="component" value="${pressure_a}"/>
+         <Color attribute="fill" domain="temperature" id="component" value="${temperature_c}"/>
+         <Color attribute="stroke" domain="temperature" id="component" value="${temperature_c}"/>
+        </Colors>
+       </Animation>
+      </Animations>
+     </Submodel>
+    </Comp>
+    <Comp alias="signalsink_5" circuitScopeId="185" depth="202" displayName="signalsink" geometry="2" iconDescription="" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
+     <Pos x="75" y="173"/>
+     <LabelPos configured="0" direction="0" x="0" y="0"/>
+     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIwIiB0eXBlPSJzaWduYWwiIHg9IjUiIHk9IjEiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
+      <IconMap data="H4sIAAAAAAACCp1RPW/DIBDd+ytO18FLaoz7kTgKidShU4cO7RylDsEoBCygxv73PTtp1KFTGbgPHu/d0602/clAJ33QzoqM50UG0tZur60S2cf7y90i26xvVqFTQEgbBDYxtkvGUkp5us+dV6wsioIRAs+QZW+0Pf4F5FVVsekVr5rI8xLhcxfkm3cHbaTAqO2AoPcCX3UnjXFbTtQCi7ZHGC4x6X1sBFZj3kitmngpOi3TsxvhUEAFFYIjrYNxSWCovTNmmnMZ2l1NYq2XQfpOIrn0so6j0PxKX/4iR0YQNc1Vf4W45dugld0Z+gkAK7IlgQwYgdZZiRCid0dSuC2m89O4O+kovdEUyDy1e06zkjEKD/kj1aXApzEZynOHnQVaZ4Z/i7RO20jbK2cc5jNihXK2AJg8MTVetMD1NyXBqRUPAgAA" format="svgz/base64"/>
+     </CirCompIcon>
+     <Ports>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="0" name="" type="signal">
+       <Pos x="5" y="1"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="0" port="1"/>
+       </Connects>
+      </Port>
+     </Ports>
+     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" hasNoCalc="1" hasTerminate="1" idMax="2" idsReset="0" label="plug for signal port" name="SSINK" outputType="1" type="0" unit="1">
+      <ParamsGroups>
+       <Group circuitScopeId="89360" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="2">
+        <Elements>
+         <Element display="1" varName="sink"/>
+        </Elements>
+       </Group>
+      </ParamsGroups>
+      <ExtVars>
+       <Port tag="signal">
+        <Vars>
+         <Var dimension="1" io="1" saveValue="1" subId="1" title="signal input" type="0" units="null" varName="sink" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+      </ExtVars>
+     </Submodel>
+    </Comp>
+    <Comp alias="mamixers2" circuitScopeId="300" depth="203" displayName="mamixers2" geometry="1" iconDescription="moist air mixer for supercomponent heat exchanger type 2" labelVisible="0" libraryId="ac.mamixers2" name="mamixers2" scaleX="1.000000" scaleY="1.000000" type="0">
+     <Pos x="127" y="84"/>
+     <LabelPos configured="0" direction="0" x="0" y="0"/>
+     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIxIiB0eXBlPSJwZmxvdyIgeD0iMjUiIHk9IjMwIj4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvcGZsb3cxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiAgPFBPUlQgZmFjZT0iMyIgdHlwZT0icGZsb3ciIHg9IjM1IiB5PSIxMiI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL3BmbG93MXB4LnN2ZzwvUE9SVF9CSVRNQVA+CiAgPC9QT1JUPgogIDxQT1JUIGZhY2U9IjIiIHR5cGU9InBmbG93IiB4PSIxIiB5PSIxMiI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL3BmbG93MXB4LnN2ZzwvUE9SVF9CSVRNQVA+CiAgPC9QT1JUPgogPC9QT1JUUz4K" cirPortHidden="0">
+      <IconMap data="H4sIAAAAAAACCtVWyW7bMBC95ysI9uCLFi6WN1gO0ENPLdBDezZcmpGJMKRAKZb99x1SllPXThO0CtwYkEmORnrzZh41nN/uHjTaSlcpa/IBTcgASSPsWpkiH3z/9imeDG4XN/NqWyDwNFWON3VdztK0aZqk4Yl1RcoIISl44NZlttPK3F9ypNPpNA138RET04Rh9GNVya/O3iktc1wrs8dIrXP8WW2l1nZJ4dU5JuUOo/1hbNS63uSYZ36xkarY1LAKt7ZKNh+tfwARxDPECUYW8O60bXJcCWe1DrHOqnIlALB0spJuKzEwLRY3CKF5afW+sAZBRDrHxhqJUVU7ew/uH0j4dYb4QdXSaQUDsAFzaZWpIVNsmGQR44hRP46SDLFxN0M4bYEgG/KvUHa0RYCU+BkHCztaYEYBtReQUYcR3tiiTC6hCOWElkjsujDEvnvIgalzazPcV5J55BEQBBnR4WEy8QnuMvzP/Ck5T8DoAv8Tbr8vAt1VvXlVFD5csSpz7OyjWT8bHGyQLxzoZkkmSMJjiDOCK6YRhRVtUQVNhhEBC41YxLz8wHfsLcE/eD4R8GGmVyFBx2/Fopsex34F6PdCq0HOWgnC2K8C+Zn+OPs/5Mem7199wOH9iu9PLaY3/T21GU6OLeDYaDzYVT+BJOQgVNBXDzpCFOriK3OooK/eMGa+hnGoIVhCDVs/73ltGdLJm9I4EWL7V4Qzlnis6iVflv50hHs4LvDzbklOP1Zn6KxHdHb2qcxeQKf9of+6UZ7bJocCwHl58ROqKyG8fgsAAA==" format="svgz/base64"/>
+     </CirCompIcon>
+     <Ports>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="1" name="" type="pflow">
+       <Pos x="25" y="30"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="12" port="2"/>
+       </Connects>
+      </Port>
+      <Port connect="2" decorationOrientation="0" decorationVisible="0" face="3" name="" type="pflow">
+       <Pos x="35" y="12"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="0" port="0"/>
+       </Connects>
+      </Port>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="2" name="" type="pflow">
+       <Pos x="1" y="12"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="6" port="1"/>
+       </Connects>
+      </Port>
+     </Ports>
+     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="1.0" dir="$AME/libac/submodels" idMax="33" idsReset="0" label="moist air mixer for U-channel plate and fins heat exchanger" name="ACUCPFMAMX0" outputType="0" type="1" unit="0">
+      <IntVars>
+       <ExposedList>
+        <Exposed exposedVar="dm1@tpf_ma_mixer" subId="13" title="mass flow rate at port 1" type="0" varName="dm1"/>
+        <Exposed exposedVar="rh1@tpf_ma_mixer" subId="14" title="relative humidity at port 1" type="0" varName="rh1"/>
+        <Exposed exposedVar="p1@tpf_ma_mixer" subId="15" title="pressure at port 1" type="0" varName="p1"/>
+        <Exposed exposedVar="t1@tpf_ma_mixer" subId="16" title="temperature at port 1" type="0" varName="t1"/>
+        <Exposed exposedVar="dm3@tpf_ma_mixer" subId="17" title="mass flow rate at port 2" type="0" varName="dm2"/>
+        <Exposed exposedVar="rh3@tpf_ma_mixer" subId="18" title="relative humidity at port 2" type="0" varName="rh2"/>
+        <Exposed exposedVar="p3@tpf_ma_mixer" subId="19" title="pressure at port 2" type="0" varName="p2"/>
+        <Exposed exposedVar="t3@tpf_ma_mixer" subId="20" title="temperature at port 2" type="0" varName="t2"/>
+        <Exposed exposedVar="dm2@tpf_ma_mixer" subId="21" title="mass flow rate at port 3" type="0" varName="dm3"/>
+        <Exposed exposedVar="rh2@tpf_ma_mixer" subId="22" title="relative humidity at port 3" type="0" varName="rh3"/>
+        <Exposed exposedVar="p2@tpf_ma_mixer" subId="23" title="pressure at port 3" type="0" varName="p3"/>
+        <Exposed exposedVar="t2@tpf_ma_mixer" subId="24" title="temperature at port 3" type="0" varName="t3"/>
+        <Exposed exposedVar="ah3@tpf_ma_sensor_1" subId="30" title="absolute humidity at port 3" type="0" varName="ah3"/>
+        <Exposed exposedVar="hspe3@tpf_ma_sensor_1" subId="33" title="specific enthalpy at port 3" type="0" varName="hspe3"/>
+       </ExposedList>
+      </IntVars>
+      <ExtVars>
+       <Port tag="pflow">
+        <Vars>
+         <Var dimension="1" io="1" saveValue="1" subId="1" title="mass flow rate at port 1" type="0" units="kg/s" varName="dm1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="2" title="relative humidity at port 1" type="0" units="%" varName="rh1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="3" title="pressure at port 1" type="0" units="barA" varName="p1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="4" title="temperature at port 1" type="0" units="degC" varName="t1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+       <Port tag="pflow">
+        <Vars>
+         <Var dimension="1" io="1" saveValue="1" subId="9" title="mass flow rate at port 3" type="0" units="kg/s" varName="dm3" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="10" title="relative humidity at port 3" type="0" units="%" varName="rh3" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="11" title="pressure at port 3" type="0" units="barA" varName="p3" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="12" title="temperature at port 3" type="0" units="degC" varName="t3" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+       <Port tag="pflow">
+        <Vars>
+         <Var dupType="0" primaryPort="2" primaryVar="0" saveValue="1" subId="1" title="mass flow rate at port 3" type="4" varName="dm1" visibility="True"/>
+         <Var dupType="0" primaryPort="2" primaryVar="1" saveValue="1" subId="2" title="relative humidity at port 3" type="4" varName="rh1" visibility="True"/>
+         <Var dupType="0" primaryPort="2" primaryVar="2" saveValue="1" subId="3" title="pressure at port 3" type="4" varName="p1" visibility="True"/>
+         <Var dupType="0" primaryPort="2" primaryVar="3" saveValue="1" subId="4" title="temperature at port 3" type="4" varName="t1" visibility="True"/>
+        </Vars>
+       </Port>
+      </ExtVars>
+      <ExposedOrder>
+       <Params>
+        <Groups/>
+       </Params>
+       <Vars>
+        <DataPaths>
+         <DataPath>dm1</DataPath>
+         <DataPath>rh1</DataPath>
+         <DataPath>p1</DataPath>
+         <DataPath>t1</DataPath>
+         <DataPath>dm2</DataPath>
+         <DataPath>rh2</DataPath>
+         <DataPath>p2</DataPath>
+         <DataPath>t2</DataPath>
+         <DataPath>dm3</DataPath>
+         <DataPath>rh3</DataPath>
+         <DataPath>p3</DataPath>
+         <DataPath>t3</DataPath>
+         <DataPath>ah3</DataPath>
+         <DataPath>hspe3</DataPath>
+        </DataPaths>
+        <Groups/>
+       </Vars>
+      </ExposedOrder>
+     </Submodel>
+     <Supercomponent catname="ac" scDir="$AME/libac/submodels">
+      <PortsMap>
+       <Map>
+        <PortMap component="0" face="1" labelX="0.000000" labelY="0.000000" port="0" type="pflow" x="143" y="124"/>
+        <PortMap component="0" face="0" labelX="0.000000" labelY="0.000000" port="2" type="pflow" x="143" y="100"/>
+        <PortMap component="1" face="2" labelX="0.000000" labelY="0.000000" port="0" type="pflow" x="95" y="112"/>
+       </Map>
+      </PortsMap>
+      <Circuit ameApplication="AMESim" highestId="91515">
+       <Comps>
+        <Comp alias="tpf_ma_mixer" circuitScopeId="1" depth="201" displayName="tpf_ma_mixer" geometry="5" iconDescription="moist air mixer" labelVisible="0" libraryId="th.tpf_ma_mixer" name="tpf_ma_mixer" scaleX="1.000000" scaleY="1.000000" type="0">
+         <Pos x="120" y="100"/>
+         <LabelPos configured="0" direction="0" x="0" y="0"/>
+         <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIxIiB0eXBlPSJwZmxvdyIgeD0iMjQiIHk9IjI1Ij4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvcGZsb3cxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiAgPFBPUlQgZmFjZT0iMiIgdHlwZT0icGZsb3ciIHg9IjEiIHk9IjEzIj4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvcGZsb3cxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiAgPFBPUlQgZmFjZT0iMCIgdHlwZT0icGZsb3ciIHg9IjI0IiB5PSIxIj4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvcGZsb3cxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
+          <IconMap data="H4sIAAAAAAACCs1WwY6bMBC971dY3kMuYLAdkhCFrNRKPbVSD+05Sh2HWMtiBGwgf98ZA5smaaWVmjQlij2MB96b4Q1m8dS+ZGSvy8rYPBlxFo6IzpXdmDxNRt+/ffJno6flw6LapwQi8yqhu7ou5kHQNA1rJLNlGogwDAOIoF3IvM1M/vy7QB7HceBW6Rsm5UxQ8mNd6a+l3ZpMJ7Q2+YESs0noZ7PXWWZXHG6d0LBoKTn0c2M29S6hUuLJTpt0VydURHi2N7r5YPECEhIpiYgosYC3zWyT0EqVNssc13lVrBUAFqWudLnXFDJNlw+EkAWQ1AToZAnNba4pqerSPkPsY+iOweG/mFqXmYEJUgF3yxMaM0A8gDFFoxWDBwyOruAKGCIaQLi4RBFHFGVKlWmi2n5dHYZLSrjLENWljVZhs0Nq857Y49Yd7+dWWJPXlcPyZgSBvDGLyKSfCekRT0DPTxyPdb17V3WwjGpdJLS0r/nmj8RATl8ksIAH8FHCKDzkNnXjhIkOVYU+Z2NPwMhhhDXwhGwK/8jn+GPymADSDP55EjzqslCOVMgk0OrpMfn3aQzm23wTafCpk4QAQp1InHVfdbjCYoMq4OJBYT3uocW9XwoL9tgXMHLfKQg8UNghzvsP9CFvmsXt5SFiEC1qAl7cbOLFg4GP584KETPkMet6T3pd/0HJsJ883hfXtR42INQWW88XGD1Fl7vCxd5bJC6TyQ0TOdFJN6RuT1evVb2SqwJ3Y3rNzXbMJmfbYIjkLrDF9bChivH5Jizl6R58gc9vkLs4/wLA1+kRHb/Olj8B8wgt++wJAAA=" format="svgz/base64"/>
+         </CirCompIcon>
+         <Ports>
+          <Port connect="1" decorationOrientation="0" decorationVisible="0" face="1" name="" type="pflow">
+           <Pos x="24" y="25"/>
+           <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+           <Connects>
+            <Connect num="12" port="2"/>
+           </Connects>
+          </Port>
+          <Port connect="1" decorationOrientation="0" decorationVisible="0" face="2" name="" type="pflow">
+           <Pos x="1" y="13"/>
+           <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+           <Connects>
+            <Connect num="4" port="2"/>
+           </Connects>
+          </Port>
+          <Port connect="2" decorationOrientation="0" decorationVisible="0" face="0" name="" type="pflow">
+           <Pos x="24" y="1"/>
+           <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+           <Connects>
+            <Connect num="0" port="0"/>
+           </Connects>
+          </Port>
+         </Ports>
+         <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libth/submodels" hasTerminate="1" idMax="26" idsReset="0" label="moist air mixer" name="THMAMX000" outputType="1" pStoresNumber="1" type="0" unit="0">
+          <ParamsGroups>
+           <Group circuitScopeId="89075" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="26">
+            <Elements>
+             <Element display="1" varName="dm1"/>
+             <Element display="1" varName="rh1"/>
+             <Element display="1" varName="p1"/>
+             <Element display="1" varName="t1"/>
+             <Element display="1" varName="dm2"/>
+             <Element display="1" varName="rh2"/>
+             <Element display="1" varName="p2"/>
+             <Element display="1" varName="t2"/>
+             <Element display="1" varName="dm3"/>
+             <Element display="1" varName="rh3"/>
+             <Element display="1" varName="p3"/>
+             <Element display="1" varName="t3"/>
+             <Element display="1" varName="ah_1"/>
+             <Element display="1" varName="hspe_1"/>
+            </Elements>
+           </Group>
+          </ParamsGroups>
+          <IntVars>
+           <Vars>
+            <Var dimension="3" saveValue="1" subId="13" title="absolute humidity at port" type="0" units="g/kg" varName="ah" visibility="True">
+             <TitleList>
+              <Title>absolute humidity at port</Title>
+              <Title>absolute humidity at port</Title>
+              <Title>absolute humidity at port</Title>
+             </TitleList>
+             <LaData>
+              <Data laStatus="0"/>
+              <Data laStatus="0"/>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+            <Var dimension="3" saveValue="1" subId="16" title="specific enthalpy at port" type="0" units="kJ/kg" varName="hspe" visibility="True">
+             <TitleList>
+              <Title>specific enthalpy at port</Title>
+              <Title>specific enthalpy at port</Title>
+              <Title>specific enthalpy at port</Title>
+             </TitleList>
+             <LaData>
+              <Data laStatus="0"/>
+              <Data laStatus="0"/>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+           </Vars>
+          </IntVars>
+          <ExtVars>
+           <Port tag="pflow">
+            <Vars>
+             <Var dimension="1" io="1" saveValue="1" subId="1" title="mass flow rate at port 1" type="0" units="kg/s" varName="dm1" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="1" saveValue="1" subId="2" title="relative humidity at port 1" type="0" units="%" varName="rh1" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="1" saveValue="1" subId="3" title="pressure at port 1" type="0" units="barA" varName="p1" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="1" saveValue="1" subId="4" title="temperature at port 1" type="0" units="degC" varName="t1" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+            </Vars>
+           </Port>
+           <Port tag="pflow">
+            <Vars>
+             <Var dimension="1" io="2" saveValue="1" subId="19" title="mass flow rate at port 2" type="0" units="kg/s" varName="dm2" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="2" saveValue="1" subId="6" title="relative humidity at port 2" type="0" units="%" varName="rh2" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="2" saveValue="1" subId="22" title="pressure at port 2" type="0" units="barA" varName="p2" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="2" saveValue="1" subId="8" title="temperature at port 2" type="0" units="degC" varName="t2" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+            </Vars>
+           </Port>
+           <Port tag="pflow">
+            <Vars>
+             <Var dimension="1" io="1" saveValue="1" subId="9" title="mass flow rate at port 3" type="0" units="kg/s" varName="dm3" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="1" saveValue="1" subId="10" title="relative humidity at port 3" type="0" units="%" varName="rh3" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="1" saveValue="1" subId="11" title="pressure at port 3" type="0" units="barA" varName="p3" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="1" saveValue="1" subId="12" title="temperature at port 3" type="0" units="degC" varName="t3" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+            </Vars>
+           </Port>
+          </ExtVars>
+         </Submodel>
+        </Comp>
+        <Comp alias="tpf_ma_sensor_1" circuitScopeId="3" depth="202" displayName="tpf_ma_sensor" geometry="5" iconDescription="generic sensor for moist air properties" labelVisible="0" libraryId="th.tpf_ma_sensor" name="tpf_ma_sensor" scaleX="1.000000" scaleY="1.000000" type="0">
+         <Pos x="95" y="76"/>
+         <LabelPos configured="0" direction="0" x="0" y="0"/>
+         <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJwZmxvdyIgeD0iMSIgeT0iMzciPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9wZmxvdzFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KICA8UE9SVCBmYWNlPSIwIiB0eXBlPSJzaWduYWwiIHg9IjEzIiB5PSIxIj4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvc2lnbmFsMXB4LnN2ZzwvUE9SVF9CSVRNQVA+CiAgPC9QT1JUPgogIDxQT1JUIGZhY2U9IjMiIHR5cGU9InBmbG93IiB4PSIyNSIgeT0iMzciPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9wZmxvdzFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KIDwvUE9SVFM+Cg==" cirPortHidden="0">
+          <IconMap data="H4sIAAAAAAACCs1Wz2+bMBS+96+wvEMuYGwTkhDFrbTDTpu0w3aOGHGJVWMjoCH57/dsIFnatOq6VBoHbD+ev+/98PNjdbcvNdrJulHWiAkjdIKkye1GmUJMfv74Ei4md7c3q2ZXINA0zTIrZaNKgXdmQ3TZEFVmhTKS9HLcawm8bdtqGUVd15EuJrYuIk4pjQBnUFnutTIPlxRZmqaR/4qPlmFGOEa/skZ+r+290lLgVpkDRmoj8Fe1k1rbNQNogWm1x+gwjJ3atFuBeeIWW6mKbSvwNHWrnZLdZ+s2IIp4gqYpRhb47rXtBG7y2mrtbV02VZYDYVXLRtY7iSEehSfutlbLdW7LyhppWozAMi3wJ+ofjJq2tg/yJLi9QQitclXnWo669/4ZdcPR4KOgVK2stYIBggCYOVjMOElgBk6yhZvVAqc46tEhbiO2AatexNkzgWcQKBjimQPZc/iQutmBD7J3QPamOVQ+P6LyS6hV1m7fggpx/sYYWQQ8JourbH7JHyfPs0rg2j6azRvdZA74iZtAFl+TLCHpQJYQ1pOlbuK5GEmvyTUH03uuxZi/ufPQcXnRR/jlnTj3y7sanVXMWE4933kh9Ge4dpUzbCr84A+L1YfCmhcq7qlllVWmhRtsFjhMBAxBHI8TqA9AHCheO4hvDIM7n7NgCth5SEkcUJLAmAQsZLBiPUkOi2lA4c1CHoJuyJ323In8Dq97baNiej2jVlFxnaRAZSVDXuiQFvoxWeFTwv7HxHi7PiY3vqflj027jteVa4P4aPjftIDj1XjqK/T59X+Bla8bVZhMv4/2dCU/azv0zxQM5+78MhnPV+pCSZHbGsDthOAW6gUz6CHjB8gAWhDu1ugVd9g/BfFZDPnFLup4hxf8W93+Bmkehs3QCQAA" format="svgz/base64"/>
+         </CirCompIcon>
+         <Ports>
+          <Port connect="1" decorationOrientation="0" decorationVisible="0" face="2" name="" type="pflow">
+           <Pos x="1" y="37"/>
+           <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+           <Connects>
+            <Connect num="6" port="1"/>
+           </Connects>
+          </Port>
+          <Port connect="1" decorationOrientation="0" decorationVisible="0" face="0" name="" type="signal">
+           <Pos x="13" y="1"/>
+           <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+           <Connects>
+            <Connect num="5" port="0"/>
+           </Connects>
+          </Port>
+          <Port connect="1" decorationOrientation="0" decorationVisible="0" face="3" name="" type="pflow">
+           <Pos x="25" y="37"/>
+           <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+           <Connects>
+            <Connect num="3" port="1"/>
+           </Connects>
+          </Port>
+         </Ports>
+         <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libth/submodels" hasNoCalc="2" hasTerminate="1" idMax="25" idsReset="0" label="moist air properties generic sensor" name="THMAGS00" outputType="1" pStoresNumber="1" type="0" unit="0">
+          <RealParams>
+           <Params>
+            <Param defValue="0" maxValue="1e+08" minValue="-1e+08" subId="16" title="signal offset" units="null" value="0" varName="offset" visibility="True"/>
+            <Param defValue="1" maxValue="1e+08" minValue="-1e+08" subId="17" title="signal gain" units="null" value="1" varName="gain" visibility="True"/>
+           </Params>
+          </RealParams>
+          <IntParams>
+           <Params>
+            <Param defValue="1" maxValue="12" minValue="1" subId="22" title="moist air property" value="1" varName="indata" visibility="True">
+             <Enums>
+              <Enum string="pressure [barA]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_pressure[barA].svg" format="path"/>
+              </Enum>
+              <Enum string="temperature [degC]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_temperature[degC].svg" format="path"/>
+              </Enum>
+              <Enum string="relative humidity [%]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_relativehumidity[%].svg" format="path"/>
+              </Enum>
+              <Enum string="absolute humidity [g/kg]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_absolutehumidity[g_kg].svg" format="path"/>
+              </Enum>
+              <Enum string="specific enthalpy [kJ/kg]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_specificenthalpy[kJ_kg].svg" format="path"/>
+              </Enum>
+              <Enum string="density [kg/m**3]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_density[kg_m__3].svg" format="path"/>
+              </Enum>
+              <Enum string="absolute viscosity [kg/m/s]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_absoluteviscosity[kg_m_s].svg" format="path"/>
+              </Enum>
+              <Enum string="specific heat at constant pressure [J/kg/K]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_specificheatatconstantpressure[J_kg_K].svg" format="path"/>
+              </Enum>
+              <Enum string="thermal conductivity [W/m/K]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_thermalconductivity[W_m_K].svg" format="path"/>
+              </Enum>
+              <Enum string="absolute humidity at saturation [g/kg]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_absolutehumidityatsaturation[g_kg].svg" format="path"/>
+              </Enum>
+              <Enum string="wet-bulb temperature [degC]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_wet-bulbtemperature[degC].svg" format="path"/>
+              </Enum>
+              <Enum string="dew temperature [degC]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_dewtemperature[degC].svg" format="path"/>
+              </Enum>
+             </Enums>
+            </Param>
+           </Params>
+          </IntParams>
+          <ParamsGroups>
+           <Group circuitScopeId="89097" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="25">
+            <Elements>
+             <Element display="0" varName="indata"/>
+             <Element display="0" varName="offset"/>
+             <Element display="0" varName="gain"/>
+             <Element display="1" varName="sig"/>
+             <Element display="1" varName="dm3"/>
+             <Element display="1" varName="rh3"/>
+             <Element display="1" varName="p3"/>
+             <Element display="1" varName="t3"/>
+             <Element display="1" varName="ah3"/>
+             <Element display="1" varName="hspe3"/>
+             <Element display="1" varName="rho3"/>
+             <Element display="1" varName="mu3"/>
+             <Element display="1" varName="cp3"/>
+             <Element display="1" varName="lam3"/>
+             <Element display="1" varName="ahsat3"/>
+             <Element display="1" varName="tempBulbC"/>
+             <Element display="1" varName="tempDewC"/>
+            </Elements>
+           </Group>
+          </ParamsGroups>
+          <IntVars>
+           <Vars>
+            <Var dimension="1" saveValue="1" subId="10" title="absolute humidity at port 3" type="0" units="g/kg" varName="ah3" visibility="True">
+             <LaData>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+            <Var dimension="1" saveValue="1" subId="11" title="specific enthalpy at port 3" type="0" units="kJ/kg" varName="hspe3" visibility="True">
+             <LaData>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+            <Var dimension="1" saveValue="1" subId="12" title="density at port 3" type="0" units="kg/m**3" varName="rho3" visibility="True">
+             <LaData>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+            <Var dimension="1" saveValue="1" subId="13" title="absolute viscosity at port 3" type="0" units="cP" varName="mu3" visibility="True">
+             <LaData>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+            <Var dimension="1" saveValue="1" subId="14" title="specific heat at constant pressure at port 3" type="0" units="J/kg/degC" varName="cp3" visibility="True">
+             <LaData>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+            <Var dimension="1" saveValue="1" subId="15" title="thermal conductivity at port 3" type="0" units="W/m/degC" varName="lam3" visibility="True">
+             <LaData>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+            <Var dimension="1" saveValue="1" subId="21" title="absolute humidity at saturation at port 3" type="0" units="g/kg" varName="ahsat3" visibility="True">
+             <LaData>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+            <Var dimension="1" saveValue="1" subId="23" title="wet-bulb temperature" type="0" units="degC" varName="tempBulbC" visibility="True">
+             <LaData>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+            <Var dimension="1" saveValue="1" subId="24" title="dew temperature" type="0" units="degC" varName="tempDewC" visibility="True">
+             <LaData>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+           </Vars>
+          </IntVars>
+          <ExtVars>
+           <Port tag="pflow">
+            <Vars>
+             <Var dupType="0" primaryPort="2" primaryVar="0" saveValue="1" subId="1" title="mass flow rate at port 3" type="4" varName="dm1" visibility="True"/>
+             <Var dupType="0" primaryPort="2" primaryVar="1" saveValue="1" subId="2" title="relative humidity at port 3" type="4" varName="rh1" visibility="True"/>
+             <Var dupType="0" primaryPort="2" primaryVar="2" saveValue="1" subId="3" title="pressure at port 3" type="4" varName="p1" visibility="True"/>
+             <Var dupType="0" primaryPort="2" primaryVar="3" saveValue="1" subId="4" title="temperature at port 3" type="4" varName="t1" visibility="True"/>
+            </Vars>
+           </Port>
+           <Port tag="signal">
+            <Vars>
+             <Var dimension="1" express2="@_3_3, @_3_2, @_3_4" io="2" saveValue="1" subId="5" title="output signal at port 2" type="8" units="null" varName="sig" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+            </Vars>
+           </Port>
+           <Port tag="pflow">
+            <Vars>
+             <Var dimension="1" io="1" saveValue="1" subId="6" title="mass flow rate at port 3" type="0" units="kg/s" varName="dm3" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="1" saveValue="1" subId="7" title="relative humidity at port 3" type="0" units="%" varName="rh3" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="1" saveValue="1" subId="8" title="pressure at port 3" type="0" units="barA" varName="p3" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="1" saveValue="1" subId="9" title="temperature at port 3" type="0" units="degC" varName="t3" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+            </Vars>
+           </Port>
+          </ExtVars>
+          <IconMap data="$AME/libth/Icons/layers/THMAGS00_frame.svg" format="path"/>
+          <Animations>
+           <Animation>
+            <Icons>
+             <Icon id="tpf_ma_sensor"/>
+            </Icons>
+            <Variables>
+             <Variable name="pressure_a" value="p3"/>
+             <Variable name="temperature_c" value="t3"/>
+            </Variables>
+            <Colors>
+             <Color attribute="fill" domain="pressure" id="whole_component" value="${pressure_a}"/>
+             <Color attribute="stroke" domain="pressure" id="whole_component" value="${pressure_a}"/>
+             <Color attribute="fill" domain="temperature" id="whole_component" value="${temperature_c}"/>
+             <Color attribute="stroke" domain="temperature" id="whole_component" value="${temperature_c}"/>
+            </Colors>
+           </Animation>
+          </Animations>
+         </Submodel>
+        </Comp>
+        <Comp alias="signalsink_2" circuitScopeId="7" depth="203" displayName="signalsink" geometry="4" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
+         <Pos x="103" y="67"/>
+         <LabelPos configured="0" direction="0" x="0" y="0"/>
+         <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIxIiB0eXBlPSJzaWduYWwiIHg9IjUiIHk9IjkiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
+          <IconMap data="H4sIAAAAAAACCp1RPW/DIBDd+ytO18FLaoz7kTgKidShU4cO7RylDsEoBCygxv73PTtp1KFTGbgPHu/d0602/clAJ33QzoqM50UG0tZur60S2cf7y90i26xvVqFTQEgbBDYxtkvGUkp5us+dV6wsioIRAs+QZW+0Pf4F5FVVsekVr5rI8xLhcxfkm3cHbaTAqO2AoPcCX3UnjXFbTtQCi7ZHGC4x6X1sBFZj3kitmngpOi3TsxvhUEAFFYIjrYNxSWCovTNmmnMZ2l1NYq2XQfpOIrn0so6j0PxKX/4iR0YQNc1Vf4W45dugld0Z+gkAK7IlgQwYgdZZiRCid0dSuC2m89O4O+kovdEUyDy1e06zkjEKD/kj1aXApzEZynOHnQVaZ4Z/i7RO20jbK2cc5jNihXK2AJg8MTVetMD1NyXBqRUPAgAA" format="svgz/base64"/>
+         </CirCompIcon>
+         <Ports>
+          <Port connect="1" decorationOrientation="0" decorationVisible="0" face="1" name="" type="signal">
+           <Pos x="5" y="9"/>
+           <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+           <Connects>
+            <Connect num="4" port="1"/>
+           </Connects>
+          </Port>
+         </Ports>
+         <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" hasNoCalc="1" hasTerminate="1" idMax="2" idsReset="0" label="plug for signal port" name="SSINK" outputType="1" type="0" unit="1">
+          <ParamsGroups>
+           <Group circuitScopeId="89099" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="2">
+            <Elements>
+             <Element display="1" varName="sink"/>
+            </Elements>
+           </Group>
+          </ParamsGroups>
+          <ExtVars>
+           <Port tag="signal">
+            <Vars>
+             <Var dimension="1" io="1" saveValue="1" subId="1" title="signal input" type="0" units="null" varName="sink" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+            </Vars>
+           </Port>
+          </ExtVars>
+         </Submodel>
+        </Comp>
+       </Comps>
+       <animationProperties loop="0" speed="1"/>
+       <globalParams/>
+      </Circuit>
+     </Supercomponent>
+    </Comp>
+    <Comp alias="mamixers2_1" circuitScopeId="301" depth="204" displayName="mamixers2" geometry="1" iconDescription="moist air mixer for supercomponent heat exchanger type 2" labelVisible="0" libraryId="ac.mamixers2" name="mamixers2" scaleX="1.000000" scaleY="1.000000" type="0">
+     <Pos x="92" y="84"/>
+     <LabelPos configured="0" direction="0" x="0" y="0"/>
+     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIxIiB0eXBlPSJwZmxvdyIgeD0iMjUiIHk9IjMwIj4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvcGZsb3cxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiAgPFBPUlQgZmFjZT0iMyIgdHlwZT0icGZsb3ciIHg9IjM1IiB5PSIxMiI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL3BmbG93MXB4LnN2ZzwvUE9SVF9CSVRNQVA+CiAgPC9QT1JUPgogIDxQT1JUIGZhY2U9IjIiIHR5cGU9InBmbG93IiB4PSIxIiB5PSIxMiI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL3BmbG93MXB4LnN2ZzwvUE9SVF9CSVRNQVA+CiAgPC9QT1JUPgogPC9QT1JUUz4K" cirPortHidden="0">
+      <IconMap data="H4sIAAAAAAACCtVWyW7bMBC95ysI9uCLFi6WN1gO0ENPLdBDezZcmpGJMKRAKZb99x1SllPXThO0CtwYkEmORnrzZh41nN/uHjTaSlcpa/IBTcgASSPsWpkiH3z/9imeDG4XN/NqWyDwNFWON3VdztK0aZqk4Yl1RcoIISl44NZlttPK3F9ypNPpNA138RET04Rh9GNVya/O3iktc1wrs8dIrXP8WW2l1nZJ4dU5JuUOo/1hbNS63uSYZ36xkarY1LAKt7ZKNh+tfwARxDPECUYW8O60bXJcCWe1DrHOqnIlALB0spJuKzEwLRY3CKF5afW+sAZBRDrHxhqJUVU7ew/uH0j4dYb4QdXSaQUDsAFzaZWpIVNsmGQR44hRP46SDLFxN0M4bYEgG/KvUHa0RYCU+BkHCztaYEYBtReQUYcR3tiiTC6hCOWElkjsujDEvnvIgalzazPcV5J55BEQBBnR4WEy8QnuMvzP/Ck5T8DoAv8Tbr8vAt1VvXlVFD5csSpz7OyjWT8bHGyQLxzoZkkmSMJjiDOCK6YRhRVtUQVNhhEBC41YxLz8wHfsLcE/eD4R8GGmVyFBx2/Fopsex34F6PdCq0HOWgnC2K8C+Zn+OPs/5Mem7199wOH9iu9PLaY3/T21GU6OLeDYaDzYVT+BJOQgVNBXDzpCFOriK3OooK/eMGa+hnGoIVhCDVs/73ltGdLJm9I4EWL7V4Qzlnis6iVflv50hHs4LvDzbklOP1Zn6KxHdHb2qcxeQKf9of+6UZ7bJocCwHl58ROqKyG8fgsAAA==" format="svgz/base64"/>
+     </CirCompIcon>
+     <Ports>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="1" name="" type="pflow">
+       <Pos x="25" y="30"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="10" port="2"/>
+       </Connects>
+      </Port>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="3" name="" type="pflow">
+       <Pos x="35" y="12"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="2" port="2"/>
+       </Connects>
+      </Port>
+      <Port connect="0" decorationOrientation="0" decorationVisible="0" face="2" name="" type="pflow">
+       <Pos x="1" y="12"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="-1" port="3"/>
+       </Connects>
+      </Port>
+     </Ports>
+     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="1.0" dir="$AME/libac/submodels" idMax="33" idsReset="0" label="moist air mixer for U-channel plate and fins heat exchanger" name="ACUCPFMAMX0" outputType="0" type="1" unit="0">
+      <IntVars>
+       <ExposedList>
+        <Exposed exposedVar="dm1@tpf_ma_mixer" subId="13" title="mass flow rate at port 1" type="0" varName="dm1"/>
+        <Exposed exposedVar="rh1@tpf_ma_mixer" subId="14" title="relative humidity at port 1" type="0" varName="rh1"/>
+        <Exposed exposedVar="p1@tpf_ma_mixer" subId="15" title="pressure at port 1" type="0" varName="p1"/>
+        <Exposed exposedVar="t1@tpf_ma_mixer" subId="16" title="temperature at port 1" type="0" varName="t1"/>
+        <Exposed exposedVar="dm3@tpf_ma_mixer" subId="17" title="mass flow rate at port 2" type="0" varName="dm2"/>
+        <Exposed exposedVar="rh3@tpf_ma_mixer" subId="18" title="relative humidity at port 2" type="0" varName="rh2"/>
+        <Exposed exposedVar="p3@tpf_ma_mixer" subId="19" title="pressure at port 2" type="0" varName="p2"/>
+        <Exposed exposedVar="t3@tpf_ma_mixer" subId="20" title="temperature at port 2" type="0" varName="t2"/>
+        <Exposed exposedVar="dm2@tpf_ma_mixer" subId="21" title="mass flow rate at port 3" type="0" varName="dm3"/>
+        <Exposed exposedVar="rh2@tpf_ma_mixer" subId="22" title="relative humidity at port 3" type="0" varName="rh3"/>
+        <Exposed exposedVar="p2@tpf_ma_mixer" subId="23" title="pressure at port 3" type="0" varName="p3"/>
+        <Exposed exposedVar="t2@tpf_ma_mixer" subId="24" title="temperature at port 3" type="0" varName="t3"/>
+        <Exposed exposedVar="ah3@tpf_ma_sensor_1" subId="30" title="absolute humidity at port 3" type="0" varName="ah3"/>
+        <Exposed exposedVar="hspe3@tpf_ma_sensor_1" subId="33" title="specific enthalpy at port 3" type="0" varName="hspe3"/>
+       </ExposedList>
+      </IntVars>
+      <ExtVars>
+       <Port tag="pflow">
+        <Vars>
+         <Var dimension="1" io="1" saveValue="1" subId="1" title="mass flow rate at port 1" type="0" units="kg/s" varName="dm1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="2" title="relative humidity at port 1" type="0" units="%" varName="rh1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="3" title="pressure at port 1" type="0" units="barA" varName="p1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="4" title="temperature at port 1" type="0" units="degC" varName="t1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+       <Port tag="pflow">
+        <Vars>
+         <Var dimension="1" io="1" saveValue="1" subId="9" title="mass flow rate at port 3" type="0" units="kg/s" varName="dm3" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="10" title="relative humidity at port 3" type="0" units="%" varName="rh3" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="11" title="pressure at port 3" type="0" units="barA" varName="p3" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="12" title="temperature at port 3" type="0" units="degC" varName="t3" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+       <Port tag="pflow">
+        <Vars>
+         <Var dupType="0" primaryPort="2" primaryVar="0" saveValue="1" subId="1" title="mass flow rate at port 3" type="4" varName="dm1" visibility="True"/>
+         <Var dupType="0" primaryPort="2" primaryVar="1" saveValue="1" subId="2" title="relative humidity at port 3" type="4" varName="rh1" visibility="True"/>
+         <Var dupType="0" primaryPort="2" primaryVar="2" saveValue="1" subId="3" title="pressure at port 3" type="4" varName="p1" visibility="True"/>
+         <Var dupType="0" primaryPort="2" primaryVar="3" saveValue="1" subId="4" title="temperature at port 3" type="4" varName="t1" visibility="True"/>
+        </Vars>
+       </Port>
+      </ExtVars>
+      <ExposedOrder>
+       <Params>
+        <Groups/>
+       </Params>
+       <Vars>
+        <DataPaths>
+         <DataPath>dm1</DataPath>
+         <DataPath>rh1</DataPath>
+         <DataPath>p1</DataPath>
+         <DataPath>t1</DataPath>
+         <DataPath>dm2</DataPath>
+         <DataPath>rh2</DataPath>
+         <DataPath>p2</DataPath>
+         <DataPath>t2</DataPath>
+         <DataPath>dm3</DataPath>
+         <DataPath>rh3</DataPath>
+         <DataPath>p3</DataPath>
+         <DataPath>t3</DataPath>
+         <DataPath>ah3</DataPath>
+         <DataPath>hspe3</DataPath>
+        </DataPaths>
+        <Groups/>
+       </Vars>
+      </ExposedOrder>
+     </Submodel>
+     <Supercomponent catname="ac" scDir="$AME/libac/submodels">
+      <PortsMap>
+       <Map>
+        <PortMap component="0" face="1" labelX="0.000000" labelY="0.000000" port="0" type="pflow" x="143" y="124"/>
+        <PortMap component="0" face="0" labelX="0.000000" labelY="0.000000" port="2" type="pflow" x="143" y="100"/>
+        <PortMap component="1" face="2" labelX="0.000000" labelY="0.000000" port="0" type="pflow" x="95" y="112"/>
+       </Map>
+      </PortsMap>
+      <Circuit ameApplication="AMESim" highestId="91515">
+       <Comps>
+        <Comp alias="tpf_ma_mixer" circuitScopeId="1" depth="201" displayName="tpf_ma_mixer" geometry="5" iconDescription="moist air mixer" labelVisible="0" libraryId="th.tpf_ma_mixer" name="tpf_ma_mixer" scaleX="1.000000" scaleY="1.000000" type="0">
+         <Pos x="120" y="100"/>
+         <LabelPos configured="0" direction="0" x="0" y="0"/>
+         <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIxIiB0eXBlPSJwZmxvdyIgeD0iMjQiIHk9IjI1Ij4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvcGZsb3cxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiAgPFBPUlQgZmFjZT0iMiIgdHlwZT0icGZsb3ciIHg9IjEiIHk9IjEzIj4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvcGZsb3cxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiAgPFBPUlQgZmFjZT0iMCIgdHlwZT0icGZsb3ciIHg9IjI0IiB5PSIxIj4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvcGZsb3cxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
+          <IconMap data="H4sIAAAAAAACCs1WwY6bMBC971dY3kMuYLAdkhCFrNRKPbVSD+05Sh2HWMtiBGwgf98ZA5smaaWVmjQlij2MB96b4Q1m8dS+ZGSvy8rYPBlxFo6IzpXdmDxNRt+/ffJno6flw6LapwQi8yqhu7ou5kHQNA1rJLNlGogwDAOIoF3IvM1M/vy7QB7HceBW6Rsm5UxQ8mNd6a+l3ZpMJ7Q2+YESs0noZ7PXWWZXHG6d0LBoKTn0c2M29S6hUuLJTpt0VydURHi2N7r5YPECEhIpiYgosYC3zWyT0EqVNssc13lVrBUAFqWudLnXFDJNlw+EkAWQ1AToZAnNba4pqerSPkPsY+iOweG/mFqXmYEJUgF3yxMaM0A8gDFFoxWDBwyOruAKGCIaQLi4RBFHFGVKlWmi2n5dHYZLSrjLENWljVZhs0Nq857Y49Yd7+dWWJPXlcPyZgSBvDGLyKSfCekRT0DPTxyPdb17V3WwjGpdJLS0r/nmj8RATl8ksIAH8FHCKDzkNnXjhIkOVYU+Z2NPwMhhhDXwhGwK/8jn+GPymADSDP55EjzqslCOVMgk0OrpMfn3aQzm23wTafCpk4QAQp1InHVfdbjCYoMq4OJBYT3uocW9XwoL9tgXMHLfKQg8UNghzvsP9CFvmsXt5SFiEC1qAl7cbOLFg4GP584KETPkMet6T3pd/0HJsJ883hfXtR42INQWW88XGD1Fl7vCxd5bJC6TyQ0TOdFJN6RuT1evVb2SqwJ3Y3rNzXbMJmfbYIjkLrDF9bChivH5Jizl6R58gc9vkLs4/wLA1+kRHb/Olj8B8wgt++wJAAA=" format="svgz/base64"/>
+         </CirCompIcon>
+         <Ports>
+          <Port connect="1" decorationOrientation="0" decorationVisible="0" face="1" name="" type="pflow">
+           <Pos x="24" y="25"/>
+           <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+           <Connects>
+            <Connect num="10" port="2"/>
+           </Connects>
+          </Port>
+          <Port connect="1" decorationOrientation="0" decorationVisible="0" face="2" name="" type="pflow">
+           <Pos x="1" y="13"/>
+           <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+           <Connects>
+            <Connect num="8" port="2"/>
+           </Connects>
+          </Port>
+          <Port connect="1" decorationOrientation="0" decorationVisible="0" face="0" name="" type="pflow">
+           <Pos x="24" y="1"/>
+           <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+           <Connects>
+            <Connect num="2" port="2"/>
+           </Connects>
+          </Port>
+         </Ports>
+         <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libth/submodels" hasTerminate="1" idMax="26" idsReset="0" label="moist air mixer" name="THMAMX000" outputType="1" pStoresNumber="1" type="0" unit="0">
+          <ParamsGroups>
+           <Group circuitScopeId="90695" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="26">
+            <Elements>
+             <Element display="1" varName="dm1"/>
+             <Element display="1" varName="rh1"/>
+             <Element display="1" varName="p1"/>
+             <Element display="1" varName="t1"/>
+             <Element display="1" varName="dm2"/>
+             <Element display="1" varName="rh2"/>
+             <Element display="1" varName="p2"/>
+             <Element display="1" varName="t2"/>
+             <Element display="1" varName="dm3"/>
+             <Element display="1" varName="rh3"/>
+             <Element display="1" varName="p3"/>
+             <Element display="1" varName="t3"/>
+             <Element display="1" varName="ah_1"/>
+             <Element display="1" varName="hspe_1"/>
+            </Elements>
+           </Group>
+          </ParamsGroups>
+          <IntVars>
+           <Vars>
+            <Var dimension="3" saveValue="1" subId="13" title="absolute humidity at port" type="0" units="g/kg" varName="ah" visibility="True">
+             <TitleList>
+              <Title>absolute humidity at port</Title>
+              <Title>absolute humidity at port</Title>
+              <Title>absolute humidity at port</Title>
+             </TitleList>
+             <LaData>
+              <Data laStatus="0"/>
+              <Data laStatus="0"/>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+            <Var dimension="3" saveValue="1" subId="16" title="specific enthalpy at port" type="0" units="kJ/kg" varName="hspe" visibility="True">
+             <TitleList>
+              <Title>specific enthalpy at port</Title>
+              <Title>specific enthalpy at port</Title>
+              <Title>specific enthalpy at port</Title>
+             </TitleList>
+             <LaData>
+              <Data laStatus="0"/>
+              <Data laStatus="0"/>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+           </Vars>
+          </IntVars>
+          <ExtVars>
+           <Port tag="pflow">
+            <Vars>
+             <Var dimension="1" io="1" saveValue="1" subId="1" title="mass flow rate at port 1" type="0" units="kg/s" varName="dm1" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="1" saveValue="1" subId="2" title="relative humidity at port 1" type="0" units="%" varName="rh1" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="1" saveValue="1" subId="3" title="pressure at port 1" type="0" units="barA" varName="p1" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="1" saveValue="1" subId="4" title="temperature at port 1" type="0" units="degC" varName="t1" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+            </Vars>
+           </Port>
+           <Port tag="pflow">
+            <Vars>
+             <Var dimension="1" io="2" saveValue="1" subId="19" title="mass flow rate at port 2" type="0" units="kg/s" varName="dm2" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="2" saveValue="1" subId="6" title="relative humidity at port 2" type="0" units="%" varName="rh2" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="2" saveValue="1" subId="22" title="pressure at port 2" type="0" units="barA" varName="p2" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="2" saveValue="1" subId="8" title="temperature at port 2" type="0" units="degC" varName="t2" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+            </Vars>
+           </Port>
+           <Port tag="pflow">
+            <Vars>
+             <Var dimension="1" io="1" saveValue="1" subId="9" title="mass flow rate at port 3" type="0" units="kg/s" varName="dm3" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="1" saveValue="1" subId="10" title="relative humidity at port 3" type="0" units="%" varName="rh3" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="1" saveValue="1" subId="11" title="pressure at port 3" type="0" units="barA" varName="p3" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="1" saveValue="1" subId="12" title="temperature at port 3" type="0" units="degC" varName="t3" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+            </Vars>
+           </Port>
+          </ExtVars>
+         </Submodel>
+        </Comp>
+        <Comp alias="tpf_ma_sensor_1" circuitScopeId="3" depth="202" displayName="tpf_ma_sensor" geometry="5" iconDescription="generic sensor for moist air properties" labelVisible="0" libraryId="th.tpf_ma_sensor" name="tpf_ma_sensor" scaleX="1.000000" scaleY="1.000000" type="0">
+         <Pos x="95" y="76"/>
+         <LabelPos configured="0" direction="0" x="0" y="0"/>
+         <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJwZmxvdyIgeD0iMSIgeT0iMzciPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9wZmxvdzFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KICA8UE9SVCBmYWNlPSIwIiB0eXBlPSJzaWduYWwiIHg9IjEzIiB5PSIxIj4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvc2lnbmFsMXB4LnN2ZzwvUE9SVF9CSVRNQVA+CiAgPC9QT1JUPgogIDxQT1JUIGZhY2U9IjMiIHR5cGU9InBmbG93IiB4PSIyNSIgeT0iMzciPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9wZmxvdzFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KIDwvUE9SVFM+Cg==" cirPortHidden="0">
+          <IconMap data="H4sIAAAAAAACCs1Wz2+bMBS+96+wvEMuYGwTkhDFrbTDTpu0w3aOGHGJVWMjoCH57/dsIFnatOq6VBoHbD+ev+/98PNjdbcvNdrJulHWiAkjdIKkye1GmUJMfv74Ei4md7c3q2ZXINA0zTIrZaNKgXdmQ3TZEFVmhTKS9HLcawm8bdtqGUVd15EuJrYuIk4pjQBnUFnutTIPlxRZmqaR/4qPlmFGOEa/skZ+r+290lLgVpkDRmoj8Fe1k1rbNQNogWm1x+gwjJ3atFuBeeIWW6mKbSvwNHWrnZLdZ+s2IIp4gqYpRhb47rXtBG7y2mrtbV02VZYDYVXLRtY7iSEehSfutlbLdW7LyhppWozAMi3wJ+ofjJq2tg/yJLi9QQitclXnWo669/4ZdcPR4KOgVK2stYIBggCYOVjMOElgBk6yhZvVAqc46tEhbiO2AatexNkzgWcQKBjimQPZc/iQutmBD7J3QPamOVQ+P6LyS6hV1m7fggpx/sYYWQQ8JourbH7JHyfPs0rg2j6azRvdZA74iZtAFl+TLCHpQJYQ1pOlbuK5GEmvyTUH03uuxZi/ufPQcXnRR/jlnTj3y7sanVXMWE4933kh9Ge4dpUzbCr84A+L1YfCmhcq7qlllVWmhRtsFjhMBAxBHI8TqA9AHCheO4hvDIM7n7NgCth5SEkcUJLAmAQsZLBiPUkOi2lA4c1CHoJuyJ323In8Dq97baNiej2jVlFxnaRAZSVDXuiQFvoxWeFTwv7HxHi7PiY3vqflj027jteVa4P4aPjftIDj1XjqK/T59X+Bla8bVZhMv4/2dCU/azv0zxQM5+78MhnPV+pCSZHbGsDthOAW6gUz6CHjB8gAWhDu1ugVd9g/BfFZDPnFLup4hxf8W93+Bmkehs3QCQAA" format="svgz/base64"/>
+         </CirCompIcon>
+         <Ports>
+          <Port connect="0" decorationOrientation="0" decorationVisible="0" face="2" name="" type="pflow">
+           <Pos x="1" y="37"/>
+           <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+           <Connects>
+            <Connect num="-1" port="3"/>
+           </Connects>
+          </Port>
+          <Port connect="1" decorationOrientation="0" decorationVisible="0" face="0" name="" type="signal">
+           <Pos x="13" y="1"/>
+           <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+           <Connects>
+            <Connect num="9" port="0"/>
+           </Connects>
+          </Port>
+          <Port connect="1" decorationOrientation="0" decorationVisible="0" face="3" name="" type="pflow">
+           <Pos x="25" y="37"/>
+           <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+           <Connects>
+            <Connect num="7" port="1"/>
+           </Connects>
+          </Port>
+         </Ports>
+         <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libth/submodels" hasNoCalc="2" hasTerminate="1" idMax="25" idsReset="0" label="moist air properties generic sensor" name="THMAGS00" outputType="1" pStoresNumber="1" type="0" unit="0">
+          <RealParams>
+           <Params>
+            <Param defValue="0" maxValue="1e+08" minValue="-1e+08" subId="16" title="signal offset" units="null" value="0" varName="offset" visibility="True"/>
+            <Param defValue="1" maxValue="1e+08" minValue="-1e+08" subId="17" title="signal gain" units="null" value="1" varName="gain" visibility="True"/>
+           </Params>
+          </RealParams>
+          <IntParams>
+           <Params>
+            <Param defValue="1" maxValue="12" minValue="1" subId="22" title="moist air property" value="1" varName="indata" visibility="True">
+             <Enums>
+              <Enum string="pressure [barA]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_pressure[barA].svg" format="path"/>
+              </Enum>
+              <Enum string="temperature [degC]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_temperature[degC].svg" format="path"/>
+              </Enum>
+              <Enum string="relative humidity [%]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_relativehumidity[%].svg" format="path"/>
+              </Enum>
+              <Enum string="absolute humidity [g/kg]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_absolutehumidity[g_kg].svg" format="path"/>
+              </Enum>
+              <Enum string="specific enthalpy [kJ/kg]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_specificenthalpy[kJ_kg].svg" format="path"/>
+              </Enum>
+              <Enum string="density [kg/m**3]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_density[kg_m__3].svg" format="path"/>
+              </Enum>
+              <Enum string="absolute viscosity [kg/m/s]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_absoluteviscosity[kg_m_s].svg" format="path"/>
+              </Enum>
+              <Enum string="specific heat at constant pressure [J/kg/K]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_specificheatatconstantpressure[J_kg_K].svg" format="path"/>
+              </Enum>
+              <Enum string="thermal conductivity [W/m/K]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_thermalconductivity[W_m_K].svg" format="path"/>
+              </Enum>
+              <Enum string="absolute humidity at saturation [g/kg]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_absolutehumidityatsaturation[g_kg].svg" format="path"/>
+              </Enum>
+              <Enum string="wet-bulb temperature [degC]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_wet-bulbtemperature[degC].svg" format="path"/>
+              </Enum>
+              <Enum string="dew temperature [degC]">
+               <IconMap data="$AME/libth/Icons/layers/THMAGS00_indata_dewtemperature[degC].svg" format="path"/>
+              </Enum>
+             </Enums>
+            </Param>
+           </Params>
+          </IntParams>
+          <ParamsGroups>
+           <Group circuitScopeId="90717" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="25">
+            <Elements>
+             <Element display="0" varName="indata"/>
+             <Element display="0" varName="offset"/>
+             <Element display="0" varName="gain"/>
+             <Element display="1" varName="sig"/>
+             <Element display="1" varName="dm3"/>
+             <Element display="1" varName="rh3"/>
+             <Element display="1" varName="p3"/>
+             <Element display="1" varName="t3"/>
+             <Element display="1" varName="ah3"/>
+             <Element display="1" varName="hspe3"/>
+             <Element display="1" varName="rho3"/>
+             <Element display="1" varName="mu3"/>
+             <Element display="1" varName="cp3"/>
+             <Element display="1" varName="lam3"/>
+             <Element display="1" varName="ahsat3"/>
+             <Element display="1" varName="tempBulbC"/>
+             <Element display="1" varName="tempDewC"/>
+            </Elements>
+           </Group>
+          </ParamsGroups>
+          <IntVars>
+           <Vars>
+            <Var dimension="1" saveValue="1" subId="10" title="absolute humidity at port 3" type="0" units="g/kg" varName="ah3" visibility="True">
+             <LaData>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+            <Var dimension="1" saveValue="1" subId="11" title="specific enthalpy at port 3" type="0" units="kJ/kg" varName="hspe3" visibility="True">
+             <LaData>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+            <Var dimension="1" saveValue="1" subId="12" title="density at port 3" type="0" units="kg/m**3" varName="rho3" visibility="True">
+             <LaData>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+            <Var dimension="1" saveValue="1" subId="13" title="absolute viscosity at port 3" type="0" units="cP" varName="mu3" visibility="True">
+             <LaData>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+            <Var dimension="1" saveValue="1" subId="14" title="specific heat at constant pressure at port 3" type="0" units="J/kg/degC" varName="cp3" visibility="True">
+             <LaData>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+            <Var dimension="1" saveValue="1" subId="15" title="thermal conductivity at port 3" type="0" units="W/m/degC" varName="lam3" visibility="True">
+             <LaData>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+            <Var dimension="1" saveValue="1" subId="21" title="absolute humidity at saturation at port 3" type="0" units="g/kg" varName="ahsat3" visibility="True">
+             <LaData>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+            <Var dimension="1" saveValue="1" subId="23" title="wet-bulb temperature" type="0" units="degC" varName="tempBulbC" visibility="True">
+             <LaData>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+            <Var dimension="1" saveValue="1" subId="24" title="dew temperature" type="0" units="degC" varName="tempDewC" visibility="True">
+             <LaData>
+              <Data laStatus="0"/>
+             </LaData>
+            </Var>
+           </Vars>
+          </IntVars>
+          <ExtVars>
+           <Port tag="pflow">
+            <Vars>
+             <Var dupType="0" primaryPort="2" primaryVar="0" saveValue="1" subId="1" title="mass flow rate at port 3" type="4" varName="dm1" visibility="True"/>
+             <Var dupType="0" primaryPort="2" primaryVar="1" saveValue="1" subId="2" title="relative humidity at port 3" type="4" varName="rh1" visibility="True"/>
+             <Var dupType="0" primaryPort="2" primaryVar="2" saveValue="1" subId="3" title="pressure at port 3" type="4" varName="p1" visibility="True"/>
+             <Var dupType="0" primaryPort="2" primaryVar="3" saveValue="1" subId="4" title="temperature at port 3" type="4" varName="t1" visibility="True"/>
+            </Vars>
+           </Port>
+           <Port tag="signal">
+            <Vars>
+             <Var dimension="1" express2="@_3_3, @_3_2, @_3_4" io="2" saveValue="1" subId="5" title="output signal at port 2" type="8" units="null" varName="sig" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+            </Vars>
+           </Port>
+           <Port tag="pflow">
+            <Vars>
+             <Var dimension="1" io="1" saveValue="1" subId="6" title="mass flow rate at port 3" type="0" units="kg/s" varName="dm3" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="1" saveValue="1" subId="7" title="relative humidity at port 3" type="0" units="%" varName="rh3" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="1" saveValue="1" subId="8" title="pressure at port 3" type="0" units="barA" varName="p3" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+             <Var dimension="1" io="1" saveValue="1" subId="9" title="temperature at port 3" type="0" units="degC" varName="t3" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+            </Vars>
+           </Port>
+          </ExtVars>
+          <IconMap data="$AME/libth/Icons/layers/THMAGS00_frame.svg" format="path"/>
+          <Animations>
+           <Animation>
+            <Icons>
+             <Icon id="tpf_ma_sensor"/>
+            </Icons>
+            <Variables>
+             <Variable name="pressure_a" value="p3"/>
+             <Variable name="temperature_c" value="t3"/>
+            </Variables>
+            <Colors>
+             <Color attribute="fill" domain="pressure" id="whole_component" value="${pressure_a}"/>
+             <Color attribute="stroke" domain="pressure" id="whole_component" value="${pressure_a}"/>
+             <Color attribute="fill" domain="temperature" id="whole_component" value="${temperature_c}"/>
+             <Color attribute="stroke" domain="temperature" id="whole_component" value="${temperature_c}"/>
+            </Colors>
+           </Animation>
+          </Animations>
+         </Submodel>
+        </Comp>
+        <Comp alias="signalsink_2" circuitScopeId="7" depth="203" displayName="signalsink" geometry="4" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
+         <Pos x="103" y="67"/>
+         <LabelPos configured="0" direction="0" x="0" y="0"/>
+         <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIxIiB0eXBlPSJzaWduYWwiIHg9IjUiIHk9IjkiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
+          <IconMap data="H4sIAAAAAAACCp1RPW/DIBDd+ytO18FLaoz7kTgKidShU4cO7RylDsEoBCygxv73PTtp1KFTGbgPHu/d0602/clAJ33QzoqM50UG0tZur60S2cf7y90i26xvVqFTQEgbBDYxtkvGUkp5us+dV6wsioIRAs+QZW+0Pf4F5FVVsekVr5rI8xLhcxfkm3cHbaTAqO2AoPcCX3UnjXFbTtQCi7ZHGC4x6X1sBFZj3kitmngpOi3TsxvhUEAFFYIjrYNxSWCovTNmmnMZ2l1NYq2XQfpOIrn0so6j0PxKX/4iR0YQNc1Vf4W45dugld0Z+gkAK7IlgQwYgdZZiRCid0dSuC2m89O4O+kovdEUyDy1e06zkjEKD/kj1aXApzEZynOHnQVaZ4Z/i7RO20jbK2cc5jNihXK2AJg8MTVetMD1NyXBqRUPAgAA" format="svgz/base64"/>
+         </CirCompIcon>
+         <Ports>
+          <Port connect="1" decorationOrientation="0" decorationVisible="0" face="1" name="" type="signal">
+           <Pos x="5" y="9"/>
+           <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+           <Connects>
+            <Connect num="8" port="1"/>
+           </Connects>
+          </Port>
+         </Ports>
+         <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" hasNoCalc="1" hasTerminate="1" idMax="2" idsReset="0" label="plug for signal port" name="SSINK" outputType="1" type="0" unit="1">
+          <ParamsGroups>
+           <Group circuitScopeId="90719" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="2">
+            <Elements>
+             <Element display="1" varName="sink"/>
+            </Elements>
+           </Group>
+          </ParamsGroups>
+          <ExtVars>
+           <Port tag="signal">
+            <Vars>
+             <Var dimension="1" io="1" saveValue="1" subId="1" title="signal input" type="0" units="null" varName="sink" visibility="True">
+              <LaData>
+               <Data laStatus="0"/>
+              </LaData>
+             </Var>
+            </Vars>
+           </Port>
+          </ExtVars>
+         </Submodel>
+        </Comp>
+       </Comps>
+       <animationProperties loop="0" speed="1"/>
+       <globalParams/>
+      </Circuit>
+     </Supercomponent>
+    </Comp>
+    <Comp alias="ac_ucpf_end1" circuitScopeId="325" depth="205" displayName="ac_ucpf_end1" geometry="1" iconDescription="ending pass of an U-channel plate and fins heat exchanger (configuration 1)" labelVisible="0" libraryId="ac.ac_ucpf_end1" name="ac_ucpf_end1" scaleX="1.000000" scaleY="1.000000" type="0">
+     <Pos x="92" y="114"/>
+     <LabelPos configured="0" direction="0" x="0" y="0"/>
+     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIzIiB0eXBlPSJoZmxvdyIgeD0iMzUiIHk9IjMyIj4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvaGZsb3cxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiAgPFBPUlQgZmFjZT0iMyIgdHlwZT0iZ2VvY29tIiB4PSIzNSIgeT0iMTAiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9nZW9jb20xcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiAgPFBPUlQgZmFjZT0iMCIgdHlwZT0icGZsb3ciIHg9IjI1IiB5PSIxIj4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvcGZsb3cxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiAgPFBPUlQgZmFjZT0iMiIgdHlwZT0iaGZsb3ciIHg9IjEiIHk9IjIzIj4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvaGZsb3cxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
+      <IconMap data="H4sIAAAAAAACCr1YS2/jNhC+768g2EMuEk0OTT2CKAv00FMLFNju2UgVra2uIhmW1k7213eGMhVHTA6b0HYAPif65vFxxNHN58eHhu2rXV93bXGlhLxiVVt293W7Lq6+/vNHnF19vv100+/XDCXbvuCbYdheLxaHw0EctOh26wVIKRcowUeR68embr+/JqjyPF/YXT5hciWAs3/v+urvXfetbqqCD3X7xFl9X/A/633VNN1K4aMLLrePnD0d+0N9P2wKrg1NNlW93gz4LJnRdF9Xh987+g8mmTYMlznrEPFb0x0K3pe7rmmsttf99q5EyO2u6qvdvuJo6/r2E2PsZns3bBgq1BS87dqKs37Ydd9R9jdpf24hRnuq/7oaTdl1P9r7af2hHqpdU2NHinGG9vyVCBMZI/JSxlJkEcRKaGxBqD62k9hOEL9/a+8SGzP8UdtTAV9/vjij2zJ0W46Nr8ipmqT1pT31YfzJb13zRC4J6rstygx4Zg36LzHMHN3IlHYj/NkJLMW4Pw1MyphTLrhij6rguTB4nHFgElwAt4AD0uEy0OSDGXhi3kXl8m47R/4VhquUXK4RtpQR/UGCjVbCfAEVZWkEEGVJD8IgaTBK2GOQehnrNKLm3TT6gN6OXUAaGUlcoshFS81Q+2VK9DrVa921Z2E38TfBA4V5XiTIWyK4Glfwl2GesuOEBijLtBsYt8UucgqfDxrYhOYGmT45iOOpfEHBEBkUEgERaAFlTE6iBJRHOI21UMimtMeFJVHLJtilSCiZoQzuA8op3Eq/ALkQFD3JPe7nWfO+ykUaaXhTa5txZ4qXKBlD5OkuMeNqiSvTQ3+eNcdQNMckQydhTDKQuSyD+OZiqX/knDzlXH7KsvPmWJvNR/OXzvz8HQn+NRC9nGNo/YF3yKsQ4EGo0BDS81QeGAI8KyC0FeBZoUJboTIPIg0NkXgQJnS4j6TN9Jy0diUkaU8gVGgIOYd4zm7hQJbze5pzlV0J6aoTCBUaQs4h3PkOBgGZB5GGhkg8CBMawgs3hA43eOGG0OEGL9wqdLiVF24VOtzKC7d6JdzuXj/dcfHNHmktcmYrGipgmF2DHAtkLGLGfixtaG5lp5vI+O3lVwuGNwsTqkaA4Y0V6xOCS4+DCTAAY6dS0r/lmMlPL2ybT0LUmq/dnrUcK8WSerr+qohGKjpWRrbWtLdnbPGWPMqiTOrkSPLZAtJzcXErVHZOK9zQ9mOztp8eyx/9sFquNvTJkAc4Tu5yBI4m6fS141gKeOh6tQ2F/kxTOSfpW+iwWldd2T3wkK/x6RUbug6AOYAODCDnAOoFgOc+FY46KnPBo6T50oF2ZcKnr/C3/wOOpQdp1BcAAA==" format="svgz/base64"/>
+     </CirCompIcon>
+     <Ports>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="3" name="" type="hflow">
+       <Pos x="35" y="32"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="12" port="4"/>
+       </Connects>
+      </Port>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="3" name="" type="geocom">
+       <Pos x="35" y="10"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="12" port="3"/>
+       </Connects>
+      </Port>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="0" name="" type="pflow">
+       <Pos x="25" y="1"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="6" port="0"/>
+       </Connects>
+      </Port>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="2" name="" type="hflow">
+       <Pos x="1" y="23"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="0" port="2"/>
+       </Connects>
+      </Port>
+     </Ports>
+     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="1.0" dir="$AME/libac/submodels" discontinuity="1" hasTerminate="1" idMax="84" idsReset="0" label="ending pass of an U-channel plate and fins heat exchanger (configuration 1)" name="ACUCPFEND1" outputType="1" pStoresNumber="3" type="0" unit="0">
+      <RealParams>
+       <Params>
+        <Param defValue="3" maxValue="1e+08" minValue="1e-08" subId="33" title="pressure" units="barA" value="3" varName="pini" visibility="True"/>
+        <Param defValue="300" maxValue="1e+10" minValue="-1e+10" subId="34" title="specific enthalpy" units="kJ/kg" value="300" varName="hini" visibility="(hcond == 1)"/>
+        <Param defValue="20" maxValue="800" minValue="-273.15" subId="35" title="temperature" units="degC" value="20" varName="tini" visibility="(hcond == 2)"/>
+        <Param defValue="0.2" maxValue="1" minValue="0" subId="36" title="gas mass fraction" units="null" value="0.2" varName="xini" visibility="(hcond == 3)"/>
+        <Param defValue="5" isDelta="1" maxValue="100" minValue="-100" subId="37" title="superheat / subcooling" units="degC" value="5" varName="shscini" visibility="(hcond == 4)"/>
+        <Param defValue="0.5" maxValue="1000" minValue="0.001" subId="81" title="singular pressure drop coefficient for incoming flow" units="null" value="0.5" varName="kin" visibility="True"/>
+        <Param defValue="1" maxValue="1000" minValue="0.001" subId="82" title="singular pressure drop coefficient for outgoing flow" units="null" value="1" varName="kout" visibility="True"/>
+        <Param defValue="3000" maxValue="1e+08" minValue="1" subId="83" title="critical Reynolds number" units="null" value="3000" varName="rec" visibility="True"/>
+        <Param defValue="1" maxValue="1e+06" minValue="1e-06" subId="51" title="frictional pressure drop gain of the pass" units="null" value="1" varName="kdpp" visibility="True"/>
+       </Params>
+      </RealParams>
+      <IntParams>
+       <Params>
+        <Param defValue="1" maxValue="99" minValue="1" subId="41" title="index of fluid" value="1" varName="fi" visibility="True"/>
+        <Param defValue="2" maxValue="99" minValue="1" subId="42" title="solid type index" value="2" varName="soli" visibility="True"/>
+        <Param defValue="1" maxValue="99" minValue="1" subId="43" title="index of U-channel plate and fin heat exchanger" value="1" varName="ucpfi" visibility="True"/>
+        <Param defValue="7" maxValue="100" minValue="1" subId="70" title="number of U-channels" value="7" varName="nbUchannels" visibility="True"/>
+        <Param defValue="1" maxValue="2" minValue="1" recompile="1" subId="69" title="number of cells" value="1" varName="nbCellsEnum" visibility="True">
+         <Enums>
+          <Enum string="3 cells"/>
+          <Enum string="5 cells"/>
+         </Enums>
+        </Param>
+        <Param defValue="1" maxValue="2" minValue="1" subId="48" title="acceleration pressure drop calculation" value="1" varName="acc" visibility="True">
+         <Enums>
+          <Enum string="no"/>
+          <Enum string="yes"/>
+         </Enums>
+        </Param>
+        <Param defValue="3" maxValue="4" minValue="1" subId="49" title="type of initialization" value="3" varName="hcond" visibility="True">
+         <Enums>
+          <Enum string="pressure and specific enthalpy"/>
+          <Enum string="pressure and temperature"/>
+          <Enum string="pressure and gas mass fraction"/>
+          <Enum string="pressure and superheat/subcooling"/>
+         </Enums>
+        </Param>
+       </Params>
+      </IntParams>
+      <ParamsGroups>
+       <Group circuitScopeId="90541" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="84">
+        <Elements>
+         <Element display="2" varName="p1"/>
+         <Element display="2" varName="rho1"/>
+         <Element display="1" varName="dmh1"/>
+         <Element display="1" varName="dm1"/>
+         <Element display="1" varName="mamfr"/>
+         <Element display="1" varName="map"/>
+         <Element display="1" varName="abs2"/>
+         <Element display="1" varName="mamfr3"/>
+         <Element display="1" varName="marh3"/>
+         <Element display="1" varName="mat3"/>
+         <Element display="2" varName="p4"/>
+         <Element display="2" varName="rho4"/>
+         <Element display="1" varName="dmh4"/>
+         <Element display="1" varName="dm4"/>
+         <Element display="2" varName="pstate_1"/>
+         <Element display="2" varName="rhostate_1"/>
+         <Element display="1" varName="tint4"/>
+         <Element display="1" varName="xint4"/>
+         <Element display="1" varName="alpha4"/>
+         <Element display="1" varName="shsc4"/>
+         <Element display="1" varName="eval"/>
+         <Element display="1" varName="massInt"/>
+         <Element display="1" varName="pint_1"/>
+         <Element display="1" varName="rhoint_1"/>
+         <Element display="1" varName="tint_1"/>
+         <Element display="1" varName="xint_1"/>
+         <Element display="1" varName="alphaInt_1"/>
+         <Element display="1" varName="shscint_1"/>
+         <Element display="1" varName="dmint_1"/>
+         <Element display="2" varName="twall_1"/>
+         <Element display="1" varName="dhint_1"/>
+         <Element display="1" varName="dhext_1"/>
+         <Element display="1" varName="hint_1"/>
+         <Element display="1" varName="region_1"/>
+         <Element display="0" varName="fi"/>
+         <Element display="0" varName="soli"/>
+         <Element display="0" varName="ucpfi"/>
+         <Element display="0" varName="nbUchannels"/>
+         <Element display="0" varName="nbCellsEnum"/>
+         <Element display="0" varName="acc"/>
+         <Element display="0" varName="hcond"/>
+         <Element display="0" varName="pini"/>
+         <Element display="0" varName="hini"/>
+         <Element display="0" varName="tini"/>
+         <Element display="0" varName="xini"/>
+         <Element display="0" varName="shscini"/>
+         <Element display="0" varName="kin"/>
+         <Element display="0" varName="kout"/>
+         <Element display="0" varName="rec"/>
+         <Element display="0" varName="kdpp"/>
+        </Elements>
+       </Group>
+      </ParamsGroups>
+      <IntVars>
+       <Vars>
+        <Var defValue="0" dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5 - 1" dimension="2" maxValue="0" minValue="0" saveValue="1" subId="19" title="pressure at nodes" type="1" units="barA" varName="pstate" varName2="dpstate" visibility="False">
+         <RValues>
+          <Value>0</Value>
+          <Value>0</Value>
+         </RValues>
+         <TitleList>
+          <Title>pressure at nodes</Title>
+          <Title>pressure at nodes</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="3"/>
+          <Data laStatus="3"/>
+         </LaData>
+        </Var>
+        <Var defValue="0" dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5 - 1" dimension="2" maxValue="0" minValue="0" saveValue="1" subId="20" title="density at nodes" type="1" units="kg/m**3" varName="rhostate" varName2="drhostate" visibility="False">
+         <RValues>
+          <Value>0</Value>
+          <Value>0</Value>
+         </RValues>
+         <TitleList>
+          <Title>density at nodes</Title>
+          <Title>density at nodes</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="3"/>
+          <Data laStatus="3"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" saveValue="1" subId="23" title="refrigerant temperature at port 4" type="0" units="degC" varName="tint4" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" saveValue="1" subId="26" title="gas mass fraction at port 4" type="0" units="null" varName="xint4" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" saveValue="1" subId="77" title="gas volume fraction at port 4" type="0" units="null" varName="alpha4" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" saveValue="1" subId="67" title="superheat / subcooling at port 4" type="0" units="degC" varName="shsc4" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" saveValue="1" subId="32" title="total evaporator length" type="0" units="m" varName="eval" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimension="1" saveValue="1" subId="73" title="mass of fluid" type="0" units="kg" varName="massInt" varName2="dpstate" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="63" title="pressure at nodes (port 1 -> 4)" type="0" units="barA" varName="pint" varName2="dpstate" visibility="True">
+         <TitleList>
+          <Title>pressure at nodes (port 1 -> 4)</Title>
+          <Title>pressure at nodes (port 1 -> 4)</Title>
+          <Title>pressure at nodes (port 1 -> 4)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="64" title="density at nodes (port 1 -> 4)" type="0" units="kg/m**3" varName="rhoint" varName2="dpstate" visibility="True">
+         <TitleList>
+          <Title>density at nodes (port 1 -> 4)</Title>
+          <Title>density at nodes (port 1 -> 4)</Title>
+          <Title>density at nodes (port 1 -> 4)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="22" title="refrigerant temperature at nodes (port 1 -> 4)" type="0" units="degC" varName="tint" visibility="True">
+         <TitleList>
+          <Title>refrigerant temperature at nodes (port 1 -> 4)</Title>
+          <Title>refrigerant temperature at nodes (port 1 -> 4)</Title>
+          <Title>refrigerant temperature at nodes (port 1 -> 4)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="25" title="gas mass fraction at nodes (port 1 -> 4)" type="0" units="null" varName="xint" visibility="True">
+         <TitleList>
+          <Title>gas mass fraction at nodes (port 1 -> 4)</Title>
+          <Title>gas mass fraction at nodes (port 1 -> 4)</Title>
+          <Title>gas mass fraction at nodes (port 1 -> 4)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="75" title="gas volume fraction at nodes (port 1 -> 4)" type="0" units="null" varName="alphaInt" visibility="True">
+         <TitleList>
+          <Title>gas volume fraction at nodes (port 1 -> 4)</Title>
+          <Title>gas volume fraction at nodes (port 1 -> 4)</Title>
+          <Title>gas volume fraction at nodes (port 1 -> 4)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="66" title="superheat / subcooling at nodes (port 2 -> 4)" type="0" units="degC" varName="shscint" visibility="True">
+         <TitleList>
+          <Title>superheat / subcooling at nodes (port 2 -> 4)</Title>
+          <Title>superheat / subcooling at nodes (port 2 -> 4)</Title>
+          <Title>superheat / subcooling at nodes (port 2 -> 4)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="27" title="internal mass flow rate (port 1 -> 4)" type="0" units="kg/s" varName="dmint" visibility="True">
+         <TitleList>
+          <Title>internal mass flow rate (port 1 -> 4)</Title>
+          <Title>internal mass flow rate (port 1 -> 4)</Title>
+          <Title>internal mass flow rate (port 1 -> 4)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var defValue="0" dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" maxValue="0" minValue="0" saveValue="1" subId="28" title="wall temperatures (port 1 -> 4)" type="1" units="degC" varName="twall" varName2="dtwall" visibility="True">
+         <RValues>
+          <Value>0</Value>
+          <Value>0</Value>
+          <Value>0</Value>
+         </RValues>
+         <TitleList>
+          <Title>wall temperatures (port 1 -> 4)</Title>
+          <Title>wall temperatures (port 1 -> 4)</Title>
+          <Title>wall temperatures (port 1 -> 4)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="3"/>
+          <Data laStatus="3"/>
+          <Data laStatus="3"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="29" title="internal heat flow rate (port 1 -> 4)" type="0" units="W" varName="dhint" visibility="True">
+         <TitleList>
+          <Title>internal heat flow rate (port 1 -> 4)</Title>
+          <Title>internal heat flow rate (port 1 -> 4)</Title>
+          <Title>internal heat flow rate (port 1 -> 4)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="30" title="external heat flow rate (port 1 -> 4)" type="0" units="W" varName="dhext" visibility="True">
+         <TitleList>
+          <Title>external heat flow rate (port 1 -> 4)</Title>
+          <Title>external heat flow rate (port 1 -> 4)</Title>
+          <Title>external heat flow rate (port 1 -> 4)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="31" title="internal heat exchange coefficient (port 1 -> 4)" type="0" units="W/m**2/K" varName="hint" visibility="True">
+         <TitleList>
+          <Title>internal heat exchange coefficient (port 1 -> 4)</Title>
+          <Title>internal heat exchange coefficient (port 1 -> 4)</Title>
+          <Title>internal heat exchange coefficient (port 1 -> 4)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="71" title="fluid state (see description) (port 1 -> 4)" type="0" units="null" varName="region" visibility="True">
+         <TitleList>
+          <Title>fluid state (see description) (port 1 -> 4)</Title>
+          <Title>fluid state (see description) (port 1 -> 4)</Title>
+          <Title>fluid state (see description) (port 1 -> 4)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </IntVars>
+      <ExtVars>
+       <Port tag="hflow">
+        <Vars>
+         <Var defValue="0" dimension="1" io="2" maxValue="0" minValue="0" saveValue="1" subId="1" title="pressure at port 1" type="1" units="barA" value="0" varName="p1" varName2="dp1" visibility="True">
+          <LaData>
+           <Data laStatus="3"/>
+          </LaData>
+         </Var>
+         <Var defValue="0" dimension="1" io="2" maxValue="0" minValue="0" saveValue="1" subId="2" title="density at port 1" type="1" units="kg/m**3" value="0" varName="rho1" varName2="drho1" visibility="True">
+          <LaData>
+           <Data laStatus="3"/>
+          </LaData>
+         </Var>
+         <Var defValue="0" dimension="1" io="2" maxValue="0" minValue="0" saveValue="1" subId="3" title="com index at port 1" type="5" units="tpfnull" unplottable="1" value="0" varName="com1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="4" title="enthalpy flow rate at port 1" type="0" units="W" varName="dmh1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="5" title="mass flow rate at port 1" type="0" units="kg/s" varName="dm1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+       <Port tag="geocom">
+        <Vars>
+         <Var dimension="1" io="1" saveValue="1" subId="56" title="inlet moist air mass flow rate" type="0" units="kg/s" varName="mamfr" visibility="False">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="55" title="inlet absolute humidity" type="0" units="g/kg" unplottable="1" varName="maxh" visibility="False">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="57" title="inlet moist air pressure" type="0" units="barA" varName="map" visibility="False">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="54" title="inlet moist air temperature" type="0" units="degC" unplottable="1" varName="mat" visibility="False">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="8" title="abscissa at port 2" type="0" units="m" varName="abs2" visibility="False">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="9" title="index of U-channel plate and fin heat exchanger" type="0" units="null" unplottable="1" varName="ucpfindex" visibility="False">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+       <Port tag="pflow">
+        <Vars>
+         <Var dimension="1" io="2" saveValue="1" subId="58" title="moist air mass flow rate at port 3" type="0" units="kg/s" varName="mamfr3" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="2" saveValue="1" subId="59" title="moist air outlet relative humidity at port 3" type="0" units="%" varName="marh3" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dupType="0" primaryPort="1" primaryVar="2" saveValue="1" subId="60" title="inlet moist air pressure" type="4" varName="map3" visibility="True"/>
+         <Var dimension="1" io="2" saveValue="1" subId="61" title="moist air outlet temperature at port 3" type="0" units="degC" varName="mat3" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+       <Port tag="hflow">
+        <Vars>
+         <Var defValue="0" dimension="1" io="2" maxValue="0" minValue="0" saveValue="1" subId="14" title="pressure at port 4" type="1" units="barA" value="0" varName="p4" varName2="dp4" visibility="True">
+          <LaData>
+           <Data laStatus="3"/>
+          </LaData>
+         </Var>
+         <Var defValue="0" dimension="1" io="2" maxValue="0" minValue="0" saveValue="1" subId="15" title="density at port 4" type="1" units="kg/m**3" value="0" varName="rho4" varName2="drho4" visibility="True">
+          <LaData>
+           <Data laStatus="3"/>
+          </LaData>
+         </Var>
+         <Var defValue="0" dimension="1" io="2" maxValue="0" minValue="0" saveValue="1" subId="16" title="com index at port 4" type="5" units="tpfnull" unplottable="1" value="0" varName="com4" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="17" title="enthalpy flow rate at port 4" type="0" units="W" varName="dmh4" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="18" title="mass flow rate at port 4" type="0" units="kg/s" varName="dm4" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+      </ExtVars>
+     </Submodel>
+    </Comp>
+    <Comp alias="ac_ucpf_ref1" circuitScopeId="327" depth="206" displayName="ac_ucpf_ref1" geometry="1" iconDescription="reference part of an U-channel plate and fins heat exchanger (configuration 1)" labelVisible="0" libraryId="ac.ac_ucpf_ref1" name="ac_ucpf_ref1" scaleX="1.000000" scaleY="1.000000" type="0">
+     <Pos x="162" y="114"/>
+     <LabelPos configured="0" direction="0" x="0" y="0"/>
+     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIxIiB0eXBlPSJwZmxvdyIgeD0iMTAiIHk9IjEwOCI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL3BmbG93MXB4LnN2ZzwvUE9SVF9CSVRNQVA+CiAgPC9QT1JUPgogIDxQT1JUIGZhY2U9IjMiIHR5cGU9ImhmbG93IiB4PSIzNSIgeT0iMzIiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9oZmxvdzFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KICA8UE9SVCBmYWNlPSIwIiB0eXBlPSJwZmxvdyIgeD0iMjUiIHk9IjEiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9wZmxvdzFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJnZW9jb20iIHg9IjEiIHk9IjEwIj4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvZ2VvY29tMXB4LnN2ZzwvUE9SVF9CSVRNQVA+CiAgPC9QT1JUPgogIDxQT1JUIGZhY2U9IjIiIHR5cGU9ImhmbG93IiB4PSIxIiB5PSIyMyI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL2hmbG93MXB4LnN2ZzwvUE9SVF9CSVRNQVA+CiAgPC9QT1JUPgogPC9QT1JUUz4K" cirPortHidden="0">
+      <IconMap data="H4sIAAAAAAACCsVZS2/jNhC+768g2INbQKL50DOIsmgPPbXAAtueA9dRbHVlyZC0sZNf3xnqYZlKFnZCuzYgDh/iNzMcDmeo28/7TU6e0qrOyiKZCcZnJC2W5UNWrJLZ33/97kazz3efbuunFYGRRZ3QddNsb+bz3W7HdoqV1WouOedzGEHbITf7PCu+vTZQxHE81710wKSCSUr+WdTpl6p8zPI0oU1WPFOSPST0j+wpzfPyXsDUCeXbPSXPXbnLHpp1QpWPlXWardYNzMUjrD5l6e63Et8gnCifQDMlJSA+5uUuofWyKvNcc3tTbxdLgNxWaZ1WTykFWVd3nwghXYHUtsyfV2VBgLs8oUVZpJTUTVV+gxd/4vrXN7ibrEmrPIMCuaFkW2ZFA1qTHvMdSaSAwmc+kWFHEELnAxKoJn0XzF60EKAfoGIk9nJoAgqgRjiDbGZFi7to1icxgdwuF9uEVuX34uFN3mAd/1QcxWf+EkvOlCMcpIQjmGphlxxoz5XwFPDUY2FM2I/DkQcJkM/51aUQ0SWl6MmhtGuBYBRODA8SICtcESE7wp4Jxr0FCh62Fhj3BghA/6sBaln5lVbuLAn+hQU6RQRcN99n8ZK7nEWOdIEjeEomaldXXF0B/Pqtvmt0GPgtt+MBU/47vV5Gbbhn4wiX02RkzCZyfW1NfRh/0Bu4h5P37am66/0GnBxO4BO/UyMRqqfgpyt4yuj+gfDDwafcWmfsyNH4geFn9JF3FWiBExxhB/67LPkVF3aOgQsdSqjWh+FfBvBQEGl8lcKJQkdKJwpq8GiubM8vF9ao5q4C5waPd1vRB/gewiLkyOdoSjpC8hQB7r0QrWvM16mH37n4aL4BngGCswDMFu1btC3wi8BNaTpAAsYS1RN+30WusgkP+0xqf9YTkRrtw3ZTHpmgDQcqAwbnoWJy6aKS0P/EDlRdxQRYU1i7+uAEs0L/6rEAfRmMgX4J4+A0ZeFXiSqE6Bdm6qd7uajbFzGc3Uq+ybV2uAbjEB0EOgIweMeAASJY6Oknfbmoi8HVbH0M7oQulI96LwP4/tU8f2tzfGxz8djKLuti2/zlOJOJ3+HfXwPxTAj1gQPk1XzMBBCWAToJImVIoBssSnAAEJYBOgniyJBAN9gAEIGJIHzLEHKCYBtgYkjStiVJPrHV2DKEiCYQoW2IYALhW4ZQ0z1ne9Opya5Ttred4ibE4XSxBqItaHwZpS3AogPX9nMEEFgGMK/ThGcZQJkA0jKAMAG4XQBzjS0vsbnC0wXuk4MhUMZrLqVYTHRahFkQ0W0yhiQbMqG2bPMjrOuxQzhzfOV2schK3/7Gsr0F1mE7cNTl1KNbMlM4SI2GlziRMdZ+/ALHSy8iogNI+OM3UC0wLfOI8nB6UA+AeiZnTbpvSFMtivqxrDYJ3SyaKtv/LAjeuKOe4YUYPAnn4hdKHsuicR8Xmyx/Tujs1ypb5LOutc5eQJ/Bdk/vnm/nOO3JGAKSNo/xcyD250EIzAvVeRDleRBKkFich/BiIFwkBFe9a1LdARGyVwInvO9sHyv9vWb5vW7u/fs1fmehFvZ/H5bI3gEMXMguCZqge/ertFyWG2oxPO3RLWcg0phe2Z2em77/aPqJ4tT91tayHb5EcTN7e2vZpD2jEVGPjs6sU22fO4s38IU96UcXhEN8NfoMEh3w8aPp3X8MHH1hgx0AAA==" format="svgz/base64"/>
+     </CirCompIcon>
+     <Ports>
+      <Port connect="0" decorationOrientation="0" decorationVisible="0" face="1" name="" type="pflow">
+       <Pos x="10" y="108"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="-1" port="0"/>
+       </Connects>
+      </Port>
+      <Port connect="0" decorationOrientation="0" decorationVisible="0" face="3" name="" type="hflow">
+       <Pos x="35" y="32"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="-1" port="1"/>
+       </Connects>
+      </Port>
+      <Port connect="2" decorationOrientation="0" decorationVisible="0" face="0" name="" type="pflow">
+       <Pos x="25" y="1"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="0" port="1"/>
+       </Connects>
+      </Port>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="2" name="" type="geocom">
+       <Pos x="1" y="10"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="12" port="1"/>
+       </Connects>
+      </Port>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="2" name="" type="hflow">
+       <Pos x="1" y="23"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="12" port="0"/>
+       </Connects>
+      </Port>
+     </Ports>
+     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="1.0" dir="$AME/libac/submodels" hasTerminate="1" idMax="123" idsReset="0" label="reference part of an U-channel plate and fins heat exchanger (configuration 1)" name="ACUCPFREF1" outputType="1" pStoresNumber="3" type="0" unit="0">
+      <RealParams>
+       <Params>
+        <Param defValue="3" maxValue="1e+08" minValue="1e-08" subId="30" title="pressure" units="barA" value="3" varName="pini" visibility="True"/>
+        <Param defValue="300" maxValue="1e+10" minValue="-1e+10" subId="31" title="specific enthalpy" units="kJ/kg" value="300" varName="hini" visibility="(hcond == 1)"/>
+        <Param defValue="20" maxValue="800" minValue="-273.15" subId="32" title="temperature" units="degC" value="20" varName="tini" visibility="(hcond == 2)"/>
+        <Param defValue="0.2" maxValue="1" minValue="0" subId="33" title="gas mass fraction" units="null" value="0.2" varName="xini" visibility="(hcond == 3)"/>
+        <Param defValue="5" isDelta="1" maxValue="100" minValue="-100" subId="34" title="superheat / subcooling" units="degC" value="5" varName="shscini" visibility="(hcond == 4)"/>
+        <Param defValue="0.5" maxValue="1000" minValue="0.001" subId="119" title="singular pressure drop coefficient for incoming flow" units="null" value="0.5" varName="kin" visibility="True"/>
+        <Param defValue="1" maxValue="1000" minValue="0.001" subId="120" title="singular pressure drop coefficient for outgoing flow" units="null" value="1" varName="kout" visibility="True"/>
+        <Param defValue="3000" maxValue="1e+08" minValue="1" subId="121" title="critical Reynolds number" units="null" value="3000" varName="rec" visibility="True"/>
+        <Param defValue="1" maxValue="1e+06" minValue="1e-06" subId="49" title="frictional pressure drop gain of the pass" units="null" value="1" varName="kdpp" visibility="True"/>
+       </Params>
+      </RealParams>
+      <IntParams>
+       <Params>
+        <Param defValue="1" maxValue="99" minValue="1" subId="38" title="index of fluid" value="1" varName="fi" visibility="True"/>
+        <Param defValue="2" maxValue="99" minValue="1" subId="39" title="solid type index" value="2" varName="soli" visibility="True"/>
+        <Param defValue="1" maxValue="99" minValue="1" subId="40" title="index of U-channel plate and fin heat exchanger" value="1" varName="ucpfi" visibility="True"/>
+        <Param defValue="6" maxValue="100" minValue="1" subId="109" title="number of U-channels" value="6" varName="nbUchannels" visibility="True"/>
+        <Param defValue="1" maxValue="2" minValue="1" recompile="1" subId="102" title="number of cells" value="1" varName="nbCellsEnum" visibility="True">
+         <Enums>
+          <Enum string="3 cells"/>
+          <Enum string="5 cells"/>
+         </Enums>
+        </Param>
+        <Param defValue="1" maxValue="2" minValue="1" subId="45" title="acceleration pressure drop calculation" value="1" varName="acc" visibility="True">
+         <Enums>
+          <Enum string="no"/>
+          <Enum string="yes"/>
+         </Enums>
+        </Param>
+        <Param defValue="1" maxValue="2" minValue="1" subId="104" title="moist air temperature definition" value="1" varName="typet" visibility="True">
+         <Enums>
+          <Enum string="input signal"/>
+          <Enum string="temperature profile"/>
+         </Enums>
+        </Param>
+        <Param defValue="3" maxValue="4" minValue="1" subId="46" title="type of initialization" value="3" varName="hcond" visibility="True">
+         <Enums>
+          <Enum string="pressure and specific enthalpy"/>
+          <Enum string="pressure and temperature"/>
+          <Enum string="pressure and gas mass fraction"/>
+          <Enum string="pressure and superheat/subcooling"/>
+         </Enums>
+        </Param>
+       </Params>
+      </IntParams>
+      <TextParams>
+       <Params>
+        <Param defValue="$AME/libac/data/profile.data" subId="47" textType="1" title="filename for mass flow rate profile = f(x,y)" value="$AME/libac/data/profile.data" varName="profilemfr" visibility="True"/>
+        <Param defValue="$AME/libac/data/profile_temp.data" subId="106" textType="0" title="filename for temperature profile (K) = f(x,y)" value="$AME/libac/data/profile_temp.data" varName="profileTemp" visibility="typet == 2"/>
+       </Params>
+      </TextParams>
+      <ParamsGroups>
+       <Group circuitScopeId="90826" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="123">
+        <Elements>
+         <Element display="1" varName="mamfr"/>
+         <Element display="1" varName="marh"/>
+         <Element display="1" varName="map"/>
+         <Element display="1" varName="mat"/>
+         <Element display="2" varName="p2"/>
+         <Element display="2" varName="rho2"/>
+         <Element display="1" varName="dmh2"/>
+         <Element display="1" varName="dm2"/>
+         <Element display="1" varName="mamfr3"/>
+         <Element display="1" varName="marh3"/>
+         <Element display="1" varName="mat3"/>
+         <Element display="2" varName="abs4"/>
+         <Element display="1" varName="dmh5"/>
+         <Element display="1" varName="dm5"/>
+         <Element display="1" varName="p5"/>
+         <Element display="1" varName="rho5"/>
+         <Element display="2" varName="pstate_1"/>
+         <Element display="2" varName="rhostate_1"/>
+         <Element display="1" varName="massInt"/>
+         <Element display="1" varName="pint_1"/>
+         <Element display="1" varName="rhoint_1"/>
+         <Element display="1" varName="tint_1"/>
+         <Element display="1" varName="xint_1"/>
+         <Element display="1" varName="alphaInt_1"/>
+         <Element display="1" varName="shscint_1"/>
+         <Element display="1" varName="dmint_1"/>
+         <Element display="2" varName="twall_1"/>
+         <Element display="1" varName="dhint_1"/>
+         <Element display="1" varName="dhext_1"/>
+         <Element display="1" varName="hint_1"/>
+         <Element display="1" varName="region_1"/>
+         <Element display="0" varName="fi"/>
+         <Element display="0" varName="soli"/>
+         <Element display="0" varName="ucpfi"/>
+         <Element display="0" varName="nbUchannels"/>
+         <Element display="0" varName="nbCellsEnum"/>
+         <Element display="0" varName="acc"/>
+         <Element display="0" varName="typet"/>
+         <Element display="0" varName="hcond"/>
+         <Element display="0" varName="pini"/>
+         <Element display="0" varName="hini"/>
+         <Element display="0" varName="tini"/>
+         <Element display="0" varName="xini"/>
+         <Element display="0" varName="shscini"/>
+         <Element display="0" varName="kin"/>
+         <Element display="0" varName="kout"/>
+         <Element display="0" varName="rec"/>
+         <Element display="0" varName="kdpp"/>
+         <Element display="0" varName="profilemfr"/>
+         <Element display="0" varName="profileTemp"/>
+        </Elements>
+       </Group>
+      </ParamsGroups>
+      <IntVars>
+       <Vars>
+        <Var dimension="1" saveValue="1" subId="113" title="mass of fluid" type="0" units="kg" varName="massInt" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var defValue="0" dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5 - 1" dimension="2" maxValue="0" minValue="0" saveValue="1" subId="19" title="pressure at nodes" type="1" units="barA" varName="pstate" varName2="dpstate" visibility="False">
+         <RValues>
+          <Value>0</Value>
+          <Value>0</Value>
+         </RValues>
+         <TitleList>
+          <Title>pressure at nodes</Title>
+          <Title>pressure at nodes</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="3"/>
+          <Data laStatus="3"/>
+         </LaData>
+        </Var>
+        <Var defValue="0" dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5 - 1" dimension="2" maxValue="0" minValue="0" saveValue="1" subId="20" title="density at nodes" type="1" units="kg/m**3" varName="rhostate" varName2="drhostate" visibility="False">
+         <RValues>
+          <Value>0</Value>
+          <Value>0</Value>
+         </RValues>
+         <TitleList>
+          <Title>density at nodes</Title>
+          <Title>density at nodes</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="3"/>
+          <Data laStatus="3"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="21" title="pressure at nodes (port 2 -> 5)" type="0" units="barA" varName="pint" visibility="True">
+         <TitleList>
+          <Title>pressure at nodes (port 2 -> 5)</Title>
+          <Title>pressure at nodes (port 2 -> 5)</Title>
+          <Title>pressure at nodes (port 2 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="23" title="density at nodes (port 2 -> 5)" type="0" units="kg/m**3" varName="rhoint" visibility="True">
+         <TitleList>
+          <Title>density at nodes (port 2 -> 5)</Title>
+          <Title>density at nodes (port 2 -> 5)</Title>
+          <Title>density at nodes (port 2 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="22" title="refrigerant temperature at nodes (port 2 -> 5)" type="0" units="degC" varName="tint" visibility="True">
+         <TitleList>
+          <Title>refrigerant temperature at nodes (port 2 -> 5)</Title>
+          <Title>refrigerant temperature at nodes (port 2 -> 5)</Title>
+          <Title>refrigerant temperature at nodes (port 2 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="24" title="gas mass fraction at nodes (port 2 -> 5)" type="0" units="null" varName="xint" visibility="True">
+         <TitleList>
+          <Title>gas mass fraction at nodes (port 2 -> 5)</Title>
+          <Title>gas mass fraction at nodes (port 2 -> 5)</Title>
+          <Title>gas mass fraction at nodes (port 2 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="115" title="gas volume fraction at nodes (port 2 -> 5)" type="0" units="null" varName="alphaInt" visibility="True">
+         <TitleList>
+          <Title>gas volume fraction at nodes (port 2 -> 5)</Title>
+          <Title>gas volume fraction at nodes (port 2 -> 5)</Title>
+          <Title>gas volume fraction at nodes (port 2 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="100" title="superheat / subcooling at nodes (port 2 -> 5)" type="0" units="degC" varName="shscint" visibility="True">
+         <TitleList>
+          <Title>superheat / subcooling at nodes (port 2 -> 5)</Title>
+          <Title>superheat / subcooling at nodes (port 2 -> 5)</Title>
+          <Title>superheat / subcooling at nodes (port 2 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="25" title="internal mass flow rate (port 2 -> 5)" type="0" units="kg/s" varName="dmint" visibility="True">
+         <TitleList>
+          <Title>internal mass flow rate (port 2 -> 5)</Title>
+          <Title>internal mass flow rate (port 2 -> 5)</Title>
+          <Title>internal mass flow rate (port 2 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var defValue="0" dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" maxValue="0" minValue="0" saveValue="1" subId="26" title="wall temperatures (port 2 -> 5)" type="1" units="degC" varName="twall" varName2="dtwall" visibility="True">
+         <RValues>
+          <Value>0</Value>
+          <Value>0</Value>
+          <Value>0</Value>
+         </RValues>
+         <TitleList>
+          <Title>wall temperatures (port 2 -> 5)</Title>
+          <Title>wall temperatures (port 2 -> 5)</Title>
+          <Title>wall temperatures (port 2 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="3"/>
+          <Data laStatus="3"/>
+          <Data laStatus="3"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="27" title="internal heat flow rate (port 2 -> 5)" type="0" units="W" varName="dhint" visibility="True">
+         <TitleList>
+          <Title>internal heat flow rate (port 2 -> 5)</Title>
+          <Title>internal heat flow rate (port 2 -> 5)</Title>
+          <Title>internal heat flow rate (port 2 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="28" title="external heat flow rate (port 2 -> 5)" type="0" units="W" varName="dhext" visibility="True">
+         <TitleList>
+          <Title>external heat flow rate (port 2 -> 5)</Title>
+          <Title>external heat flow rate (port 2 -> 5)</Title>
+          <Title>external heat flow rate (port 2 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="29" title="internal heat exchange coefficient (port 2 -> 5)" type="0" units="W/m**2/K" varName="hint" visibility="True">
+         <TitleList>
+          <Title>internal heat exchange coefficient (port 2 -> 5)</Title>
+          <Title>internal heat exchange coefficient (port 2 -> 5)</Title>
+          <Title>internal heat exchange coefficient (port 2 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="111" title="fluid state (see description) (port 2 -> 5)" type="0" units="null" varName="region" visibility="True">
+         <TitleList>
+          <Title>fluid state (see description) (port 2 -> 5)</Title>
+          <Title>fluid state (see description) (port 2 -> 5)</Title>
+          <Title>fluid state (see description) (port 2 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </IntVars>
+      <ExtVars>
+       <Port tag="pflow">
+        <Vars>
+         <Var dimension="1" io="1" saveValue="1" subId="50" title="inlet moist air mass flow rate at port 1" type="0" units="kg/s" varName="mamfr" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="52" title="inlet moist air relative humidity at port 1" type="0" units="%" varName="marh" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="53" title="inlet moist air pressure at port 1" type="0" units="barA" varName="map" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="54" title="inlet moist air temperature at port 1" type="0" units="degC" varName="mat" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+       <Port tag="hflow">
+        <Vars>
+         <Var defValue="0" dimension="1" io="2" maxValue="0" minValue="0" saveValue="1" subId="5" title="pressure at port 2" type="1" units="barA" value="0" varName="p2" varName2="dp2" visibility="True">
+          <LaData>
+           <Data laStatus="3"/>
+          </LaData>
+         </Var>
+         <Var defValue="0" dimension="1" io="2" maxValue="0" minValue="0" saveValue="1" subId="6" title="density at port 2" type="1" units="kg/m**3" value="0" varName="rho2" varName2="drho2" visibility="True">
+          <LaData>
+           <Data laStatus="3"/>
+          </LaData>
+         </Var>
+         <Var defValue="0" dimension="1" io="2" maxValue="0" minValue="0" saveValue="1" subId="7" title="com index at port 2" type="5" units="tpfnull" unplottable="1" value="0" varName="com2" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="8" title="enthalpy flow rate at port 2" type="0" units="W" varName="dmh2" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="9" title="mass flow rate at port 2" type="0" units="kg/s" varName="dm2" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+       <Port tag="pflow">
+        <Vars>
+         <Var dimension="1" io="2" saveValue="1" subId="95" title="moist air mass flow rate at port 3" type="0" units="kg/s" varName="mamfr3" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="2" saveValue="1" subId="96" title="moist air outlet relative humidity at port 3" type="0" units="%" varName="marh3" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dupType="0" primaryPort="0" primaryVar="2" saveValue="1" subId="97" title="inlet moist air pressure at port 1" type="4" varName="map3" visibility="True"/>
+         <Var dimension="1" io="2" saveValue="1" subId="98" title="moist air outlet temperature at port 3" type="0" units="degC" varName="mat3" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+       <Port tag="geocom">
+        <Vars>
+         <Var dupType="0" primaryPort="0" primaryVar="0" saveValue="1" subId="110" title="inlet moist air mass flow rate at port 1" type="4" varName="mamfr4" visibility="False"/>
+         <Var dimension="1" io="2" saveValue="1" subId="93" title="inlet absolute humidity at port 4" type="0" units="g/kg" unplottable="1" varName="maxh4" visibility="False">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dupType="0" primaryPort="0" primaryVar="2" saveValue="1" subId="88" title="inlet moist air pressure at port 1" type="4" varName="map4" visibility="False"/>
+         <Var dupType="0" primaryPort="0" primaryVar="3" saveValue="1" subId="87" title="inlet moist air temperature at port 1" type="4" varName="mat4" visibility="False"/>
+         <Var defValue="0" dimension="1" io="2" maxValue="0" minValue="0" saveValue="1" subId="108" title="abscissa port 4" type="5" units="m" value="0" varName="abs4" visibility="False">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var defValue="0" dimension="1" io="2" maxValue="0" minValue="0" saveValue="1" subId="80" title="index of U-channel plate and fin heat exchanger" type="5" units="null" unplottable="1" value="0" varName="ucpfindex" visibility="False">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+       <Port tag="hflow">
+        <Vars>
+         <Var dimension="1" express2="@_5_2" io="2" saveValue="1" subId="122" title="enthalpy flow rate at port 5" type="12" units="W" varName="dmh5" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" express2="@_5_3,@_5_4,@_5_5,@_0_2,@_0_3" io="2" saveValue="1" subId="91" title="mass flow rate at port 5" type="8" units="kg/s" varName="dm5" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="86" title="pressure at port 5" type="0" units="barA" varName="p5" visibility="True">
+          <LaData>
+           <Data laStatus="3"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="85" title="density at port 5" type="0" units="kg/m**3" varName="rho5" visibility="True">
+          <LaData>
+           <Data laStatus="3"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="78" title="com index at port 5" type="0" units="tpfnull" unplottable="1" varName="com5" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+      </ExtVars>
+     </Submodel>
+    </Comp>
+    <Comp alias="ac_ucpf_int1" circuitScopeId="398" depth="207" displayName="ac_ucpf_int1" geometry="1" iconDescription="intermediate part of an U-channel plate and fins heat exchanger (configuration 1)" labelVisible="0" libraryId="ac.ac_ucpf_int1" name="ac_ucpf_int1" scaleX="1.000000" scaleY="1.000000" type="0">
+     <Pos x="127" y="114"/>
+     <LabelPos configured="0" direction="0" x="0" y="0"/>
+     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIzIiB0eXBlPSJoZmxvdyIgeD0iMzUiIHk9IjIzIj4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvaGZsb3cxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiAgPFBPUlQgZmFjZT0iMyIgdHlwZT0iZ2VvY29tIiB4PSIzNSIgeT0iMTAiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9nZW9jb20xcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiAgPFBPUlQgZmFjZT0iMCIgdHlwZT0icGZsb3ciIHg9IjI1IiB5PSIxIj4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvcGZsb3cxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiAgPFBPUlQgZmFjZT0iMiIgdHlwZT0iZ2VvY29tIiB4PSIxIiB5PSIxMCI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL2dlb2NvbTFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJoZmxvdyIgeD0iMSIgeT0iMzIiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9oZmxvdzFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KIDwvUE9SVFM+Cg==" cirPortHidden="0">
+      <IconMap data="H4sIAAAAAAACCr1ZS2/jNhC+768g2EMuMk0ORT2CKAv00FMLFNj2bKSK1lZXkQzLayf76zukTNkWExSbjK0AEh8TfvOWZnz3+fmpYbtq09ddW9woIW9Y1ZbdY90ui5u///ptlt18vv901++WDCnbvuCr7XZ9O5/v93ux16LbLOcgpZwjBR9Ibp+buv32GqHK83zudvmIyZUAzv556Ks/N93XuqkKvq3bF87qx4L/Xu+qpukWCo8uuFw/c/ZyeO7rx+2q4NrYyaqql6stniUzO93V1f7Xzv4Hk0wbhsucdYj4ten2Be/LTdc0jtvbfv1QIuR6U/XVZldxlHV5/4kxdrd+2K4YMtQUvO3airN+u+m+Ie0v0l1+YYbyVP92NYqy6b63j+P6U72tNk2ND8sYZyjPH4kwkTEiL+VMiiyCmRIa7yBUP3OTmZsgfv/W3jU2JvgDt6cEIf98fkG1Zai2HG8hI6dsWq6vrakP449665oXqxJS3a2RZosxa1B/iWHmoEamtB/h5SYQi2F/HJiUMc8cOWPPquC5MBjOODAJLoBfwIHl4TrQVgcT8MS8y5XLh/UU+Wc8XKVW5RphSxnZP0jwppUwX0BFWRoBRFnSgzDoNGglfKKRejnTaWRv73ajD/DtvUs595LOlw5iqBz9x7rXKV/Lrr2Id1v/TTCgMM+LZMBValjBK8M85caJHSAt035g/Ba7ShQeAw1cQvODTJ8E4hCVF82mkAiIQAsoZ1ZhNhnlEU5nWij0rNTlMSVi62ku38Yi6ZEG9wHpFK6nX8CqE5Q9yR/344xrCk5VLtJIw5ucBmy6+BHJDKKAX4kZV0tcGQ/9cdEcY605JJk49UkGMp9lEN9cLfUPPidPfS4/9bLL5liXzQfxYy9+/o4E/xqIjqcYWn/gHfIqBAQQihpCBprKiSFCPREDBFqiVlJ+eGP78zNaT1Jqcr7dIAXQUwAgBjBTgJgYIJ0CJMQAUxsrYiNPBSDm/xBkmZ4EmVsgDLIjgCIGiMfP4uRMArdAKMERQFEDBIkIqDMRBOlaUadr5/jnECk1RBJAGOr3WhgQ1BGhg5DQ1DHh385HiONnHB1IPC1I9TH0aFV1AqGoIeQUwn/IkEFAFkCk1BBJAGGoIQJzA7W5ITA3UJsbAnMranOrwNyK2twqMLd6xdy+geHrKsByFGupOALAstPOpFBDbTWMbKt32HNrJ+XW0GD+2a7IWwWezdYRMCzFTWRseZceBiMggbeK6bflsZQzo47OZJtOKBpqr7UItBzaYaV92hpfRXakokP7xzXUXJcA7wrvjhZpUk9nKY8SWD7nV5dCZZeUwg/dc7gt3e8r5fd+uzCLlf1dhBOE0iEf2Lbl4CZm7HeowU0C9HixrLqye+KEX68jOu3nPUyO17THy2nxc3Z8oDi9WFOZ7Rjfchrd8AY6EJpNT+2mqbtEgeWITaenttP/YzxFF3Pg22ww1mzedjDUVIew73fL+/8A+I+/FvAdAAA=" format="svgz/base64"/>
+     </CirCompIcon>
+     <Ports>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="3" name="" type="hflow">
+       <Pos x="35" y="23"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="11" port="4"/>
+       </Connects>
+      </Port>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="3" name="" type="geocom">
+       <Pos x="35" y="10"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="11" port="3"/>
+       </Connects>
+      </Port>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="0" name="" type="pflow">
+       <Pos x="25" y="1"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="2" port="0"/>
+       </Connects>
+      </Port>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="2" name="" type="geocom">
+       <Pos x="1" y="10"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="10" port="1"/>
+       </Connects>
+      </Port>
+      <Port connect="1" decorationOrientation="0" decorationVisible="0" face="2" name="" type="hflow">
+       <Pos x="1" y="32"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="10" port="0"/>
+       </Connects>
+      </Port>
+     </Ports>
+     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="1.0" dir="$AME/libac/submodels" hasTerminate="1" idMax="117" idsReset="0" label="intermediate part of an U-channel plate and fins heat exchanger (configuration 1)" name="ACUCPFINT1" outputType="1" pStoresNumber="3" type="0" unit="0">
+      <RealParams>
+       <Params>
+        <Param defValue="3" maxValue="1e+08" minValue="1e-08" subId="30" title="pressure" units="barA" value="3" varName="pini" visibility="True"/>
+        <Param defValue="300" maxValue="1e+10" minValue="-1e+10" subId="31" title="specific enthalpy" units="kJ/kg" value="300" varName="hini" visibility="(hcond == 1)"/>
+        <Param defValue="20" maxValue="800" minValue="-273.15" subId="32" title="temperature" units="degC" value="20" varName="tini" visibility="(hcond == 2)"/>
+        <Param defValue="0.2" maxValue="1" minValue="0" subId="33" title="gas mass fraction" units="null" value="0.2" varName="xini" visibility="(hcond == 3)"/>
+        <Param defValue="5" isDelta="1" maxValue="100" minValue="-100" subId="34" title="superheat / subcooling" units="degC" value="5" varName="shscini" visibility="(hcond == 4)"/>
+        <Param defValue="0.5" maxValue="1000" minValue="0.001" subId="113" title="singular pressure drop coefficient for incoming flow" units="null" value="0.5" varName="kin" visibility="True"/>
+        <Param defValue="1" maxValue="1000" minValue="0.001" subId="114" title="singular pressure drop coefficient for outgoing flow" units="null" value="1" varName="kout" visibility="True"/>
+        <Param defValue="3000" maxValue="1e+08" minValue="1" subId="115" title="critical Reynolds number" units="null" value="3000" varName="rec" visibility="True"/>
+        <Param defValue="1" maxValue="1e+06" minValue="1e-06" subId="48" title="frictional pressure drop gain of the pass" units="null" value="1" varName="kdpp" visibility="True"/>
+       </Params>
+      </RealParams>
+      <IntParams>
+       <Params>
+        <Param defValue="1" maxValue="99" minValue="1" subId="38" title="index of fluid" value="1" varName="fi" visibility="True"/>
+        <Param defValue="2" maxValue="99" minValue="1" subId="39" title="solid type index" value="2" varName="soli" visibility="True"/>
+        <Param defValue="1" maxValue="99" minValue="1" subId="40" title="index of U-channel plate and fin heat exchanger" value="1" varName="ucpfi" visibility="True"/>
+        <Param defValue="6" maxValue="100" minValue="1" subId="103" title="number of U-channels" value="6" varName="nbUchannels" visibility="True"/>
+        <Param defValue="1" maxValue="2" minValue="1" recompile="1" subId="102" title="number of cells" value="1" varName="nbCellsEnum" visibility="True">
+         <Enums>
+          <Enum string="3 cells"/>
+          <Enum string="5 cells"/>
+         </Enums>
+        </Param>
+        <Param defValue="1" maxValue="2" minValue="1" subId="45" title="acceleration pressure drop calculation" value="1" varName="acc" visibility="True">
+         <Enums>
+          <Enum string="no"/>
+          <Enum string="yes"/>
+         </Enums>
+        </Param>
+        <Param defValue="3" maxValue="4" minValue="1" subId="46" title="type of initialization" value="3" varName="hcond" visibility="True">
+         <Enums>
+          <Enum string="pressure and specific enthalpy"/>
+          <Enum string="pressure and temperature"/>
+          <Enum string="pressure and gas mass fraction"/>
+          <Enum string="pressure and superheat/subcooling"/>
+         </Enums>
+        </Param>
+       </Params>
+      </IntParams>
+      <ParamsGroups>
+       <Group circuitScopeId="90469" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="117">
+        <Elements>
+         <Element display="2" varName="p1"/>
+         <Element display="2" varName="rho1"/>
+         <Element display="1" varName="dmh1"/>
+         <Element display="1" varName="dm1"/>
+         <Element display="1" varName="map"/>
+         <Element display="1" varName="mamfr3"/>
+         <Element display="1" varName="marh3"/>
+         <Element display="1" varName="mat3"/>
+         <Element display="1" varName="abs4"/>
+         <Element display="1" varName="dmh5"/>
+         <Element display="1" varName="dm5"/>
+         <Element display="1" varName="p5"/>
+         <Element display="1" varName="rho5"/>
+         <Element display="2" varName="pstate_1"/>
+         <Element display="2" varName="rhostate_1"/>
+         <Element display="1" varName="massInt"/>
+         <Element display="1" varName="pint_1"/>
+         <Element display="1" varName="rhoint_1"/>
+         <Element display="1" varName="tint_1"/>
+         <Element display="1" varName="xint_1"/>
+         <Element display="1" varName="alphaInt_1"/>
+         <Element display="1" varName="shscint_1"/>
+         <Element display="1" varName="dmint_1"/>
+         <Element display="2" varName="twall_1"/>
+         <Element display="1" varName="dhint_1"/>
+         <Element display="1" varName="dhext_1"/>
+         <Element display="1" varName="hint_1"/>
+         <Element display="1" varName="region_1"/>
+         <Element display="0" varName="fi"/>
+         <Element display="0" varName="soli"/>
+         <Element display="0" varName="ucpfi"/>
+         <Element display="0" varName="nbUchannels"/>
+         <Element display="0" varName="nbCellsEnum"/>
+         <Element display="0" varName="acc"/>
+         <Element display="0" varName="hcond"/>
+         <Element display="0" varName="pini"/>
+         <Element display="0" varName="hini"/>
+         <Element display="0" varName="tini"/>
+         <Element display="0" varName="xini"/>
+         <Element display="0" varName="shscini"/>
+         <Element display="0" varName="kin"/>
+         <Element display="0" varName="kout"/>
+         <Element display="0" varName="rec"/>
+         <Element display="0" varName="kdpp"/>
+        </Elements>
+       </Group>
+      </ParamsGroups>
+      <IntVars>
+       <Vars>
+        <Var dimension="1" saveValue="1" subId="107" title="mass of fluid" type="0" units="kg" varName="massInt" visibility="True">
+         <LaData>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var defValue="0" dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5 - 1" dimension="2" maxValue="0" minValue="0" saveValue="1" subId="93" title="pressure at nodes" type="1" units="barA" varName="pstate" varName2="dpstate" visibility="False">
+         <RValues>
+          <Value>0</Value>
+          <Value>0</Value>
+         </RValues>
+         <TitleList>
+          <Title>pressure at nodes</Title>
+          <Title>pressure at nodes</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="3"/>
+          <Data laStatus="3"/>
+         </LaData>
+        </Var>
+        <Var defValue="0" dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5 - 1" dimension="2" maxValue="0" minValue="0" saveValue="1" subId="20" title="density at nodes" type="1" units="kg/m**3" varName="rhostate" varName2="drhostate" visibility="False">
+         <RValues>
+          <Value>0</Value>
+          <Value>0</Value>
+         </RValues>
+         <TitleList>
+          <Title>density at nodes</Title>
+          <Title>density at nodes</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="3"/>
+          <Data laStatus="3"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="21" title="pressure at nodes (port 1 -> 5)" type="0" units="barA" varName="pint" visibility="True">
+         <TitleList>
+          <Title>pressure at nodes (port 1 -> 5)</Title>
+          <Title>pressure at nodes (port 1 -> 5)</Title>
+          <Title>pressure at nodes (port 1 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="97" title="density at nodes (port 1 -> 5)" type="0" units="kg/m**3" varName="rhoint" visibility="True">
+         <TitleList>
+          <Title>density at nodes (port 1 -> 5)</Title>
+          <Title>density at nodes (port 1 -> 5)</Title>
+          <Title>density at nodes (port 1 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="22" title="refrigerant temperature at nodes (port 1 -> 5)" type="0" units="degC" varName="tint" visibility="True">
+         <TitleList>
+          <Title>refrigerant temperature at nodes (port 1 -> 5)</Title>
+          <Title>refrigerant temperature at nodes (port 1 -> 5)</Title>
+          <Title>refrigerant temperature at nodes (port 1 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="24" title="gas mass fraction at nodes (port 1 -> 5)" type="0" units="null" varName="xint" visibility="True">
+         <TitleList>
+          <Title>gas mass fraction at nodes (port 1 -> 5)</Title>
+          <Title>gas mass fraction at nodes (port 1 -> 5)</Title>
+          <Title>gas mass fraction at nodes (port 1 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="109" title="gas volume fraction at nodes (port 1 -> 5)" type="0" units="null" varName="alphaInt" visibility="True">
+         <TitleList>
+          <Title>gas volume fraction at nodes (port 1 -> 5)</Title>
+          <Title>gas volume fraction at nodes (port 1 -> 5)</Title>
+          <Title>gas volume fraction at nodes (port 1 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="100" title="superheat / subcooling at nodes (port 2 -> 5)" type="0" units="degC" varName="shscint" visibility="True">
+         <TitleList>
+          <Title>superheat / subcooling at nodes (port 2 -> 5)</Title>
+          <Title>superheat / subcooling at nodes (port 2 -> 5)</Title>
+          <Title>superheat / subcooling at nodes (port 2 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="25" title="internal mass flow rate (port 1 -> 5)" type="0" units="kg/s" varName="dmint" visibility="True">
+         <TitleList>
+          <Title>internal mass flow rate (port 1 -> 5)</Title>
+          <Title>internal mass flow rate (port 1 -> 5)</Title>
+          <Title>internal mass flow rate (port 1 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var defValue="0" dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" maxValue="0" minValue="0" saveValue="1" subId="26" title="wall temperatures (port 1 -> 4)" type="1" units="degC" varName="twall" varName2="dtwall" visibility="True">
+         <RValues>
+          <Value>0</Value>
+          <Value>0</Value>
+          <Value>0</Value>
+         </RValues>
+         <TitleList>
+          <Title>wall temperatures (port 1 -> 4)</Title>
+          <Title>wall temperatures (port 1 -> 4)</Title>
+          <Title>wall temperatures (port 1 -> 4)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="3"/>
+          <Data laStatus="3"/>
+          <Data laStatus="3"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="27" title="internal heat flow rate (port 1 -> 5)" type="0" units="W" varName="dhint" visibility="True">
+         <TitleList>
+          <Title>internal heat flow rate (port 1 -> 5)</Title>
+          <Title>internal heat flow rate (port 1 -> 5)</Title>
+          <Title>internal heat flow rate (port 1 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="28" title="external heat flow rate (port 1 -> 5)" type="0" units="W" varName="dhext" visibility="True">
+         <TitleList>
+          <Title>external heat flow rate (port 1 -> 5)</Title>
+          <Title>external heat flow rate (port 1 -> 5)</Title>
+          <Title>external heat flow rate (port 1 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="29" title="internal heat exchange coefficient (port 1 -> 5)" type="0" units="W/m**2/K" varName="hint" visibility="True">
+         <TitleList>
+          <Title>internal heat exchange coefficient (port 1 -> 5)</Title>
+          <Title>internal heat exchange coefficient (port 1 -> 5)</Title>
+          <Title>internal heat exchange coefficient (port 1 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+        <Var dimExpression="(nbCellsEnum==1)*3 + (nbCellsEnum==2)*5" dimension="3" saveValue="1" subId="104" title="fluid state (see description) (port 1 -> 5)" type="0" units="null" varName="region" visibility="True">
+         <TitleList>
+          <Title>fluid state (see description) (port 1 -> 5)</Title>
+          <Title>fluid state (see description) (port 1 -> 5)</Title>
+          <Title>fluid state (see description) (port 1 -> 5)</Title>
+         </TitleList>
+         <LaData>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+          <Data laStatus="0"/>
+         </LaData>
+        </Var>
+       </Vars>
+      </IntVars>
+      <ExtVars>
+       <Port tag="hflow">
+        <Vars>
+         <Var defValue="0" dimension="1" io="2" maxValue="0" minValue="0" saveValue="1" subId="1" title="pressure at port 1" type="1" units="barA" value="0" varName="p1" varName2="dp1" visibility="True">
+          <LaData>
+           <Data laStatus="3"/>
+          </LaData>
+         </Var>
+         <Var defValue="0" dimension="1" io="2" maxValue="0" minValue="0" saveValue="1" subId="2" title="density at port 1" type="1" units="kg/m**3" value="0" varName="rho1" varName2="drho1" visibility="True">
+          <LaData>
+           <Data laStatus="3"/>
+          </LaData>
+         </Var>
+         <Var defValue="0" dimension="1" io="2" maxValue="0" minValue="0" saveValue="1" subId="3" title="com index at port 1" type="5" units="tpfnull" unplottable="1" value="0" varName="com1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="4" title="enthalpy flow rate at port 1" type="0" units="W" varName="dmh1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="5" title="mass flow rate at port 1" type="0" units="kg/s" varName="dm1" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+       <Port tag="geocom">
+        <Vars>
+         <Var dimension="1" io="1" saveValue="1" subId="49" title="inlet moist air mass flow rate" type="0" units="kg/s" unplottable="1" varName="mamfr" visibility="False">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="7" title="inlet absolute humidity" type="0" units="g/kg" unplottable="1" varName="maxh" visibility="False">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="50" title="inlet moist air pressure" type="0" units="barA" varName="map" visibility="False">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="6" title="inlet moist air temperature" type="0" units="degC" unplottable="1" varName="mat" visibility="False">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="8" title="abscissae port 2" type="0" units="m" unplottable="1" varName="abs2" visibility="False">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="9" title="index of U-channel plate and fin heat exchanger" type="0" units="null" unplottable="1" varName="ucpfindex" visibility="False">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+       <Port tag="pflow">
+        <Vars>
+         <Var dimension="1" io="2" saveValue="1" subId="72" title="moist air mass flow rate at port 3" type="0" units="kg/s" varName="mamfr3" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="2" saveValue="1" subId="71" title="moist air outlet relative humidity at port 3" type="0" units="%" varName="marh3" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dupType="0" primaryPort="1" primaryVar="2" saveValue="1" subId="53" title="inlet moist air pressure" type="4" varName="map3" visibility="True"/>
+         <Var dimension="1" io="2" saveValue="1" subId="66" title="moist air outlet temperature at port 3" type="0" units="degC" varName="mat3" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+       <Port tag="geocom">
+        <Vars>
+         <Var dupType="0" primaryPort="1" primaryVar="0" saveValue="1" subId="87" title="inlet moist air mass flow rate" type="4" varName="mamfr4" visibility="False"/>
+         <Var dupType="0" primaryPort="1" primaryVar="1" saveValue="1" subId="85" title="inlet absolute humidity" type="4" varName="maxh4" visibility="False"/>
+         <Var dupType="0" primaryPort="1" primaryVar="2" saveValue="1" subId="83" title="inlet moist air pressure" type="4" varName="map4" visibility="False"/>
+         <Var dupType="0" primaryPort="1" primaryVar="3" saveValue="1" subId="81" title="inlet moist air temperature" type="4" varName="mat4" visibility="False"/>
+         <Var dimension="1" express2="@_2_5" io="2" saveValue="1" subId="105" title="abscissa port 4" type="8" units="m" varName="abs4" visibility="False">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dupType="0" primaryPort="1" primaryVar="5" saveValue="1" subId="77" title="index of U-channel plate and fin heat exchanger" type="4" varName="ucpfindex4" visibility="False"/>
+        </Vars>
+       </Port>
+       <Port tag="hflow">
+        <Vars>
+         <Var dimension="1" express2="@_5_2" io="2" saveValue="1" subId="116" title="enthalpy flow rate at port 5" type="12" units="W" varName="dmh5" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" express2="@_5_3,@_5_4,@_5_5,@_0_2,@_0_3" io="2" saveValue="1" subId="94" title="mass flow rate at port 5" type="8" units="kg/s" varName="dm5" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="90" title="pressure at port 5" type="0" units="barA" varName="p5" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="91" title="density at port 5" type="0" units="kg/m**3" varName="rho5" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="92" title="com index at port 5" type="0" units="tpfnull" unplottable="1" varName="com5" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+      </ExtVars>
+     </Submodel>
+    </Comp>
+    <Comp alias="signalsink" catname="sig" circuitScopeId="1" depth="208" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
+     <Pos x="426" y="30"/>
+     <LabelPos configured="0" direction="0" x="0" y="0"/>
+     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjUiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
+      <IconMap data="H4sIAAAAAAACCp1RuVLDMBDt+YqdpXATfHEk9kTJDAUVBQXUGWMr9k5kySMJH3/P2gkZCipUaA89vbdP2u7HVkEvrSOjRZCEcQBSl6YiXYvg4/3lbhPsdzdb19fASO3yopWOWoG9rkLVupDaoiYtw3MfzyiBjfddHkXDMITDfWhsHaVxHEfMc4HkoyJ9+guYZFkWLad4nQyTMEX4LJx8s+ZISgr0pCcEqgS+Ui+VMoeEqQXG3YgwXeJAlW8EZnPeSKobfyl6ksOzmeEQQwYZgmGtozKDQFdao9QyZ+66omSxzkonbS+R38LK0s9C6yt9+oscI4bUy1zll/OH5OCo1oXimwCwZVsS2IASqI2WCM5bc2KF23hZP427lry0ijiweW6PCc/Kxjg8hI9cpwKf5mRKz53oLNAZNf1bpDOkPf9eukpgvWJWSFcbgMVTVM8bf+DuG+p4C5w1AgAA" format="svgz/base64"/>
+     </CirCompIcon>
+     <Ports>
+      <Port connect="0" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
+       <Pos x="1" y="5"/>
+       <DecorationBoundingRect height="0" width="0" x="0" y="0"/>
+       <Connects>
+        <Connect num="-1" port="-1"/>
+       </Connects>
+      </Port>
+     </Ports>
+    </Comp>
+   </Comps>
+   <Lines>
+    <Line alias="pneumatic" circuitScopeId="324" endEntity="11" endPort="2" endType="0" labelVisible="0" startEntity="2" startPort="1" startType="0" type="0">
+     <pos configured="0" direction="0" x="0" y="0"/>
+     <Points>
+      <Point x="161" y="95"/>
+      <Point x="186" y="95"/>
+      <Point x="186" y="114"/>
+     </Points>
+     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="1" codeGenVersion="1.0" idMax="8" label="Direct connection" name="DIRECT" outputType="1" type="0" unit="0">
+      <ExtVars>
+       <Port tag="undefined">
+        <Vars>
+         <Var dimension="1" io="2" saveValue="1" subId="1" title="moist air mass flow rate at port 3" type="0" units="kg/s" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="2" saveValue="1" subId="2" title="moist air outlet relative humidity at port 3" type="0" units="%" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="2" saveValue="1" subId="3" title="inlet moist air pressure at port 1" type="0" units="barA" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="2" saveValue="1" subId="4" title="moist air outlet temperature at port 3" type="0" units="degC" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+       <Port tag="undefined">
+        <Vars>
+         <Var dimension="1" io="1" saveValue="1" subId="5" title="mass flow rate at port 3" type="0" units="kg/s" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="6" title="relative humidity at port 3" type="0" units="%" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="7" title="pressure at port 3" type="0" units="barA" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+         <Var dimension="1" io="1" saveValue="1" subId="8" title="temperature at port 3" type="0" units="degC" visibility="True">
+          <LaData>
+           <Data laStatus="0"/>
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+      </ExtVars>
+     </Submodel>
+    </Line>
+   </Lines>
+   <animationProperties loop="0" speed="1"/>
+   <globalParams/>
+  </Circuit>
+ </Supercomponent>
+</SUB>
