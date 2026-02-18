@@ -10,7 +10,7 @@
     <PortMap component="3" face="2" labelX="0.000000" labelY="0.000000" port="2" type="pflow" x="93" y="150" />
    </Map>
   </PortsMap>
-  <Circuit ameApplication="AMESim" highestId="91550">
+  <Circuit ameApplication="AMESim" highestId="91552">
    <Comps>
     <Comp alias="tpf_generic_sensor_extra_3" circuitScopeId="184" depth="201" displayName="tpf_generic_sensor_extra" geometry="3" iconDescription="" labelVisible="0" libraryId="tpf.tpf_generic_sensor_extra" name="tpf_generic_sensor_extra" scaleX="1.000000" scaleY="1.000000" type="0">
      <Pos x="67" y="178" />
@@ -545,7 +545,7 @@
         <PortMap component="1" face="2" labelX="0.000000" labelY="0.000000" port="0" type="pflow" x="95" y="112" />
        </Map>
       </PortsMap>
-      <Circuit ameApplication="AMESim" highestId="91550">
+      <Circuit ameApplication="AMESim" highestId="91552">
        <Comps>
         <Comp alias="tpf_ma_mixer" circuitScopeId="1" depth="201" displayName="tpf_ma_mixer" geometry="5" iconDescription="moist air mixer" labelVisible="0" libraryId="th.tpf_ma_mixer" name="tpf_ma_mixer" scaleX="1.000000" scaleY="1.000000" type="0">
          <Pos x="120" y="100" />
@@ -1097,7 +1097,7 @@
         <PortMap component="1" face="2" labelX="0.000000" labelY="0.000000" port="0" type="pflow" x="95" y="112" />
        </Map>
       </PortsMap>
-      <Circuit ameApplication="AMESim" highestId="91550">
+      <Circuit ameApplication="AMESim" highestId="91552">
        <Comps>
         <Comp alias="tpf_ma_mixer" circuitScopeId="1" depth="201" displayName="tpf_ma_mixer" geometry="5" iconDescription="moist air mixer" labelVisible="0" libraryId="th.tpf_ma_mixer" name="tpf_ma_mixer" scaleX="1.000000" scaleY="1.000000" type="0">
          <Pos x="120" y="100" />
@@ -3138,6 +3138,42 @@
         </Elements>
        </Group>
       </ParamsGroups>
+     </Submodel>
+    </Comp>
+    <Comp alias="signalsink_1" circuitScopeId="1" depth="211" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
+     <Pos x="300" y="50" />
+     <LabelPos configured="0" direction="0" x="0" y="0" />
+     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjUiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
+      <IconMap data="H4sIAAAAAAACCp1RuVLDMBDt+YqdpXATfHEk9kTJDAUVBQXUGWMr9k5kySMJH3/P2gkZCipUaA89vbdP2u7HVkEvrSOjRZCEcQBSl6YiXYvg4/3lbhPsdzdb19fASO3yopWOWoG9rkLVupDaoiYtw3MfzyiBjfddHkXDMITDfWhsHaVxHEfMc4HkoyJ9+guYZFkWLad4nQyTMEX4LJx8s+ZISgr0pCcEqgS+Ui+VMoeEqQXG3YgwXeJAlW8EZnPeSKobfyl6ksOzmeEQQwYZgmGtozKDQFdao9QyZ+66omSxzkonbS+R38LK0s9C6yt9+oscI4bUy1zll/OH5OCo1oXimwCwZVsS2IASqI2WCM5bc2KF23hZP427lry0ijiweW6PCc/Kxjg8hI9cpwKf5mRKz53oLNAZNf1bpDOkPf9eukpgvWJWSFcbgMVTVM8bf+DuG+p4C5w1AgAA" format="svgz/base64" />
+     </CirCompIcon>
+     <Ports>
+      <Port connect="0" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
+       <Pos x="1" y="5" />
+       <DecorationBoundingRect height="0" width="0" x="0" y="0" />
+       <Connects>
+        <Connect num="-1" port="-1" />
+       </Connects>
+      </Port>
+     </Ports>
+     <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" hasNoCalc="1" hasTerminate="1" idMax="2" idsReset="0" label="plug for signal port" name="SSINK" outputType="1" type="0" unit="1">
+      <ParamsGroups>
+       <Group circuitScopeId="91552" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="2">
+        <Elements>
+         <Element display="1" varName="sink" />
+        </Elements>
+       </Group>
+      </ParamsGroups>
+      <ExtVars>
+       <Port tag="signal">
+        <Vars>
+         <Var dimension="1" io="1" saveValue="1" subId="1" title="signal input" type="0" units="null" varName="sink" visibility="True">
+          <LaData>
+           <Data laStatus="0" />
+          </LaData>
+         </Var>
+        </Vars>
+       </Port>
+      </ExtVars>
      </Submodel>
     </Comp>
    </Comps>
