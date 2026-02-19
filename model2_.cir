@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE CIR>
 <CIR AME_VERSION="2604" DOC_VERSION="6" HOTFIX="0" MAJ="20261" UPDATE="0">
- <Circuit ameApplication="AMESim" execVersion="202520000" highestId="33">
+ <Circuit ameApplication="AMESim" execVersion="202520000" highestId="36">
   <Comps>
    <Comp alias="constant" circuitScopeId="1" depth="201" displayName="constant" geometry="1" iconDescription="constant signal source" labelVisible="0" libraryId="sig.constant" name="constant" scaleX="1.000000" scaleY="1.000000" type="0">
     <Pos x="247" y="149" />
@@ -232,6 +232,59 @@
        </Elements>
       </Group>
      </ParamsGroups>
+    </Submodel>
+   </Comp>
+   <Comp alias="super_enable" circuitScopeId="5" depth="204" displayName="super_enable" geometry="1" iconDescription="enable/disable switchable supercomponents" labelVisible="0" libraryId="simu.super_enable" name="super_enable" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Pos x="239" y="270" />
+    <LabelPos configured="0" direction="0" x="0" y="0" />
+    <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIzIiB0eXBlPSJzaWduYWwiIHg9IjUyIiB5PSIxNSI+CiAgIDxQT1JUX0JJVE1BUD4kQU1FL2xpYnBvcnRzL0ljb25zL3NpZ25hbDFweC5zdmc8L1BPUlRfQklUTUFQPgogIDwvUE9SVD4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjE1Ij4KICAgPFBPUlRfQklUTUFQPiRBTUUvbGlicG9ydHMvSWNvbnMvc2lnbmFsMXB4LnN2ZzwvUE9SVF9CSVRNQVA+CiAgPC9QT1JUPgogPC9QT1JUUz4K" cirPortHidden="0">
+     <IconMap data="H4sIAAAAAAACCq1TPW/bMBDd/SsOl8GLQ5G0hFiG6QAZOnXo0M6GKtMyEYoUREWS/32Pkt00hYeiyC18PN7He3fg7nmsLfS6DcY7tRSML0G70h+Nq9Tyx/cvj5vl836xC30FFOnCtqh1MLXC3h2ZrQMzdVEZp9nsxzlK4bnrmm2SDMPAhjXzbZVIznlCda4h29Ea93ovUOR5nkyv+JsZCiYRfhZBf2v9yVitsDPugmCOCr+aXlvrD4JKK+TNiHC5noM5dmeFmYyXszbVuVMo83jrjR5efEwADpkEmSN46neyflAYytZbO3HdhqYoqWHT6qDbXiPNo9ovAGBXmra0GoiQVfhwmgwhdK1/pYQHPtnN8VibTrfW0EF6yF1Sc5mxjBDxFWlEbQSYzOUbby80h1sD553+9+qNN66jTaypw0oKlsGaf0BPBOQHML2RiVtKJLJLqih4mnT5FrqDPARTucLiTPK/CY6CZk+rEjfto1SYR3CRV9dnziFbCQGCr2JhoMsG4K488Yny0vRvfZm8L6/y7n1jOVElkumaiZlu9Dxdzw3bQJq9+zmTfyqJX2y/+AXdXRyh2AMAAA==" format="svgz/base64" />
+    </CirCompIcon>
+    <Ports>
+     <Port connect="0" decorationOrientation="0" decorationVisible="0" face="3" name="" type="signal">
+      <Pos x="52" y="15" />
+      <DecorationBoundingRect height="0" width="0" x="0" y="0" />
+      <Connects>
+       <Connect num="-1" port="-1" />
+      </Connects>
+     </Port>
+     <Port connect="0" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
+      <Pos x="1" y="15" />
+      <DecorationBoundingRect height="0" width="0" x="0" y="0" />
+      <Connects>
+       <Connect num="-1" port="-1" />
+      </Connects>
+     </Port>
+    </Ports>
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="1.0" dir="$AME/libame/submodels" discontinuity="1" enableDisable="1" hasContextPtr="1" iStoresNumber="1" idMax="7" idsReset="0" label="enable/disable switchable supercomponents" name="SUPERCOMPENABLE0" outputType="1" type="0" unit="1">
+     <ParamsGroups>
+      <Group circuitScopeId="36" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="7">
+       <Elements>
+        <Element display="2" varName="subsysenabled" />
+        <Element display="1" varName="enable" />
+       </Elements>
+      </Group>
+     </ParamsGroups>
+     <ExtVars>
+      <Port tag="signal">
+       <Vars>
+        <Var circuitScopeId="34" defValue="0" dimension="1" io="2" maxValue="1" minValue="0" saveValue="1" subId="6" title="supercomponent is enabled" type="10" units="null" value="0" varName="subsysenabled" visibility="True">
+         <LaData>
+          <Data laStatus="0" />
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+      <Port tag="signal">
+       <Vars>
+        <Var circuitScopeId="35" dimension="1" io="1" saveValue="1" subId="1" title="enable signal for supercomponent" type="0" units="null" varName="enable" visibility="True">
+         <LaData>
+          <Data laStatus="0" />
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+     </ExtVars>
     </Submodel>
    </Comp>
   </Comps>

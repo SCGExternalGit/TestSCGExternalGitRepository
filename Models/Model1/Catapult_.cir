@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE CIR>
 <CIR AME_VERSION="2604" DOC_VERSION="6" HOTFIX="0" MAJ="20261" UPDATE="0">
- <Circuit ameApplication="AMESim" execVersion="202520000" highestId="1677">
+ <Circuit ameApplication="AMESim" execVersion="202520000" highestId="1691">
   <Comps>
    <Comp alias="zeroforcesource" circuitScopeId="1" depth="201" displayName="zeroforcesource" geometry="3" iconDescription="" labelVisible="0" libraryId="meca.zeroforcesource" name="zeroforcesource" scaleX="1.000000" scaleY="1.000000" type="0">
     <Pos x="186" y="97" />
@@ -1636,6 +1636,81 @@
        </Var>
       </Vars>
      </IntVars>
+    </Submodel>
+   </Comp>
+   <Comp alias="scriptinteractive" circuitScopeId="17" depth="212" displayName="scriptinteractive" geometry="1" iconDescription="set simulation parameters from submodel" labelVisible="0" libraryId="simu.scriptinteractive" name="scriptinteractive" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Pos x="99" y="341" />
+    <LabelPos configured="0" direction="0" x="0" y="0" />
+    <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
+     <IconMap data="H4sIAAAAAAACCr1UPW/bMBDd/SuIy+DJlCh/SaroAB06ZciQzoUr0/IhlGiQhGT9+x5lOQmCAAWKWgSB++DdvXtvYPF4qTVrlXVoGjkXPJ4z1ZTmgE0l5z9ffizS+eNuVri2YlTZuHxfK4e1hLY5cF07jvW+wkbxax6uVRJO3p/zKOq6jndLbmwVJXEcRzRnLMkvGpvXrwpFlmXR8Apvm4HgCbDfe6eerTmiVhI8Nj0wPEh4wlZpbX4JGi0hPl+A9aPt8OBPEpIsBCeF1cnfohZV992EBhazJKMLzBDeUZtOgiut0XrYNXfnfUmAZ6ucsq0C0qPazRhjRYm21IrRQlrCw3E4wJy35pUaHuLh3BKLGr2yGskQH0qXBC5WfE1ef/NscCC6jreq9IHSJrxQyTrYfwQblRCbdx1ESvM+QjnfB2UDQj7O+xaChSEF0Pd5zFeb7XqZrLaD1Omw1favmMt3zO1nbunITfwHcskHbp9xxHIqoHsy+lq6dCrp0qmkSyeSLhETSXd3oHsymhURfXhF+L13sz/+khEXMwYAAA==" format="svgz/base64" />
+    </CirCompIcon>
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="1.0" dir="$AME/libame/submodels" hasNoCalc="1" idMax="28" idsReset="0" label="Interact with some GUI actions" name="SCRCALL01" outputType="1" type="0" unit="0">
+     <IntParams>
+      <Params>
+       <Param circuitScopeId="1678" defValue="2" maxValue="2" minValue="1" subId="21" title="debug mode" value="2" varName="debugmode" visibility="True">
+        <Enums>
+         <Enum string="true" />
+         <Enum string="false" />
+        </Enums>
+       </Param>
+       <Param circuitScopeId="1679" defValue="2" maxValue="2" minValue="1" subId="25" title="open action is blocking" value="2" varName="paramopenblocking" visibility="True">
+        <Enums>
+         <Enum string="true" />
+         <Enum string="false" />
+        </Enums>
+       </Param>
+       <Param circuitScopeId="1680" defValue="2" maxValue="2" minValue="1" subId="26" title="open action is blocking" value="2" varName="simuopenblocking" visibility="True">
+        <Enums>
+         <Enum string="true" />
+         <Enum string="false" />
+        </Enums>
+       </Param>
+       <Param circuitScopeId="1681" defValue="2" maxValue="2" minValue="1" subId="27" title="command called after a simulation is blocking" value="2" varName="simucompleteblocking" visibility="True">
+        <Enums>
+         <Enum string="true" />
+         <Enum string="false" />
+        </Enums>
+       </Param>
+      </Params>
+     </IntParams>
+     <TextParams>
+      <Params>
+       <Param circuitScopeId="1682" defValue="User command" subId="1" textType="0" title="assistant name" value="User command" varName="name" visibility="True" />
+       <Param circuitScopeId="1683" defValue="none" subId="2" textType="0" title="command interpreter" value="none" varName="cmdinterpreter" visibility="True" />
+       <Param circuitScopeId="1684" defValue="none" subId="13" textType="0" title="command for open action" value="none" varName="parammodeopencmd" visibility="True" />
+       <Param circuitScopeId="1685" defValue="none" subId="14" textType="0" title="command on parameter change" value="none" varName="changeparamcmd" visibility="True" />
+       <Param circuitScopeId="1686" defValue="none" subId="15" textType="0" title="command for open action" value="none" varName="simumodeopencmd" visibility="True" />
+       <Param circuitScopeId="1687" defValue="none" subId="16" textType="0" title="command to call before a simulation" value="none" varName="beforesimucmd" visibility="True" />
+       <Param circuitScopeId="1688" defValue="none" subId="17" textType="0" title="command to call after a simulation" value="none" varName="simucompletecmd" visibility="True" />
+      </Params>
+     </TextParams>
+     <ParamsGroups>
+      <Group circuitScopeId="1689" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="28">
+       <Elements>
+        <Element display="0" varName="debugmode" />
+        <Element display="0" varName="name" />
+        <Element display="0" varName="cmdinterpreter" />
+        <Element display="2" varName="parammode" />
+        <Element display="2" varName="simumode" />
+       </Elements>
+      </Group>
+      <Group circuitScopeId="1690" editable="0" editableTitle="1" groupHeadIcon="" name="parammode" origTitle="Parameter mode" subId="18">
+       <Elements>
+        <Element display="0" varName="parammodeopencmd" />
+        <Element display="0" varName="paramopenblocking" />
+        <Element display="0" varName="changeparamcmd" />
+       </Elements>
+      </Group>
+      <Group circuitScopeId="1691" editable="0" editableTitle="1" groupHeadIcon="" name="simumode" origTitle="Simulation mode" subId="20">
+       <Elements>
+        <Element display="0" varName="simumodeopencmd" />
+        <Element display="0" varName="simuopenblocking" />
+        <Element display="0" varName="beforesimucmd" />
+        <Element display="0" varName="simucompletecmd" />
+        <Element display="0" varName="simucompleteblocking" />
+       </Elements>
+      </Group>
+     </ParamsGroups>
     </Submodel>
    </Comp>
   </Comps>
