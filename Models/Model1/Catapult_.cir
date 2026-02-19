@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE CIR>
 <CIR AME_VERSION="2604" DOC_VERSION="6" HOTFIX="0" MAJ="20261" UPDATE="0">
- <Circuit ameApplication="AMESim" execVersion="202520000" highestId="1691">
+ <Circuit ameApplication="AMESim" execVersion="202520000" highestId="1698">
   <Comps>
    <Comp alias="zeroforcesource" circuitScopeId="1" depth="201" displayName="zeroforcesource" geometry="3" iconDescription="" labelVisible="0" libraryId="meca.zeroforcesource" name="zeroforcesource" scaleX="1.000000" scaleY="1.000000" type="0">
     <Pos x="186" y="97" />
@@ -1639,7 +1639,7 @@
     </Submodel>
    </Comp>
    <Comp alias="scriptinteractive" circuitScopeId="17" depth="212" displayName="scriptinteractive" geometry="1" iconDescription="set simulation parameters from submodel" labelVisible="0" libraryId="simu.scriptinteractive" name="scriptinteractive" scaleX="1.000000" scaleY="1.000000" type="0">
-    <Pos x="99" y="341" />
+    <Pos x="188" y="341" />
     <LabelPos configured="0" direction="0" x="0" y="0" />
     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
      <IconMap data="H4sIAAAAAAACCr1UPW/bMBDd/SuIy+DJlCh/SaroAB06ZciQzoUr0/IhlGiQhGT9+x5lOQmCAAWKWgSB++DdvXtvYPF4qTVrlXVoGjkXPJ4z1ZTmgE0l5z9ffizS+eNuVri2YlTZuHxfK4e1hLY5cF07jvW+wkbxax6uVRJO3p/zKOq6jndLbmwVJXEcRzRnLMkvGpvXrwpFlmXR8Apvm4HgCbDfe6eerTmiVhI8Nj0wPEh4wlZpbX4JGi0hPl+A9aPt8OBPEpIsBCeF1cnfohZV992EBhazJKMLzBDeUZtOgiut0XrYNXfnfUmAZ6ucsq0C0qPazRhjRYm21IrRQlrCw3E4wJy35pUaHuLh3BKLGr2yGskQH0qXBC5WfE1ef/NscCC6jreq9IHSJrxQyTrYfwQblRCbdx1ESvM+QjnfB2UDQj7O+xaChSEF0Pd5zFeb7XqZrLaD1Omw1favmMt3zO1nbunITfwHcskHbp9xxHIqoHsy+lq6dCrp0qmkSyeSLhETSXd3oHsymhURfXhF+L13sz/+khEXMwYAAA==" format="svgz/base64" />
@@ -1711,6 +1711,64 @@
        </Elements>
       </Group>
      </ParamsGroups>
+    </Submodel>
+   </Comp>
+   <Comp alias="timesync" circuitScopeId="18" depth="213" displayName="timesync" geometry="1" iconDescription="time synchronization" labelVisible="0" libraryId="simu.timesync" name="timesync" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Pos x="293" y="453" />
+    <LabelPos configured="0" direction="0" x="0" y="0" />
+    <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
+     <IconMap data="H4sIAAAAAAACCtVWTW/bRhC951csmIMv5Gpnv5e2HKAJeuqhh/RcKNRaZkORAklLsn9931JiIqdCgwDNoYJlkY+zMzszb97y7t1x27B97Ie6a5c3xMUNi23Vret2s7z54+Ovhb95d//mbthvGCzboVxt41Bvl9m+XfNmO/B6u9rUbeQnPHvD2MlwmT2O465cLA6HAz8o3vWbhRRCLODqq1V5bOr28zVbCiEspqcX1gM2tsP3y4IZ4EP31FfxASsjb+O4+PDxw5eHheDrcX3hBk6HarWLr+LO4BS9TensVlUcFjM+rZ8rlRGXGfu0GuLvffdQN3A11u1zxur1Mvut3sem6f6kjB2XmdgdM/Z8/j3U6/FxmcmQbh5jvXkc57t9HQ+/dGkBE0wG/GWsQ7yHpjsss6Hqu6bJUgLltLFltuvjEPt9zNCfzX3a3V1V91UTGTbULLO3D9MnY8PYd5+x4K2YPjNQbOsx9k2NH+QDuEJw0tzg6nm+6tNFtji5363Gx3TB4OE55ZwClW3XxtuTy/Ic4vYfEUoSt8m66LD5enwuKTt5mstbVl3bxmrs+qJ66ver8alHADFboawpujvf43bLsEOtrNa5NFwY4bVnFRO5YAXxoK0inQsuhAus0JyUdcHlRUKUZe+Z504Iks5My5X3sLNca2UCFkpkL6TyFphRwXvlcym40vAjgVly0kqfk+UhOKsUI8WFF0banBxX0toQJkwGC+i8VclI8mCNJspJcOeNJ0ohtEFg2CkOD1obYA4LCXZpUzqQUcxxkoRMXa65DITnjiUvSmmTMCRmrZSpMEooYXXCpLbSBlSGuFJE0pxqAJfwp50zZBMCM4NaATPWUaBcIphy5DzDQxOCCtiJd0I7r1gxVUo4iwjaKG/chFmhTcg9VwHFSZCAE+e9yRUn8nYqnaIghc6JG9KSzJS9kN7DvdVIU6eAhGaZPPXVSLKpgRK7xx4U9mC1M6xwaEIwKJDiAbm6mRvX2X1+dpYEkHYdx+ddhE5VwzCk71Bl7F+JPpP7FY8F19YZJbU74f1TE8u4jwiwnqfiYkKKSQFK2h1nABIXMQDlp6dxvMT+6uq2nJKY0a8hrQUhCYN5MQ2JHA5FBp9RbEE2aDQ99ToQCJJjKEyQkjwsMQIuMb9QGALjZbiKpVEClcklUgseHBwlgkgjTKo6HGs5NVlYJ2RiDEmJkUEoJ4VCtyQ6ib6ba1ADUMzcxvZELNzFAGOqdNAnshrJConx8sErecrEaePZyzfyoEmrH9KVa3x4qV6q6uV/zQUKqLZX2ieRsR6dnbiABjk0T2H2II8ORTVcY4ZAGUiRlv4aMvUDOhKs8hOLnLHaTobIlSw0VWJwBUzfJ0VJUgYSBg7FgIVNIoj5tqCgh28oVaCrWMMk2OAgupMe4QXAQUJOhLBJ4APSgZ5JsE+ypANeQ4CwCPLjIHvX2FD8Z3z4xs3Yr9oB7xvboootGlMcp5cCKxVm4rvGOF+hXw5zg5GdqHZ5fv8A0b5zmM9H+XSQCxzoi/ufE4ircyjD/U8Pdg71KtDdYpP+4e3y/s3fVC16x9YKAAA=" format="svgz/base64" />
+    </CirCompIcon>
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libame/submodels" hasContextPtr="1" hasTerminate="1" idMax="20" idsReset="0" label="synchronize simulation with wall clock time" name="SIMSYNCTIME0" outputType="1" type="0" unit="1">
+     <RealParams>
+      <Params>
+       <Param circuitScopeId="1692" defValue="1" maxValue="1e+30" minValue="1e-30" subId="13" title="scaling for time synchronization (fixed step only - bigger than 1 to run slower than wall clock time)" units="null" value="1" varName="timescaling" visibility="synch==2" />
+       <Param circuitScopeId="1693" defValue="0.1" maxValue="1e+30" minValue="0" subId="19" title="maximum time step" units="s" value="0.1" varName="maxtimestep" visibility="simsteplimitmethod==2" />
+      </Params>
+     </RealParams>
+     <IntParams>
+      <Params>
+       <Param circuitScopeId="1694" defValue="2" maxValue="2" minValue="1" subId="9" title="synchronize with wall clock time" value="2" varName="synch" visibility="True">
+        <Enums>
+         <Enum string="no" />
+         <Enum string="yes" />
+        </Enums>
+       </Param>
+       <Param circuitScopeId="1695" defValue="1" maxValue="3" minValue="1" subId="17" title="set a maximum time step" value="1" varName="simsteplimitmethod" visibility="True">
+        <Enums>
+         <Enum string="set to print interval" />
+         <Enum string="set to user-defined value" />
+         <Enum string="use settings from run parameters" />
+        </Enums>
+       </Param>
+      </Params>
+     </IntParams>
+     <ParamsGroups>
+      <Group circuitScopeId="1698" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="20">
+       <Elements>
+        <Element display="0" varName="synch" />
+        <Element display="0" varName="simsteplimitmethod" />
+        <Element display="0" varName="timescaling" />
+        <Element display="0" varName="maxtimestep" />
+        <Element display="1" varName="etime" />
+        <Element display="1" varName="waittime" />
+       </Elements>
+      </Group>
+     </ParamsGroups>
+     <IntVars>
+      <Vars>
+       <Var circuitScopeId="1696" dimension="1" saveValue="1" subId="8" title="elapsed time from start of simulation" type="0" units="s" varName="etime" visibility="True">
+        <LaData>
+         <Data laStatus="0" />
+        </LaData>
+       </Var>
+       <Var circuitScopeId="1697" dimension="1" saveValue="1" subId="15" title="time to wait" type="0" units="s" varName="waittime" visibility="True">
+        <LaData>
+         <Data laStatus="0" />
+        </LaData>
+       </Var>
+      </Vars>
+     </IntVars>
     </Submodel>
    </Comp>
   </Comps>
