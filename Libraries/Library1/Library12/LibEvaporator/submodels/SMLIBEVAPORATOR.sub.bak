@@ -3141,7 +3141,7 @@
      </Submodel>
     </Comp>
     <Comp alias="sim_params_1" circuitScopeId="1" depth="211" displayName="sim_params" geometry="1" iconDescription="set simulation parameters from submodel" labelVisible="0" libraryId="simu.sim_params" name="sim_params" scaleX="1.000000" scaleY="1.000000" type="0">
-     <Pos x="502" y="263" />
+     <Pos x="502" y="178" />
      <LabelPos configured="0" direction="0" x="0" y="0" />
      <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
       <IconMap data="H4sIAAAAAAACCo1STY+bMBC951eMvIdciPEHNjiKs1IPPe1hD+25osQBaw1GgCD59x1I0lMPtSx7/Oa9N2PLp/dbG2B2w+hjZ/ecsj24rooX39V2//PH90Oxfz/vTuNcAzK78Vi2bvStJXN3oaEdqW/L2neOPnDyYFnSTFN/TNNlWegiaRzqVDDGUvR5Uo634LuvfxG5MSbdsuRvZ4RTQeB3ObrPIV59cJZMvrsT8BdLPvzsQoi/OFpbwvobgftzX/xlaiwRZj00ztfN9DrN3i3f4ioABsLgJBCx3jXExZKxGmIIW6/HsS8rLNgPbnTD7Ai+R33eAcCp8kMVHGBDwZK36zYIjNMQv1DwxrbxAg6tn9wQPG54H4QrLM4zqjC6v6JhDUj6sO/LqXmad7Fz/++Mj9JCTnWeG615IjIqszxTBVTAEgaSai64EiaRNMswxUFTwXmhpUkO+AnEKgNBmZbK6OQgqVJM5wbWpOZaFkiTlMtCmwwYZXIT5lRKplhRAKcyF4ojKDBikq1uRppCyRXKciWUEFg1Q9vVDL1MgeL16qe0Xhf8K+fdH6Cc6n2hAgAA" format="svgz/base64" />
@@ -3305,86 +3305,6 @@
      </Submodel>
     </Comp>
     <Comp alias="signalsink_1" catname="sig" circuitScopeId="1" depth="212" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
-     <Pos x="300" y="135" />
-     <LabelPos configured="0" direction="0" x="0" y="0" />
-     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjUiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
-      <IconMap data="H4sIAAAAAAACCp1RuVLDMBDt+YqdpXATfHEk9kTJDAUVBQXUGWMr9k5kySMJH3/P2gkZCipUaA89vbdP2u7HVkEvrSOjRZCEcQBSl6YiXYvg4/3lbhPsdzdb19fASO3yopWOWoG9rkLVupDaoiYtw3MfzyiBjfddHkXDMITDfWhsHaVxHEfMc4HkoyJ9+guYZFkWLad4nQyTMEX4LJx8s+ZISgr0pCcEqgS+Ui+VMoeEqQXG3YgwXeJAlW8EZnPeSKobfyl6ksOzmeEQQwYZgmGtozKDQFdao9QyZ+66omSxzkonbS+R38LK0s9C6yt9+oscI4bUy1zll/OH5OCo1oXimwCwZVsS2IASqI2WCM5bc2KF23hZP427lry0ijiweW6PCc/Kxjg8hI9cpwKf5mRKz53oLNAZNf1bpDOkPf9eukpgvWJWSFcbgMVTVM8bf+DuG+p4C5w1AgAA" format="svgz/base64" />
-     </CirCompIcon>
-     <Ports>
-      <Port connect="0" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
-       <Pos x="1" y="5" />
-       <DecorationBoundingRect height="0" width="0" x="0" y="0" />
-       <Connects>
-        <Connect num="-1" port="-1" />
-       </Connects>
-      </Port>
-     </Ports>
-    </Comp>
-    <Comp alias="signalsink_2" catname="sig" circuitScopeId="1" depth="213" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
-     <Pos x="300" y="118" />
-     <LabelPos configured="0" direction="0" x="0" y="0" />
-     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjUiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
-      <IconMap data="H4sIAAAAAAACCp1RuVLDMBDt+YqdpXATfHEk9kTJDAUVBQXUGWMr9k5kySMJH3/P2gkZCipUaA89vbdP2u7HVkEvrSOjRZCEcQBSl6YiXYvg4/3lbhPsdzdb19fASO3yopWOWoG9rkLVupDaoiYtw3MfzyiBjfddHkXDMITDfWhsHaVxHEfMc4HkoyJ9+guYZFkWLad4nQyTMEX4LJx8s+ZISgr0pCcEqgS+Ui+VMoeEqQXG3YgwXeJAlW8EZnPeSKobfyl6ksOzmeEQQwYZgmGtozKDQFdao9QyZ+66omSxzkonbS+R38LK0s9C6yt9+oscI4bUy1zll/OH5OCo1oXimwCwZVsS2IASqI2WCM5bc2KF23hZP427lry0ijiweW6PCc/Kxjg8hI9cpwKf5mRKz53oLNAZNf1bpDOkPf9eukpgvWJWSFcbgMVTVM8bf+DuG+p4C5w1AgAA" format="svgz/base64" />
-     </CirCompIcon>
-     <Ports>
-      <Port connect="0" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
-       <Pos x="1" y="5" />
-       <DecorationBoundingRect height="0" width="0" x="0" y="0" />
-       <Connects>
-        <Connect num="-1" port="-1" />
-       </Connects>
-      </Port>
-     </Ports>
-    </Comp>
-    <Comp alias="signalsink_3" catname="sig" circuitScopeId="1" depth="214" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
-     <Pos x="300" y="101" />
-     <LabelPos configured="0" direction="0" x="0" y="0" />
-     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjUiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
-      <IconMap data="H4sIAAAAAAACCp1RuVLDMBDt+YqdpXATfHEk9kTJDAUVBQXUGWMr9k5kySMJH3/P2gkZCipUaA89vbdP2u7HVkEvrSOjRZCEcQBSl6YiXYvg4/3lbhPsdzdb19fASO3yopWOWoG9rkLVupDaoiYtw3MfzyiBjfddHkXDMITDfWhsHaVxHEfMc4HkoyJ9+guYZFkWLad4nQyTMEX4LJx8s+ZISgr0pCcEqgS+Ui+VMoeEqQXG3YgwXeJAlW8EZnPeSKobfyl6ksOzmeEQQwYZgmGtozKDQFdao9QyZ+66omSxzkonbS+R38LK0s9C6yt9+oscI4bUy1zll/OH5OCo1oXimwCwZVsS2IASqI2WCM5bc2KF23hZP427lry0ijiweW6PCc/Kxjg8hI9cpwKf5mRKz53oLNAZNf1bpDOkPf9eukpgvWJWSFcbgMVTVM8bf+DuG+p4C5w1AgAA" format="svgz/base64" />
-     </CirCompIcon>
-     <Ports>
-      <Port connect="0" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
-       <Pos x="1" y="5" />
-       <DecorationBoundingRect height="0" width="0" x="0" y="0" />
-       <Connects>
-        <Connect num="-1" port="-1" />
-       </Connects>
-      </Port>
-     </Ports>
-    </Comp>
-    <Comp alias="signalsink_4" catname="sig" circuitScopeId="1" depth="215" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
-     <Pos x="300" y="84" />
-     <LabelPos configured="0" direction="0" x="0" y="0" />
-     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjUiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
-      <IconMap data="H4sIAAAAAAACCp1RuVLDMBDt+YqdpXATfHEk9kTJDAUVBQXUGWMr9k5kySMJH3/P2gkZCipUaA89vbdP2u7HVkEvrSOjRZCEcQBSl6YiXYvg4/3lbhPsdzdb19fASO3yopWOWoG9rkLVupDaoiYtw3MfzyiBjfddHkXDMITDfWhsHaVxHEfMc4HkoyJ9+guYZFkWLad4nQyTMEX4LJx8s+ZISgr0pCcEqgS+Ui+VMoeEqQXG3YgwXeJAlW8EZnPeSKobfyl6ksOzmeEQQwYZgmGtozKDQFdao9QyZ+66omSxzkonbS+R38LK0s9C6yt9+oscI4bUy1zll/OH5OCo1oXimwCwZVsS2IASqI2WCM5bc2KF23hZP427lry0ijiweW6PCc/Kxjg8hI9cpwKf5mRKz53oLNAZNf1bpDOkPf9eukpgvWJWSFcbgMVTVM8bf+DuG+p4C5w1AgAA" format="svgz/base64" />
-     </CirCompIcon>
-     <Ports>
-      <Port connect="0" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
-       <Pos x="1" y="5" />
-       <DecorationBoundingRect height="0" width="0" x="0" y="0" />
-       <Connects>
-        <Connect num="-1" port="-1" />
-       </Connects>
-      </Port>
-     </Ports>
-    </Comp>
-    <Comp alias="signalsink_6" catname="sig" circuitScopeId="1" depth="216" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
-     <Pos x="300" y="67" />
-     <LabelPos configured="0" direction="0" x="0" y="0" />
-     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjUiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
-      <IconMap data="H4sIAAAAAAACCp1RuVLDMBDt+YqdpXATfHEk9kTJDAUVBQXUGWMr9k5kySMJH3/P2gkZCipUaA89vbdP2u7HVkEvrSOjRZCEcQBSl6YiXYvg4/3lbhPsdzdb19fASO3yopWOWoG9rkLVupDaoiYtw3MfzyiBjfddHkXDMITDfWhsHaVxHEfMc4HkoyJ9+guYZFkWLad4nQyTMEX4LJx8s+ZISgr0pCcEqgS+Ui+VMoeEqQXG3YgwXeJAlW8EZnPeSKobfyl6ksOzmeEQQwYZgmGtozKDQFdao9QyZ+66omSxzkonbS+R38LK0s9C6yt9+oscI4bUy1zll/OH5OCo1oXimwCwZVsS2IASqI2WCM5bc2KF23hZP427lry0ijiweW6PCc/Kxjg8hI9cpwKf5mRKz53oLNAZNf1bpDOkPf9eukpgvWJWSFcbgMVTVM8bf+DuG+p4C5w1AgAA" format="svgz/base64" />
-     </CirCompIcon>
-     <Ports>
-      <Port connect="0" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
-       <Pos x="1" y="5" />
-       <DecorationBoundingRect height="0" width="0" x="0" y="0" />
-       <Connects>
-        <Connect num="-1" port="-1" />
-       </Connects>
-      </Port>
-     </Ports>
-    </Comp>
-    <Comp alias="signalsink_7" catname="sig" circuitScopeId="1" depth="217" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
      <Pos x="300" y="50" />
      <LabelPos configured="0" direction="0" x="0" y="0" />
      <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjUiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
