@@ -3551,7 +3551,7 @@
             <Unit_Definition Conversion_String="*2.8349523125e-2" Name="oz" User_Specific="1"/>
             <Unit_Definition Conversion_String="*6.35029318" Name="stone" User_Specific="1"/>
             <Unit_Definition Conversion_String="*14.593903" Name="slug" User_Specific="1"/>
-            <Unit_Definition Conversion_String="*6.479891e-5" Name="gr" User_Specific="1"/>
+            <Unit_Definition Conversion_String="*6.479891e-5" Default_Unit="lb" Name="gr" User_Specific="1"/>
         </Domain_Definition>
         <Domain_Definition Domain="magnetic field">
             <SI_Unit_Definition Name="A/m" User_Specific="1"/>
