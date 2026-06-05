@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE CIR>
-<CIR AME_VERSION="2604" DOC_VERSION="6" HOTFIX="0" MAJ="20261" UPDATE="0">
+<CIR AME_VERSION="2612" DOC_VERSION="7" HOTFIX="0" MAJ="20262" UPDATE="0">
  <Circuit ameApplication="AMESim" execVersion="202520000" highestId="1698">
   <Comps>
    <Comp alias="zeroforcesource" circuitScopeId="1" depth="201" displayName="zeroforcesource" geometry="3" iconDescription="" labelVisible="0" libraryId="meca.zeroforcesource" name="zeroforcesource" scaleX="1.000000" scaleY="1.000000" type="0">
@@ -1455,7 +1455,7 @@
     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
      <IconMap data="H4sIAAAAAAACCrWTTY/TMBCG7/srLO+hF9uxnY+tq82uBBInkJAKZ1RctzXrxJUdkpZfzzgfK1EBEgesTt/JZDLzzCh5fL40DvUmROvbeiUYXyHTar+37bFeff70jq5Xz093j7E/Ishs42bXmGibGvftnrkmMtvsjrY1bIrjKavGp647b7JsGAY25MyHYyY55xnUmVM2F2fbl98lCqVUNt7Fr2RYMInR1100H4M/WGdq3Nn2ipHd1/i97Y1z/ouA0jXm5wtG11kHu+9ONc5VujgZezx1y1VvzfDGpwcQR7mCH0Ye+h2cH2ocdfDOjaybeN5paHgOJprQGwz70DZoZxCQuBrfH8aDUeyCf4HMez6eJUBnCvkaaGxngrMgMBnkacAQipXgXRcvgLMGJ4N25113Wprp8WAEg3+QgshK05zlhLM1rZgisCiqWAVaaEkkeCUTpABNUVAtOOFESFbSh0mEYGWkkkI3WoIphDTlTIEJKqBuUskeoIfQAqolk6wAW5MUL5h6K9cQSOREKiLhXkL7cUvf+tb8eU+3axlHBNaclRqgR0CRjEMbCG6FILlMrXIZbydC6JeZtnMhMus/osHraL55C29i8N/b/V+RSyLKiRg2U9IEW9E8Jl+CJ4AMIGGLADMpkM6cVfqPdASlJSm2UzEyyX+Elqll1ct51TLZAgf7TZY2KmieBqLFdnqATDKBpc/76e4nFuwrrlQEAAA=" format="svgz/base64" />
     </CirCompIcon>
-    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libmec/submodels" hasTerminate="1" iStoresNumber="1" idMax="10" idsReset="0" label="sets the gravity of the whole system" name="GRAV0" outputType="1" timeRequired="1" type="0" unit="1">
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libmec/submodels" hasTerminate="1" iStoresNumber="1" idMax="10" idsReset="0" label="sets the gravity of the whole system" name="GRAV0" needsUpdateCheck="1" outputType="1" timeRequired="1" type="0" unit="1">
      <RealParams>
       <Params>
        <Param circuitScopeId="1657" defValue="9.80665" maxValue="1e+06" minValue="0" subId="5" title="constant gravity value" units="m/s/s" value="9.80665" varName="fixedg" visibility="(gtype == 1)" />
@@ -1518,7 +1518,7 @@
     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
      <IconMap data="H4sIAAAAAAACCrWTTY/TMBCG7/srLO+hF9uxnY+tq82uBBInkJAKZ1RctzXrxJUdkpZfzzgfK1EBEgesTt/JZDLzzCh5fL40DvUmROvbeiUYXyHTar+37bFeff70jq5Xz093j7E/Ishs42bXmGibGvftnrkmMtvsjrY1bIrjKavGp647b7JsGAY25MyHYyY55xnUmVM2F2fbl98lCqVUNt7Fr2RYMInR1100H4M/WGdq3Nn2ipHd1/i97Y1z/ouA0jXm5wtG11kHu+9ONc5VujgZezx1y1VvzfDGpwcQR7mCH0Ye+h2cH2ocdfDOjaybeN5paHgOJprQGwz70DZoZxCQuBrfH8aDUeyCf4HMez6eJUBnCvkaaGxngrMgMBnkacAQipXgXRcvgLMGJ4N25113Wprp8WAEg3+QgshK05zlhLM1rZgisCiqWAVaaEkkeCUTpABNUVAtOOFESFbSh0mEYGWkkkI3WoIphDTlTIEJKqBuUskeoIfQAqolk6wAW5MUL5h6K9cQSOREKiLhXkL7cUvf+tb8eU+3axlHBNaclRqgR0CRjEMbCG6FILlMrXIZbydC6JeZtnMhMus/osHraL55C29i8N/b/V+RSyLKiRg2U9IEW9E8Jl+CJ4AMIGGLADMpkM6cVfqPdASlJSm2UzEyyX+Elqll1ct51TLZAgf7TZY2KmieBqLFdnqATDKBpc/76e4nFuwrrlQEAAA=" format="svgz/base64" />
     </CirCompIcon>
-    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libmec/submodels" hasTerminate="1" iStoresNumber="1" idMax="10" idsReset="0" label="sets the gravity of the whole system" name="GRAV0" outputType="1" timeRequired="1" type="0" unit="1">
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libmec/submodels" hasTerminate="1" iStoresNumber="1" idMax="10" idsReset="0" label="sets the gravity of the whole system" name="GRAV0" needsUpdateCheck="1" outputType="1" timeRequired="1" type="0" unit="1">
      <RealParams>
       <Params>
        <Param circuitScopeId="1664" defValue="9.80665" maxValue="1e+06" minValue="0" subId="5" title="constant gravity value" units="m/s/s" value="9.80665" varName="fixedg" visibility="(gtype == 1)" />
@@ -1581,7 +1581,7 @@
     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
      <IconMap data="H4sIAAAAAAACCrWTTY/TMBCG7/srLO+hF9uxnY+tq82uBBInkJAKZ1RctzXrxJUdkpZfzzgfK1EBEgesTt/JZDLzzCh5fL40DvUmROvbeiUYXyHTar+37bFeff70jq5Xz093j7E/Ishs42bXmGibGvftnrkmMtvsjrY1bIrjKavGp647b7JsGAY25MyHYyY55xnUmVM2F2fbl98lCqVUNt7Fr2RYMInR1100H4M/WGdq3Nn2ipHd1/i97Y1z/ouA0jXm5wtG11kHu+9ONc5VujgZezx1y1VvzfDGpwcQR7mCH0Ye+h2cH2ocdfDOjaybeN5paHgOJprQGwz70DZoZxCQuBrfH8aDUeyCf4HMez6eJUBnCvkaaGxngrMgMBnkacAQipXgXRcvgLMGJ4N25113Wprp8WAEg3+QgshK05zlhLM1rZgisCiqWAVaaEkkeCUTpABNUVAtOOFESFbSh0mEYGWkkkI3WoIphDTlTIEJKqBuUskeoIfQAqolk6wAW5MUL5h6K9cQSOREKiLhXkL7cUvf+tb8eU+3axlHBNaclRqgR0CRjEMbCG6FILlMrXIZbydC6JeZtnMhMus/osHraL55C29i8N/b/V+RSyLKiRg2U9IEW9E8Jl+CJ4AMIGGLADMpkM6cVfqPdASlJSm2UzEyyX+Elqll1ct51TLZAgf7TZY2KmieBqLFdnqATDKBpc/76e4nFuwrrlQEAAA=" format="svgz/base64" />
     </CirCompIcon>
-    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libmec/submodels" hasTerminate="1" iStoresNumber="1" idMax="10" idsReset="0" label="sets the gravity of the whole system" name="GRAV0" outputType="1" timeRequired="1" type="0" unit="1">
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libmec/submodels" hasTerminate="1" iStoresNumber="1" idMax="10" idsReset="0" label="sets the gravity of the whole system" name="GRAV0" needsUpdateCheck="1" outputType="1" timeRequired="1" type="0" unit="1">
      <RealParams>
       <Params>
        <Param circuitScopeId="1671" defValue="9.80665" maxValue="1e+06" minValue="0" subId="5" title="constant gravity value" units="m/s/s" value="9.80665" varName="fixedg" visibility="(gtype == 1)" />
@@ -1644,7 +1644,7 @@
     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
      <IconMap data="H4sIAAAAAAACCr1UPW/bMBDd/SuIy+DJlCh/SaroAB06ZciQzoUr0/IhlGiQhGT9+x5lOQmCAAWKWgSB++DdvXtvYPF4qTVrlXVoGjkXPJ4z1ZTmgE0l5z9ffizS+eNuVri2YlTZuHxfK4e1hLY5cF07jvW+wkbxax6uVRJO3p/zKOq6jndLbmwVJXEcRzRnLMkvGpvXrwpFlmXR8Apvm4HgCbDfe6eerTmiVhI8Nj0wPEh4wlZpbX4JGi0hPl+A9aPt8OBPEpIsBCeF1cnfohZV992EBhazJKMLzBDeUZtOgiut0XrYNXfnfUmAZ6ucsq0C0qPazRhjRYm21IrRQlrCw3E4wJy35pUaHuLh3BKLGr2yGskQH0qXBC5WfE1ef/NscCC6jreq9IHSJrxQyTrYfwQblRCbdx1ESvM+QjnfB2UDQj7O+xaChSEF0Pd5zFeb7XqZrLaD1Omw1favmMt3zO1nbunITfwHcskHbp9xxHIqoHsy+lq6dCrp0qmkSyeSLhETSXd3oHsymhURfXhF+L13sz/+khEXMwYAAA==" format="svgz/base64" />
     </CirCompIcon>
-    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="1.0" dir="$AME/libame/submodels" hasNoCalc="1" idMax="28" idsReset="0" label="Interact with some GUI actions" name="SCRCALL01" outputType="1" type="0" unit="0">
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="1.0" dir="$AME/libame/submodels" hasNoCalc="1" idMax="28" idsReset="0" label="Interact with some GUI actions" name="SCRCALL01" needsUpdateCheck="1" outputType="1" type="0" unit="0">
      <IntParams>
       <Params>
        <Param circuitScopeId="1678" defValue="2" maxValue="2" minValue="1" subId="21" title="debug mode" value="2" varName="debugmode" visibility="True">
@@ -1719,7 +1719,7 @@
     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
      <IconMap data="H4sIAAAAAAACCtVWTW/bRhC951csmIMv5Gpnv5e2HKAJeuqhh/RcKNRaZkORAklLsn9931JiIqdCgwDNoYJlkY+zMzszb97y7t1x27B97Ie6a5c3xMUNi23Vret2s7z54+Ovhb95d//mbthvGCzboVxt41Bvl9m+XfNmO/B6u9rUbeQnPHvD2MlwmT2O465cLA6HAz8o3vWbhRRCLODqq1V5bOr28zVbCiEspqcX1gM2tsP3y4IZ4EP31FfxASsjb+O4+PDxw5eHheDrcX3hBk6HarWLr+LO4BS9TensVlUcFjM+rZ8rlRGXGfu0GuLvffdQN3A11u1zxur1Mvut3sem6f6kjB2XmdgdM/Z8/j3U6/FxmcmQbh5jvXkc57t9HQ+/dGkBE0wG/GWsQ7yHpjsss6Hqu6bJUgLltLFltuvjEPt9zNCfzX3a3V1V91UTGTbULLO3D9MnY8PYd5+x4K2YPjNQbOsx9k2NH+QDuEJw0tzg6nm+6tNFtji5363Gx3TB4OE55ZwClW3XxtuTy/Ic4vYfEUoSt8m66LD5enwuKTt5mstbVl3bxmrs+qJ66ver8alHADFboawpujvf43bLsEOtrNa5NFwY4bVnFRO5YAXxoK0inQsuhAus0JyUdcHlRUKUZe+Z504Iks5My5X3sLNca2UCFkpkL6TyFphRwXvlcym40vAjgVly0kqfk+UhOKsUI8WFF0banBxX0toQJkwGC+i8VclI8mCNJspJcOeNJ0ohtEFg2CkOD1obYA4LCXZpUzqQUcxxkoRMXa65DITnjiUvSmmTMCRmrZSpMEooYXXCpLbSBlSGuFJE0pxqAJfwp50zZBMCM4NaATPWUaBcIphy5DzDQxOCCtiJd0I7r1gxVUo4iwjaKG/chFmhTcg9VwHFSZCAE+e9yRUn8nYqnaIghc6JG9KSzJS9kN7DvdVIU6eAhGaZPPXVSLKpgRK7xx4U9mC1M6xwaEIwKJDiAbm6mRvX2X1+dpYEkHYdx+ddhE5VwzCk71Bl7F+JPpP7FY8F19YZJbU74f1TE8u4jwiwnqfiYkKKSQFK2h1nABIXMQDlp6dxvMT+6uq2nJKY0a8hrQUhCYN5MQ2JHA5FBp9RbEE2aDQ99ToQCJJjKEyQkjwsMQIuMb9QGALjZbiKpVEClcklUgseHBwlgkgjTKo6HGs5NVlYJ2RiDEmJkUEoJ4VCtyQ6ib6ba1ADUMzcxvZELNzFAGOqdNAnshrJConx8sErecrEaePZyzfyoEmrH9KVa3x4qV6q6uV/zQUKqLZX2ieRsR6dnbiABjk0T2H2II8ORTVcY4ZAGUiRlv4aMvUDOhKs8hOLnLHaTobIlSw0VWJwBUzfJ0VJUgYSBg7FgIVNIoj5tqCgh28oVaCrWMMk2OAgupMe4QXAQUJOhLBJ4APSgZ5JsE+ypANeQ4CwCPLjIHvX2FD8Z3z4xs3Yr9oB7xvboootGlMcp5cCKxVm4rvGOF+hXw5zg5GdqHZ5fv8A0b5zmM9H+XSQCxzoi/ufE4ircyjD/U8Pdg71KtDdYpP+4e3y/s3fVC16x9YKAAA=" format="svgz/base64" />
     </CirCompIcon>
-    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libame/submodels" hasContextPtr="1" hasTerminate="1" idMax="20" idsReset="0" label="synchronize simulation with wall clock time" name="SIMSYNCTIME0" outputType="1" type="0" unit="1">
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libame/submodels" hasContextPtr="1" hasTerminate="1" idMax="20" idsReset="0" label="synchronize simulation with wall clock time" name="SIMSYNCTIME0" needsUpdateCheck="1" outputType="1" type="0" unit="1">
      <RealParams>
       <Params>
        <Param circuitScopeId="1692" defValue="1" maxValue="1e+30" minValue="1e-30" subId="13" title="scaling for time synchronization (fixed step only - bigger than 1 to run slower than wall clock time)" units="null" value="1" varName="timescaling" visibility="synch==2" />
@@ -1804,6 +1804,22 @@
     </Ports>
    </Comp>
    <Comp alias="signalsink_2" catname="sig" circuitScopeId="21" depth="216" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Pos x="300" y="50" />
+    <LabelPos configured="0" direction="0" x="0" y="0" />
+    <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjUiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
+     <IconMap data="H4sIAAAAAAACCp1RuVLDMBDt+YqdpXATfHEk9kTJDAUVBQXUGWMr9k5kySMJH3/P2gkZCipUaA89vbdP2u7HVkEvrSOjRZCEcQBSl6YiXYvg4/3lbhPsdzdb19fASO3yopWOWoG9rkLVupDaoiYtw3MfzyiBjfddHkXDMITDfWhsHaVxHEfMc4HkoyJ9+guYZFkWLad4nQyTMEX4LJx8s+ZISgr0pCcEqgS+Ui+VMoeEqQXG3YgwXeJAlW8EZnPeSKobfyl6ksOzmeEQQwYZgmGtozKDQFdao9QyZ+66omSxzkonbS+R38LK0s9C6yt9+oscI4bUy1zll/OH5OCo1oXimwCwZVsS2IASqI2WCM5bc2KF23hZP427lry0ijiweW6PCc/Kxjg8hI9cpwKf5mRKz53oLNAZNf1bpDOkPf9eukpgvWJWSFcbgMVTVM8bf+DuG+p4C5w1AgAA" format="svgz/base64" />
+    </CirCompIcon>
+    <Ports>
+     <Port connect="0" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
+      <Pos x="1" y="5" />
+      <DecorationBoundingRect height="0" width="0" x="0" y="0" />
+      <Connects>
+       <Connect num="-1" port="-1" />
+      </Connects>
+     </Port>
+    </Ports>
+   </Comp>
+   <Comp alias="signalsink_3" catname="sig" circuitScopeId="22" depth="217" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
     <Pos x="300" y="50" />
     <LabelPos configured="0" direction="0" x="0" y="0" />
     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjUiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
