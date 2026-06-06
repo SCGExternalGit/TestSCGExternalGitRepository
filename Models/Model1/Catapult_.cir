@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE CIR>
 <CIR AME_VERSION="2612" DOC_VERSION="7" HOTFIX="0" MAJ="20262" UPDATE="0">
- <Circuit ameApplication="AMESim" execVersion="202520000" highestId="1698">
+ <Circuit ameApplication="AMESim" execVersion="202520000" highestId="1700">
   <Comps>
    <Comp alias="zeroforcesource" circuitScopeId="1" depth="201" displayName="zeroforcesource" geometry="3" iconDescription="" labelVisible="0" libraryId="meca.zeroforcesource" name="zeroforcesource" scaleX="1.000000" scaleY="1.000000" type="0">
     <Pos x="186" y="97" />
@@ -1882,6 +1882,42 @@
       </Connects>
      </Port>
     </Ports>
+   </Comp>
+   <Comp alias="signalsink_7" circuitScopeId="26" depth="221" displayName="signalsink" geometry="1" iconDescription="general signal sink" labelVisible="0" libraryId="sig.signalsink" name="signalsink" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Pos x="300" y="50" />
+    <LabelPos configured="0" direction="0" x="0" y="0" />
+    <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUz4KICA8UE9SVCBmYWNlPSIyIiB0eXBlPSJzaWduYWwiIHg9IjEiIHk9IjUiPgogICA8UE9SVF9CSVRNQVA+JEFNRS9saWJwb3J0cy9JY29ucy9zaWduYWwxcHguc3ZnPC9QT1JUX0JJVE1BUD4KICA8L1BPUlQ+CiA8L1BPUlRTPgo=" cirPortHidden="0">
+     <IconMap data="H4sIAAAAAAACCp1RuVLDMBDt+YqdpXATfHEk9kTJDAUVBQXUGWMr9k5kySMJH3/P2gkZCipUaA89vbdP2u7HVkEvrSOjRZCEcQBSl6YiXYvg4/3lbhPsdzdb19fASO3yopWOWoG9rkLVupDaoiYtw3MfzyiBjfddHkXDMITDfWhsHaVxHEfMc4HkoyJ9+guYZFkWLad4nQyTMEX4LJx8s+ZISgr0pCcEqgS+Ui+VMoeEqQXG3YgwXeJAlW8EZnPeSKobfyl6ksOzmeEQQwYZgmGtozKDQFdao9QyZ+66omSxzkonbS+R38LK0s9C6yt9+oscI4bUy1zll/OH5OCo1oXimwCwZVsS2IASqI2WCM5bc2KF23hZP427lry0ijiweW6PCc/Kxjg8hI9cpwKf5mRKz53oLNAZNf1bpDOkPf9eukpgvWJWSFcbgMVTVM8bf+DuG+p4C5w1AgAA" format="svgz/base64" />
+    </CirCompIcon>
+    <Ports>
+     <Port connect="0" decorationOrientation="0" decorationVisible="0" face="2" name="" type="signal">
+      <Pos x="1" y="5" />
+      <DecorationBoundingRect height="0" width="0" x="0" y="0" />
+      <Connects>
+       <Connect num="-1" port="-1" />
+      </Connects>
+     </Port>
+    </Ports>
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libsig/submodels" hasNoCalc="1" hasTerminate="1" idMax="2" idsReset="0" label="plug for signal port" name="SSINK" outputType="1" type="0" unit="1">
+     <ParamsGroups>
+      <Group circuitScopeId="1700" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="2">
+       <Elements>
+        <Element display="1" varName="sink" />
+       </Elements>
+      </Group>
+     </ParamsGroups>
+     <ExtVars>
+      <Port tag="signal">
+       <Vars>
+        <Var circuitScopeId="1699" dimension="1" io="1" saveValue="1" subId="1" title="signal input" type="0" units="null" varName="sink" visibility="True">
+         <LaData>
+          <Data laStatus="0" />
+         </LaData>
+        </Var>
+       </Vars>
+      </Port>
+     </ExtVars>
+    </Submodel>
    </Comp>
   </Comps>
   <Texts>
