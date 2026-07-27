@@ -1,0 +1,4 @@
+#ifndef __BouncingBall_tempModel_H__
+#define __BouncingBall_tempModel_H__
+#define STANDALONESIMULATOR
+#endif
