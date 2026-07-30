@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE CIR>
-<CIR AME_VERSION="2604" DOC_VERSION="6" HOTFIX="0" MAJ="20261" UPDATE="0">
- <Circuit ameApplication="AMESim" execVersion="202610000" highestId="171">
+<CIR AME_VERSION="2612" DOC_VERSION="8" HOTFIX="0" MAJ="20262" UPDATE="0">
+ <Circuit ameApplication="AMESim" execVersion="202610000" highestId="200">
   <Comps>
    <Comp alias="component_1" circuitScopeId="5" depth="201" displayName="component_1" geometry="1" hasDefaultIcon="1" iconDescription="description for supercomponent" isTextShown="1" labelVisible="0" libraryId="local_category.component_1" name="component_1" scaleX="1.000000" scaleY="1.000000" text="SC_1" type="0">
     <Pos x="277" y="105" />
@@ -9,7 +9,7 @@
     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
      <IconMap data="H4sIAAAAAAACCs1TTY/bIBC991cgcmnV2mBvoiaW8UpVtVKv7VY9s4AdGhssIHHy7zvQxJuNtu21SMYzb958MVDfH4ceHZTz2hqGi5xipIywUpuO4e+PD9kaIx+4kby3RjFsLL5van/oEDgaX0nB8DaEsSJk3Ls+t64jUhDVq0GZ4EmRFwSfueKZK5ziQR+UsMNgjU9uxi8uTCfbmTpNUz7dJUax2WwILUlZZsDI/MkEfsyu/KCu1/xKSikB24V27LXZ/TFBsp6pf4920Gr6ZI8MU0TR+g59XOLrsyww0pJhoK5xUw8qcMkDT9hFWYEBWqm+fn5oaiGqH9btUAT4k90HhhHYpaha6wYeGj3wTsXU76G4mjwbIiecRpVcnfJ274R6dTBSDDoyybeg+/5LDIjJb38degUiOZcB0lwZudTb1B0KjhsfE0MbPDh9fAvXBk5g3pJalPP+7h9N/h89jrY/weQVasGJ4UWbFk5qZkcuIGZ6IfBERqvhcjO8zFf0A4UNrdY34nITZXorRmn2ik/L2R10saBpXYBMcr/lznHI+AKzbesVHBnNr8ixasFHhp/2IbxAf0KdMCUdlJvxpPUafgyX12Fuejyjk5Zhe8biyXXwwXSaN78AUoubQDsEAAA=" format="svgz/base64" />
     </CirCompIcon>
-    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="1" codeGenVersion="1.0" gpIdMax="-5" idMax="10" name="SC_1" outputType="0" type="1" unit="0">
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="1" codeGenVersion="1.0" gpIdMax="-5" idMax="10" name="SC_1" needsUpdateCheck="1" outputType="0" type="1" unit="0">
      <ParamsGroups>
       <Group circuitScopeId="104" editable="1" editableTitle="1" groupHead="" groupHeadIcon="" name="custom_exposed_group" origTitle="New Group" subId="1" />
       <Group circuitScopeId="106" editable="1" editableTitle="1" groupHead="" groupHeadIcon="" name="custom_exposed_group_2" origTitle="New Group" subId="3" />
@@ -76,7 +76,7 @@
     </Submodel>
     <Supercomponent catname="local_category" scLocal="1">
      <PortsMap />
-     <Circuit ameApplication="AMESim" highestId="171">
+     <Circuit ameApplication="AMESim" highestId="200">
       <Comps>
        <Comp alias="pressuresource" circuitScopeId="4" depth="201" displayName="pressuresource" geometry="2" iconDescription="hydraulic pressure source can be used as a perfect pressure compensated pump" labelVisible="0" libraryId="hydr.pressuresource" name="pressuresource" scaleX="1.000000" scaleY="1.000000" type="0">
         <Pos x="67" y="96" />
@@ -429,7 +429,7 @@
        </Comp>
       </Comps>
       <Lines>
-       <Line alias="hydraulic" circuitScopeId="3" endEntity="2" endPort="0" endType="0" labelVisible="0" startEntity="1" startPort="0" startType="0" type="0">
+       <Line alias="hydraulic" circuitScopeId="3" endEntity="2" endPort="0" endType="0" labelVisible="0" startEntity="1" startPort="0" startType="0">
         <pos configured="0" direction="0" x="0" y="0" />
         <Points>
          <Point x="103" y="108" />
@@ -762,7 +762,7 @@
     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
      <IconMap data="H4sIAAAAAAACCo1STY+bMBC951eMvIdciPEHNjiKs1IPPe1hD+25osQBaw1GgCD59x1I0lMPtSx7/Oa9N2PLp/dbG2B2w+hjZ/ecsj24rooX39V2//PH90Oxfz/vTuNcAzK78Vi2bvStJXN3oaEdqW/L2neOPnDyYFnSTFN/TNNlWegiaRzqVDDGUvR5Uo634LuvfxG5MSbdsuRvZ4RTQeB3ObrPIV59cJZMvrsT8BdLPvzsQoi/OFpbwvobgftzX/xlaiwRZj00ztfN9DrN3i3f4ioABsLgJBCx3jXExZKxGmIIW6/HsS8rLNgPbnTD7Ai+R33eAcCp8kMVHGBDwZK36zYIjNMQv1DwxrbxAg6tn9wQPG54H4QrLM4zqjC6v6JhDUj6sO/LqXmad7Fz/++Mj9JCTnWeG615IjIqszxTBVTAEgaSai64EiaRNMswxUFTwXmhpUkO+AnEKgNBmZbK6OQgqVJM5wbWpOZaFkiTlMtCmwwYZXIT5lRKplhRAKcyF4ojKDBikq1uRppCyRXKciWUEFg1Q9vVDL1MgeL16qe0Xhf8K+fdH6Cc6n2hAgAA" format="svgz/base64" />
     </CirCompIcon>
-    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libame/submodels" hasTerminate="1" iStoresNumber="1" idMax="47" idsReset="0" label="change simulation parameters" name="SIMP00" outputType="1" type="0" unit="0">
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libame/submodels" hasTerminate="1" iStoresNumber="1" idMax="47" idsReset="0" label="change simulation parameters" name="SIMP00" needsUpdateCheck="1" outputType="1" type="0" unit="0">
      <RealParams>
       <Params>
        <Param circuitScopeId="114" defValue="1e+30" maxValue="1e+30" minValue="1e-05" subId="2" title="maximum time step" units="s" value="1e+30" varName="maxstep" visibility="(setmaxstep == 2)" />
@@ -926,7 +926,7 @@
     <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
      <IconMap data="H4sIAAAAAAACCo1STY+bMBC951eMvIdciPEHNjiKs1IPPe1hD+25osQBaw1GgCD59x1I0lMPtSx7/Oa9N2PLp/dbG2B2w+hjZ/ecsj24rooX39V2//PH90Oxfz/vTuNcAzK78Vi2bvStJXN3oaEdqW/L2neOPnDyYFnSTFN/TNNlWegiaRzqVDDGUvR5Uo634LuvfxG5MSbdsuRvZ4RTQeB3ObrPIV59cJZMvrsT8BdLPvzsQoi/OFpbwvobgftzX/xlaiwRZj00ztfN9DrN3i3f4ioABsLgJBCx3jXExZKxGmIIW6/HsS8rLNgPbnTD7Ai+R33eAcCp8kMVHGBDwZK36zYIjNMQv1DwxrbxAg6tn9wQPG54H4QrLM4zqjC6v6JhDUj6sO/LqXmad7Fz/++Mj9JCTnWeG615IjIqszxTBVTAEgaSai64EiaRNMswxUFTwXmhpUkO+AnEKgNBmZbK6OQgqVJM5wbWpOZaFkiTlMtCmwwYZXIT5lRKplhRAKcyF4ojKDBikq1uRppCyRXKciWUEFg1Q9vVDL1MgeL16qe0Xhf8K+fdH6Cc6n2hAgAA" format="svgz/base64" />
     </CirCompIcon>
-    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libame/submodels" hasTerminate="1" iStoresNumber="1" idMax="47" idsReset="0" label="change simulation parameters" name="SIMP00" outputType="1" type="0" unit="0">
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libame/submodels" hasTerminate="1" iStoresNumber="1" idMax="47" idsReset="0" label="change simulation parameters" name="SIMP00" needsUpdateCheck="1" outputType="1" type="0" unit="0">
      <RealParams>
       <Params>
        <Param circuitScopeId="143" defValue="1e+30" maxValue="1e+30" minValue="1e-05" subId="2" title="maximum time step" units="s" value="1e+30" varName="maxstep" visibility="(setmaxstep == 2)" />
@@ -1075,6 +1075,170 @@
        </Elements>
       </Group>
       <Group circuitScopeId="171" editable="0" editableTitle="1" groupHeadIcon="" name="kluptions" origTitle="KLU options" subId="40">
+       <Elements>
+        <Element display="0" varName="klubtf" />
+        <Element display="0" varName="kluordering" />
+        <Element display="0" varName="kluscaling" />
+       </Elements>
+      </Group>
+     </ParamsGroups>
+    </Submodel>
+   </Comp>
+   <Comp alias="sim_params_2" circuitScopeId="8" depth="204" displayName="sim_params" geometry="1" iconDescription="set simulation parameters from submodel" labelVisible="0" libraryId="simu.sim_params" name="sim_params" scaleX="1.000000" scaleY="1.000000" type="0">
+    <Pos x="267" y="317" />
+    <LabelPos configured="0" direction="0" x="0" y="0" />
+    <CirCompIcon cirIconIdentity="1" cirPortGraphics="IDxQT1JUUy8+Cg==" cirPortHidden="0">
+     <IconMap data="H4sIAAAAAAACCo1STY+bMBC951eMvIdciPEHNjiKs1IPPe1hD+25osQBaw1GgCD59x1I0lMPtSx7/Oa9N2PLp/dbG2B2w+hjZ/ecsj24rooX39V2//PH90Oxfz/vTuNcAzK78Vi2bvStJXN3oaEdqW/L2neOPnDyYFnSTFN/TNNlWegiaRzqVDDGUvR5Uo634LuvfxG5MSbdsuRvZ4RTQeB3ObrPIV59cJZMvrsT8BdLPvzsQoi/OFpbwvobgftzX/xlaiwRZj00ztfN9DrN3i3f4ioABsLgJBCx3jXExZKxGmIIW6/HsS8rLNgPbnTD7Ai+R33eAcCp8kMVHGBDwZK36zYIjNMQv1DwxrbxAg6tn9wQPG54H4QrLM4zqjC6v6JhDUj6sO/LqXmad7Fz/++Mj9JCTnWeG615IjIqszxTBVTAEgaSai64EiaRNMswxUFTwXmhpUkO+AnEKgNBmZbK6OQgqVJM5wbWpOZaFkiTlMtCmwwYZXIT5lRKplhRAKcyF4ojKDBikq1uRppCyRXKciWUEFg1Q9vVDL1MgeL16qe0Xhf8K+fdH6Cc6n2hAgAA" format="svgz/base64" />
+    </CirCompIcon>
+    <Submodel autonomousCompilation="False" autonomousRuntime="False" cirPortsOverFramework="0" codeGenVersion="2.0" dir="$AME/libame/submodels" hasTerminate="1" iStoresNumber="1" idMax="47" idsReset="0" label="change simulation parameters" name="SIMP00" outputType="1" type="0" unit="0">
+     <RealParams>
+      <Params>
+       <Param circuitScopeId="172" defValue="1e+30" maxValue="1e+30" minValue="1e-05" subId="2" title="maximum time step" units="s" value="1e+30" varName="maxstep" visibility="(setmaxstep == 2)" />
+       <Param circuitScopeId="173" defValue="1e-07" maxValue="0.01" minValue="1e-14" subId="1" title="integrator fixed tolerance" units="null" value="1e-07" varName="toler" visibility="(tolermode == 2 &amp;&amp; tolermethod&lt;=3)" />
+       <Param circuitScopeId="174" defValue="1e-08" maxValue="1e+30" minValue="1e-16" subId="44" title="absolute tolerance" units="null" value="1e-08" varName="abstol" visibility="tolermode == 2 &amp;&amp; tolermethod>=4" />
+       <Param circuitScopeId="175" defValue="1e-06" maxValue="1e+30" minValue="1e-16" subId="45" title="relative tolerance" units="null" value="1e-06" varName="reltol" visibility="tolermode == 2 &amp;&amp; tolermethod>=4" />
+       <Param circuitScopeId="176" defValue="1e+30" maxValue="1e+30" minValue="1e-05" subId="3" title="maximum time" units="s" value="1e+30" varName="maxcpu" visibility="(setmaxcpu >= 2)" />
+       <Param circuitScopeId="177" defValue="1e-07" maxValue="1e+30" minValue="1e-14" subId="20" title="initial time step value" units="s" value="1e-07" varName="inith" visibility="inithmode == 2" />
+       <Param circuitScopeId="178" defValue="0" maxValue="1e+30" minValue="0" subId="25" title="fixed time step" units="s" value="0" varName="fixedh" visibility="True" />
+       <Param circuitScopeId="179" defValue="1.49011611938477e-08" maxValue="1.49011611938477e-08" minValue="0" subId="31" title="user-defined perturbation value for numerical Jacobian" units="null" value="1.49011611938477e-08" varName="pertvalue" visibility="jacmethod==4" />
+      </Params>
+     </RealParams>
+     <IntParams>
+      <Params>
+       <Param circuitScopeId="180" defValue="1" maxValue="2" minValue="1" subId="11" title="set a maximum time step" value="1" varName="setmaxstep" visibility="True">
+        <Enums>
+         <Enum string="no" />
+         <Enum string="yes" />
+        </Enums>
+       </Param>
+       <Param circuitScopeId="181" defValue="1" maxValue="3" minValue="1" subId="6" title="set integrator tolerance" value="1" varName="tolermode" visibility="True">
+        <Enums>
+         <Enum string="no" />
+         <Enum string="normal" />
+         <Enum string="log to base 10" />
+        </Enums>
+       </Param>
+       <Param circuitScopeId="182" defValue="5" maxValue="5" minValue="1" subId="4" title="tolerance method" value="5" varName="tolermethod" visibility="tolermode>=2">
+        <Enums>
+         <Enum string="fixed mixed" />
+         <Enum string="fixed relative" />
+         <Enum string="fixed absolute" />
+         <Enum string="fixed with specified values" />
+         <Enum string="auto scale absolute" />
+        </Enums>
+       </Param>
+       <Param circuitScopeId="183" defValue="-7" maxValue="-2" minValue="-14" subId="7" title="integrator tolerance (log to base 10)" value="-7" varName="intol" visibility="(tolermode == 3 &amp;&amp; tolermethod &lt;=3)" />
+       <Param circuitScopeId="184" defValue="-8" maxValue="-2" minValue="-14" subId="46" title="integrator absolute tolerance (log to base 10)" value="-8" varName="inatol" visibility="(tolermode == 3 &amp;&amp; tolermethod>=4)" />
+       <Param circuitScopeId="185" defValue="-6" maxValue="-2" minValue="-14" subId="47" title="integrator relative tolerance (log to base 10)" value="-6" varName="inrtol" visibility="(tolermode == 3 &amp;&amp; tolermethod>=4)" />
+       <Param circuitScopeId="186" defValue="1" maxValue="3" minValue="1" subId="5" title="set a maximum time" value="1" varName="setmaxcpu" visibility="True">
+        <Enums>
+         <Enum string="no" />
+         <Enum string="CPU time" />
+         <Enum string="elapsed time" />
+        </Enums>
+       </Param>
+       <Param circuitScopeId="187" defValue="1" maxValue="3" minValue="1" subId="12" title="expression evaluation error handling" value="1" varName="expevalerror" visibility="True">
+        <Enums>
+         <Enum string="fatal error" />
+         <Enum string="warning" />
+         <Enum string="ignore" />
+        </Enums>
+       </Param>
+       <Param circuitScopeId="188" defValue="1" maxValue="2" minValue="1" subId="17" title="initial time step computation" value="1" varName="inithmode" visibility="True">
+        <Enums>
+         <Enum string="automatic" />
+         <Enum string="manual" />
+        </Enums>
+       </Param>
+       <Param circuitScopeId="189" defValue="20" maxValue="100000" minValue="0" subId="34" title="maximum consecutive solver step restarts" value="20" varName="maxallowedconsrestart" visibility="True" />
+       <Param circuitScopeId="190" defValue="1" maxValue="2" minValue="1" subId="26" title="matrix equilibration" value="1" varName="matequilib" visibility="True">
+        <Enums>
+         <Enum string="disabled" />
+         <Enum string="enabled" />
+        </Enums>
+       </Param>
+       <Param circuitScopeId="191" defValue="1" maxValue="4" minValue="1" subId="28" title="perturbation for numerical Jacobian" value="1" varName="jacmethod" visibility="True">
+        <Enums>
+         <Enum string="model-defined" />
+         <Enum string="forced adaptive" />
+         <Enum string="forced legacy" />
+         <Enum string="user-defined" />
+        </Enums>
+       </Param>
+       <Param circuitScopeId="192" defValue="2" maxValue="2" minValue="1" subId="36" title="heuristic for Jacobian computation" value="2" varName="jacheur" visibility="True">
+        <Enums>
+         <Enum string="legacy" />
+         <Enum string="Jacobian saving" />
+        </Enums>
+       </Param>
+       <Param circuitScopeId="193" defValue="4" maxValue="4" minValue="1" subId="14" title="Jacobian storage method" value="4" varName="jacstore" visibility="True">
+        <Enums>
+         <Enum string="automatic" />
+         <Enum string="dense" />
+         <Enum string="sparse" />
+         <Enum string="KLU sparse" />
+        </Enums>
+       </Param>
+       <Param circuitScopeId="194" defValue="1" maxValue="2" minValue="1" subId="37" title="btf pre ordering" value="1" varName="klubtf" visibility="jacstore == 4">
+        <Enums>
+         <Enum string="yes" />
+         <Enum string="no" />
+        </Enums>
+       </Param>
+       <Param circuitScopeId="195" defValue="1" maxValue="2" minValue="1" subId="38" title="ordering" value="1" varName="kluordering" visibility="jacstore == 4">
+        <Enums>
+         <Enum string="AMD" />
+         <Enum string="COLAMD" />
+        </Enums>
+       </Param>
+       <Param circuitScopeId="196" defValue="1" maxValue="3" minValue="1" subId="39" title="scaling" value="1" varName="kluscaling" visibility="jacstore == 4">
+        <Enums>
+         <Enum string="none" />
+         <Enum string="sum" />
+         <Enum string="max" />
+        </Enums>
+       </Param>
+      </Params>
+     </IntParams>
+     <ParamsGroups>
+      <Group circuitScopeId="197" editable="0" editableTitle="1" groupHeadIcon="" name="ROOTGROUP" origTitle="ROOTGROUP" subId="27">
+       <Elements>
+        <Element display="0" varName="setmaxcpu" />
+        <Element display="0" varName="expevalerror" />
+        <Element display="0" varName="maxcpu" />
+        <Element display="2" varName="varstepsolv" />
+        <Element display="2" varName="fixedstepsolv" />
+       </Elements>
+      </Group>
+      <Group circuitScopeId="198" editable="0" editableTitle="1" groupHeadIcon="" name="varstepsolv" origTitle="variable step solver specific" subId="22">
+       <Elements>
+        <Element display="0" varName="tolermode" />
+        <Element display="0" varName="tolermethod" />
+        <Element display="0" varName="toler" />
+        <Element display="0" varName="abstol" />
+        <Element display="0" varName="reltol" />
+        <Element display="0" varName="intol" />
+        <Element display="0" varName="inatol" />
+        <Element display="0" varName="inrtol" />
+        <Element display="0" varName="setmaxstep" />
+        <Element display="0" varName="maxstep" />
+        <Element display="0" varName="inithmode" />
+        <Element display="0" varName="inith" />
+        <Element display="0" varName="maxallowedconsrestart" />
+        <Element display="0" varName="matequilib" />
+        <Element display="0" varName="jacmethod" />
+        <Element display="0" varName="pertvalue" />
+        <Element display="0" varName="jacheur" />
+        <Element display="0" varName="jacstore" />
+        <Element display="2" varName="kluptions" />
+       </Elements>
+      </Group>
+      <Group circuitScopeId="199" editable="0" editableTitle="1" groupHeadIcon="" name="fixedstepsolv" origTitle="fixed step solver specific" subId="23">
+       <Elements>
+        <Element display="0" varName="fixedh" />
+       </Elements>
+      </Group>
+      <Group circuitScopeId="200" editable="0" editableTitle="1" groupHeadIcon="" name="kluptions" origTitle="KLU options" subId="40">
        <Elements>
         <Element display="0" varName="klubtf" />
         <Element display="0" varName="kluordering" />

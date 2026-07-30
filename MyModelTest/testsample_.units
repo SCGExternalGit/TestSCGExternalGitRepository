@@ -1,4 +1,4 @@
-<Unit_Configuration Active_Configuration_Id="{603ada5e-e64f-4478-9695-b9d995f93cc6}" Version="">
+<Unit_Configuration Active_Configuration_Id="{603ada5e-e64f-4478-9695-b9d995f93cc6}" Version="17.0">
     <Configuration_Definition Id="{603ada5e-e64f-4478-9695-b9d995f93cc6}" IsDuplicate="0" IsFactory="1" IsReference="0" Name="International System of Units (SI)" Scope="0">
         <Domain_Definition Domain="density">
             <Unit_Definition Conversion_String="*1.0e3" Default_Unit="lb/ft**3" Name="g/cm**3" User_Specific="1"/>
@@ -76,6 +76,13 @@
             <Unit_Definition Conversion_String="/2.54e-2" Name="per in" User_Specific="1"/>
             <Unit_Definition Conversion_String="/3.048e-1" Name="per ft" User_Specific="1"/>
         </Domain_Definition>
+        <Domain_Definition Domain="electrical reactive power">
+            <SI_Unit_Definition Name="var" User_Specific="1"/>
+            <Unit_Definition Conversion_String="*1.0e-3" Default_Unit="var" Name="mvar" User_Specific="1"/>
+            <Unit_Definition Conversion_String="*1.0e-6" Default_Unit="var" Name="uvar" User_Specific="1"/>
+            <Unit_Definition Conversion_String="*1.0e3" Default_Unit="var" Name="kvar" User_Specific="1"/>
+            <Unit_Definition Conversion_String="*1.0e6" Default_Unit="var" Name="Mvar" User_Specific="1"/>
+        </Domain_Definition>
         <Domain_Definition Domain="gas node index">
             <SI_Unit_Definition Name="gasnode" User_Specific="1"/>
         </Domain_Definition>
@@ -96,6 +103,13 @@
             <Unit_Definition Conversion_String="/1.0e-3" Name="per mm" User_Specific="1"/>
             <Unit_Definition Conversion_String="/2.54e-2" Name="per in" User_Specific="1"/>
             <Unit_Definition Conversion_String="/3.048e-1" Name="per ft" User_Specific="1"/>
+        </Domain_Definition>
+        <Domain_Definition Domain="electrical reactive power">
+            <SI_Unit_Definition Name="var" User_Specific="1"/>
+            <Unit_Definition Conversion_String="*1.0e-3" Default_Unit="var" Name="mvar" User_Specific="1"/>
+            <Unit_Definition Conversion_String="*1.0e-6" Default_Unit="var" Name="uvar" User_Specific="1"/>
+            <Unit_Definition Conversion_String="*1.0e3" Default_Unit="var" Name="kvar" User_Specific="1"/>
+            <Unit_Definition Conversion_String="*1.0e6" Default_Unit="var" Name="Mvar" User_Specific="1"/>
         </Domain_Definition>
         <Domain_Definition Domain="gas node index">
             <SI_Unit_Definition Name="gasnode" User_Specific="1"/>
@@ -124,6 +138,13 @@
             <Unit_Definition Conversion_String="*1.0e-6" Default_Unit="VA" Name="uVA" User_Specific="1"/>
             <Unit_Definition Conversion_String="*1.0e3" Default_Unit="VA" Name="kVA" User_Specific="1"/>
             <Unit_Definition Conversion_String="*1.0e6" Default_Unit="VA" Name="MVA" User_Specific="1"/>
+        </Domain_Definition>
+        <Domain_Definition Domain="electrical reactive power">
+            <SI_Unit_Definition Name="var" User_Specific="1"/>
+            <Unit_Definition Conversion_String="*1.0e-3" Default_Unit="var" Name="mvar" User_Specific="1"/>
+            <Unit_Definition Conversion_String="*1.0e-6" Default_Unit="var" Name="uvar" User_Specific="1"/>
+            <Unit_Definition Conversion_String="*1.0e3" Default_Unit="var" Name="kvar" User_Specific="1"/>
+            <Unit_Definition Conversion_String="*1.0e6" Default_Unit="var" Name="Mvar" User_Specific="1"/>
         </Domain_Definition>
         <Domain_Definition Domain="fluid absolute viscosity">
             <Unit_Definition Conversion_String="*47.88025898" Default_Unit="lb/ft/s" Name="lbfs/ft**2" User_Specific="1"/>
