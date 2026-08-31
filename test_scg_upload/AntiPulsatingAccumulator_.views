@@ -1,8 +1,0 @@
-<!DOCTYPE PVC>
-<PVC AME_VERSION="20221.." DOC_VERSION="1">
- <ZOOM_HISTORY config_0="0/0/1" config_1="0/57/1.88168" config_10="211/107/2.58117" config_11="196/99/2.32306" config_12="180/90/2.09075" config_13="162/81/1.88168" config_14="141/71/1.69351" config_15="119/59/1.52416" config_16="93/47/1.37174" config_17="66/33/1.23457" config_18="34/17/1.11111" config_19="0/0/1" config_2="0/73/2.09075" config_20="15/0/1.23457" config_21="44/23/1.11111" config_22="0/0/1" config_3="0/87/2.32306" config_4="0/99/2.58117" config_5="0/110/2.86797" config_6="0/120/3.18664" config_7="0/129/3.54071" config_8="237/122/3.18664" config_9="225/115/2.86797"/>
- <PARAM_VAR_LIST>
-  <PARAM/>
-  <VAR/>
- </PARAM_VAR_LIST>
-</PVC>
